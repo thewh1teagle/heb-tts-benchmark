@@ -9,6 +9,12 @@ OR
 git clone https://huggingface.co/thewh1teagle/phonikud-experiments
 
 uv run src/transcribe.py --input ./phonikud-experiments/comparison/audio/ --output ./transcripts
+
+git clone https://huggingface.co/thewh1teagle/whisper-heb-ipa
+uv run ct2-transformers-converter \
+    --model ./whisper-heb-ipa \
+    --output_dir ./whisper-heb-ipa-ct2 \
+    --quantization int8_float16
 """
 import argparse
 import torch
@@ -16,6 +22,8 @@ import json
 from transformers import pipeline
 from pathlib import Path
 from tqdm import tqdm
+
+
 
 
 def get_device():
