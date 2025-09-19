@@ -1,0 +1,8 @@
+data/
+!data/.gitkeep
+!data/saspeech_100_gold_gt.csv
+__pycache__/
+.venv/
+venv/
+.DS_Store
+audio-data/
