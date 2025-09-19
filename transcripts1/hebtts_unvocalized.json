@@ -1,0 +1,602 @@
+{
+  "gold_005_line_151": {
+    "before_clean": " zˈe hoʔadˈeʁeχ ʃˈel hamehiʃˈoχ ʔalehˈem kaʔˈal ʃˈel ʔoʁˈim tsijʁˈim, lemaʃˈal ʃelavˈoʔu liknˈo letaʔaχitʁˈim ulebnaχˈiʁ ʔefsˈeʔod, ʔavˈal ɡvˈaʁjaʔasˈu ʔˈet kˈolet mnijˈot ʃelavˈim ʔˈal hadeʔoʔˈeχ vehiknˈu ɡˈam, kadˈanu tsaʁˈim veʁeʃijˈim veʁovaχijˈim, veʁeʁofˈim, tˈeʁe ʁaʃˈim ʔot haʁamaveχˈim.",
+    "after_clean": "zˈe hoʔadˈeʁeχ ʃˈel hamehiʃˈoχ ʔalehˈem kaʔˈal ʃˈel ʔoʁˈim tsijʁˈim lemaʃˈal ʃelavˈoʔu liknˈo letaʔaχitʁˈim ulebnaχˈiʁ ʔefsˈeʔod ʔavˈal ɡvˈaʁjaʔasˈu ʔˈet kˈolet mnijˈot ʃelavˈim ʔˈal hadeʔoʔˈeχ vehiknˈu ɡˈam kadˈanu tsaʁˈim veʁeʃijˈim veʁovaχijˈim veʁeʁofˈim tˈeʁe ʁaʃˈim ʔot haʁamaveχˈim",
+    "gt_text": "זוֹ הַ|דֶּ֫רֶךְ שֶׁ|לָּהֶם לִמְשֹׁוךְ אֲלֵיהֶם קָהָל שֶׁל הוֹרִים צְֽעִירִים לְֽמָשָׁל שֶׁ|יָּבוֹאוּ לִקְנוֹת אֶת הַ|חִיתּוּלִים אוּלַי בִּ|מְחִיר הֶפְסֵד אֲבָל כְּבָר יַעֲשׂוּ אֶת כׇּל הַ|קְּנִיּוֹת שֶׁ|לָּהֶם עַל הַ|דֶּ֫רֶךְ וְֽ|יַקְנוּ גַּם אֶת הַ|מּוּצָרִים הָ|רִוְוחִיִּים יוֹתֵר לְ|סוּפֶּר",
+    "gt_phonemes": "zˈo hadˈeʁeχ ʃelahˈem limʃˈoχ ʔelehˈem kahˈal ʃˈel hoʁˈim tseʔiʁˈim lemaʃˈal ʃejavˈoʔu liknˈot ʔˈet haχitulˈim ʔulˈaj bemeχˈiʁ hefsˈed ʔavˈal kvˈaʁ jaʔasˈu ʔˈet kˈol haknijˈot ʃelahˈem ʔˈal hadˈeʁeχ vejiknˈu ɡˈam ʔˈet hamutsaʁˈim haʁivχijˈim jotˈeʁ lasˈupeʁ"
+  },
+  "gold_020_line_046": {
+    "before_clean": " siʔˈim ʔatˈa ʃeʔˈot taχʃˈov ʃˈaf haʔˈa היא joʁeχdˈin veʔˈo ʔeχdˈi, ʃeʔovdˈim meʔˈal ʔˈejzeʃehu kejisʔˈa hanoʁˈa hasavʁˈuf veʔˈat hameχapˈes, veʔˈet ʔatakdimˈim veʔˈu meχapˈes ʔˈa קˈom letavanˈot mesikˈot kodmˈot meʔaʃˈu kazˈa.",
+    "after_clean": "siʔˈim ʔatˈa ʃeʔˈot taχʃˈov ʃˈaf haʔˈa היא joʁeχdˈin veʔˈo ʔeχdˈi ʃeʔovdˈim meʔˈal ʔˈejzeʃehu kejisʔˈa hanoʁˈa hasavʁˈuf veʔˈat hameχapˈes veʔˈet ʔatakdimˈim veʔˈu meχapˈes ʔˈa קˈom letavanˈot mesikˈot kodmˈot meʔaʃˈu kazˈa",
+    "gt_text": "אִם אַתָּה עַכְשָׁיו תַּחֲשֹׁוב שֶׁ|אַתָּה אָה עוֹרֵךְ דִּין אוֹ עוֹרֶ֫כֶת דִּין שֶׁ|עוֹבְדִים עַל אֵיזֶ֫שֶׁהוּ קֵיְיס אָה נוֹרָא סָבוּךְ וְֽ|אַתָּה מְֽחַפֵּשׂ אָה תַּקְדִּימִים אוֹ מְֽחַפֵּשׂ אָה כׇּל מִינֵי תּוֹבָנוֹת מִ|פְּסִיקוֹת קוֹדְמוֹת אוֹ מַ֫שֶּׁהוּ כָּ|זֶה",
+    "gt_phonemes": "ʔˈim ʔatˈa ʔaχʃˈav taχʃˈov ʃeʔatˈa ʔˈe ʔˈoʁeχ dˈin ʔˈo ʔoʁˈeχet dˈin ʃeʔovdˈim ʔˈal ʔˈejzeʃehu kˈejs ʔˈe noʁˈa savˈuχ veʔatˈa meχapˈes ʔˈe takdimˈim ʔˈo meχapˈes ʔˈe kˈol minˈej tovanˈot mipsikˈot kodmˈot ʔˈo mˈaʃehu kazˈe"
+  },
+  "gold_009_line_091": {
+    "before_clean": " veʃelaχˈen hˈu jaddˈiʁ ʔatemubˈilijot haχevʁatˈit ʃˈel ʔotˈo noʔˈaʁ, veɡˈam ʔˈet hahaχnasˈa haʔatidˈit ʃelˈo, kamˈa ʃeχinˈuχ miktsoʔˈim mesajˈel tsimtsˈum teʔaʁˈim.",
+    "after_clean": "veʃelaχˈen hˈu jaddˈiʁ ʔatemubˈilijot haχevʁatˈit ʃˈel ʔotˈo noʔˈaʁ veɡˈam ʔˈet hahaχnasˈa haʔatidˈit ʃelˈo kamˈa ʃeχinˈuχ miktsoʔˈim mesajˈel tsimtsˈum teʔaʁˈim",
+    "gt_text": "וְֽשֶׁ|לָּכֵן הוּא יַגְדִּיל אֶת הַ|מּוֹבִילִיּוּת הַ|חֶבְרָתִית שֶׁל אוֹתוֹ נֹ֫ועַר וְֽ|גַם אֶת הַ|הַכְנָסָה הָ|עֲתִידִית שֶׁ|לּוֹ כְּלוֹמַר שֶׁ|חִינּוּךְ מִקְצוֹעִי מְֽסַיֵּ֫יעַ לְֽ|צִימְצוּם פְּֽעָרִים",
+    "gt_phonemes": "veʃelaχˈen hˈu jaɡdˈil ʔˈet hamovilijˈut haχevʁatˈit ʃˈel ʔotˈo nˈoʔaʁ veɡˈam ʔˈet hahaχnasˈa haʔatidˈit ʃelˈo klomˈaʁ ʃeχinˈuχ miktsoʔˈi mesajˈea letsimtsˈum peʔaʁˈim"
+  },
+  "gold_020_line_038": {
+    "before_clean": " אני lˈo χoʃˈov ʃeʔanˈaχu tsʁiχˈim leχʃˈoleʃ lemakˈom meʔavodˈa ʃalˈanu, ʔanˈi kˈej χoʃˈev ʃehateχnolˈoɡja ʔezˈu kmˈo kˈol teχnolˈoɡja mutslˈaχa besofˈo ʃˈel davˈaʁ. teʃanˈe ʔˈet ʃˈuk haʔavodˈa veteltˈel ʔanafˈim ʃlemˈim.",
+    "after_clean": "אני lˈo χoʃˈov ʃeʔanˈaχu tsʁiχˈim leχʃˈoleʃ lemakˈom meʔavodˈa ʃalˈanu ʔanˈi kˈej χoʃˈev ʃehateχnolˈoɡja ʔezˈu kmˈo kˈol teχnolˈoɡja mutslˈaχa besofˈo ʃˈel davˈaʁ teʃanˈe ʔˈet ʃˈuk haʔavodˈa veteltˈel ʔanafˈim ʃlemˈim",
+    "gt_text": "אֲנִי לֹא חוֹשֵׁב שֶׁ|אֲנַ֫חְנוּ צְרִיכִים לַחֲשֹׁושׁ לִ|מְקוֹם הָ|עֲבוֹדָה שֶׁלָּ֫נוּ אֲנִי כֵּן חוֹשֵׁב שֶׁהַ|טֶּכְנוֹל֫וֹגְיָה הַ|זּוֹ כְּמוֹ כׇּל טֶכְנוֹל֫וֹגְיָה מֻוצְלַ֫חַת בְּֽ|סוֹפוֹ שֶׁל דָּבָר תְּשַׁנֶּה אֶת שׁוּק הָ|עֲבוֹדָה וּ|תְטַלְטֵל עֲנָפִים שְׁלֵמִים",
+    "gt_phonemes": "ʔanˈi lˈo χoʃˈev ʃeʔanˈaχnu tsʁiχˈim laχʃˈoʃ limkˈom haʔavodˈa ʃelˈanu ʔanˈi kˈen χoʃˈev ʃehateχnolˈoɡja hazˈo kmˈo kˈol teχnolˈoɡja mutslˈaχat besofˈo ʃˈel davˈaʁ teʃanˈe ʔˈet ʃˈuk haʔavodˈa vetetaltˈel ʔanafˈim ʃlemˈim"
+  },
+  "gold_007_line_087": {
+    "before_clean": " holˈe, תʁודˈi, יˈuʁ גˈoʔaʁ maʃbˈeʁ ɡijˈuʁ ʔˈal haʔibʁˈoa leʔˈot ʔalfˈej zˈu ɡˈot sejeʁˈim, ʃeʔˈod ʃnijˈa ʔalʔˈim nitsχˈok ʔˈal lehaʃˈuv ʃemeχiʁˈe haɡijˈu ɡvohˈim midˈaj.",
+    "after_clean": "holˈe תʁודˈi יˈuʁ גˈoʔaʁ maʃbˈeʁ ɡijˈuʁ ʔˈal haʔibʁˈoa leʔˈot ʔalfˈej zˈu ɡˈot sejeʁˈim ʃeʔˈod ʃnijˈa ʔalʔˈim nitsχˈok ʔˈal lehaʃˈuv ʃemeχiʁˈe haɡijˈu ɡvohˈim midˈaj",
+    "gt_text": "אוֹ לְֽ|יֶ֫תֶר דִּיּוּק הִיא לֹא רוֹאָה מַשְׁבֵּר דִּיּוּר אֶ֫לָּא הִיא רוֹאָה מְאוֹת אַלְפֵי זוּגוֹת צְֽעִירִים שֶׁ|עוֹד שְׁנִיָּיה עֲלוּלִים לִצְעֹוק עָלֶ֫יהָ שׁוּב שֶׁ|מְּחִירֵי הַ|דִּיּוּר גְּבוֹהִים מִדַּי",
+    "gt_phonemes": "ʔˈo lejˈeteʁ dijˈuk hˈi lˈo ʁoʔˈa maʃbˈeʁ dijˈuʁ ʔˈela hˈi ʁoʔˈa meʔˈot ʔalfˈej zuɡˈot tseʔiʁˈim ʃeʔˈod ʃnijˈa ʔalulˈim litsʔˈok ʔalˈeha ʃˈuv ʃemeχiʁˈej hadijˈuʁ ɡvohˈim midˈaj"
+  },
+  "gold_020_line_033": {
+    "before_clean": " keχˈol ʃeʔanevˈaʁ hazˈe hiʃtaχlˈel veʔivˈu ʔˈal zˈe, tשˈodˈe, ʔavˈiʔu hazˈe hatikˈaf ʔˈet misχaʁijˈot beʔotˈo ʔˈofen ʃebˈo ʔˈa, beʔˈa, bˈe, ʔˈat stˈo, ʔˈo ʔˈa, ʃˈel tˈeʔelu, beɡˈuɡel, אˈalbu, beχanˈot ʔop likˈatsot ʃˈel ɡˈuɡel.",
+    "after_clean": "keχˈol ʃeʔanevˈaʁ hazˈe hiʃtaχlˈel veʔivˈu ʔˈal zˈe tשˈodˈe ʔavˈiʔu hazˈe hatikˈaf ʔˈet misχaʁijˈot beʔotˈo ʔˈofen ʃebˈo ʔˈa beʔˈa bˈe ʔˈat stˈo ʔˈo ʔˈa ʃˈel tˈeʔelu beɡˈuɡel אˈalbu beχanˈot ʔop likˈatsot ʃˈel ɡˈuɡel",
+    "gt_text": "כְּֽכׇל שֶׁהַ|דָּבָר הַ|זֶּה יִשְׁתַּכְלֵל וְֽ|יִהְיוּ עַל זֶה אָה אַתָּה יוֹדֵ֫עַ יִבְנוּ עַל זֶה אַפְּלִיקַ֫צְיוֹת מִסְחָרִיּוֹת בְּֽ|אוֹתוֹ אֹ֫ופֶן שֶׁ|בּוֹ אָה בְּ|אַפְּסְטוֹר אָה שֶׁל אַפֶּל אוֹ בְּֽ|גוּגֶל אָה בַּ|חֲנוּת אַפְּלִיקַ֫צְיוֹת שֶׁל גּוּגֶל",
+    "gt_phonemes": "keχˈol ʃehadavˈaʁ hazˈe jiʃtaχlˈel vejihjˈu ʔˈal zˈe ʔˈe ʔatˈa jodˈea jivnˈu ʔˈal zˈe ʔaplikˈatsjot misχaʁijˈot beʔotˈo ʔˈofen ʃebˈo ʔˈe beʔˈapstoʁ ʔˈe ʃˈel ʔˈapel ʔˈo beɡˈuɡel ʔˈe baχanˈut ʔaplikˈatsjot ʃˈel ɡˈuɡel"
+  },
+  "gold_005_line_197": {
+    "before_clean": " אבˈan ʔefʔˈilu leʔˈem ʔemʃalˈa vebeʔˈin ʔדinˈa, ʃeʔˈod mˈaʃi ʃejaχˈol lejekoʁˈim vebaʔalˈej hasofʁˈim lehatχˈil leʃenˈot ʔˈet mˈa ʃemukaʁˈim, ɡitmˈeʃan metsiɡˈim biʃʔˈim ʃenitʔanˈa, ɡelˈo",
+    "after_clean": "אבˈan ʔefʔˈilu leʔˈem ʔemʃalˈa vebeʔˈin ʔדinˈa ʃeʔˈod mˈaʃi ʃejaχˈol lejekoʁˈim vebaʔalˈej hasofʁˈim lehatχˈil leʃenˈot ʔˈet mˈa ʃemukaʁˈim ɡitmˈeʃan metsiɡˈim biʃʔˈim ʃenitʔanˈa ɡelˈo",
+    "gt_text": "אֲבָל אֲפִ֫ילּוּ בְּלִי הַ|מֶּמְשָׁלָה וּ|בְלִי הַ|מְּֽדִינָה יֵשׁ עוֹד מַ֫שֶּׁהוּ שֶׁ|יָּכוֹל לִגְרֹום לְֽ|בַעֲלֵי הַ|סּוֹפְרִים לְֽהַתְחִיל לְֽשַׁנּוֹת אֶת מָה שֶׁ|הֵם מוֹכְרִים וְֽ|אֶת מָה שֶׁ|הֵם מַצִּיגִים בִּשְׁבִיל שֶׁ|נִּיקְנֶה לֹא",
+    "gt_phonemes": "ʔavˈal ʔafˈilu blˈi hamemʃalˈa veblˈi hamedinˈa jˈeʃ ʔˈod mˈaʃehu ʃejaχˈol liɡʁˈom lebaʔalˈej hasˈupeʁim lehatχˈil leʃanˈot ʔˈet mˈa ʃehˈem moχʁˈim veʔˈet mˈa ʃehˈem metsiɡˈim biʃvˈil ʃeniknˈe lˈo"
+  },
+  "gold_005_line_035": {
+    "before_clean": " jˈeʃ nˈo meʔˈat meχkaʁˈim veʔidulijˈot ʃˈel baʔalˈej χanujˈot ʃˈel baʔalˈej χanulˈot, ʃˈel maʁʔˈim, ʃejˈeʃ sikˈul leʁˈa ʃetesʔˈimu baʔaɡalˈa ʔˈet havavˈaʁ haʁiʃˈon ʃeʁaʔˈitem, dˈo lˈo mefˈelm nˈut ʔiχnˈantem liknˈot ʔotˈo.",
+    "after_clean": "jˈeʃ nˈo meʔˈat meχkaʁˈim veʔidulijˈot ʃˈel baʔalˈej χanujˈot ʃˈel baʔalˈej χanulˈot ʃˈel maʁʔˈim ʃejˈeʃ sikˈul leʁˈa ʃetesʔˈimu baʔaɡalˈa ʔˈet havavˈaʁ haʁiʃˈon ʃeʁaʔˈitem dˈo lˈo mefˈelm nˈut ʔiχnˈantem liknˈot ʔotˈo",
+    "gt_text": "יֵשׁ לֹא מְֽעַט מֶחְקָרִים וְֽ|עֵדוּיוֹת שֶׁל בַּעֲלֵי חֲנוּיוֹת שֶׁ|מַּרְאִים שֶׁ|יֵּשׁ סִיכּוּי לֹא רַע שֶׁ|תָּשִׂימוּ בָּ|עֲגָלָה אֶת הַ|דָּבָר הָ|רִאשׁוֹן שֶׁ|רְאִ֫יתֶם גַּם אִם אֲפִ֫ילּוּ לֹא תִּכְנַ֫נְתֶּם לִקְנוֹת אוֹתוּ",
+    "gt_phonemes": "jˈeʃ lˈo meʔˈat meχkaʁˈim veʔedujˈot ʃˈel baʔalˈej χanujˈot ʃemaʁʔˈim ʃejˈeʃ sikˈuj lˈo ʁˈa ʃetasˈimu baʔaɡalˈa ʔˈet hadavˈaʁ haʁiʃˈon ʃeʁaʔˈitem ɡˈam ʔˈim ʔafˈilu lˈo tiχnˈantem liknˈot ʔotˈo"
+  },
+  "gold_008_line_100": {
+    "before_clean": " אני bˈofi ʃeʔaχeʁ ʔˈej zˈe ʃehitkufˈa ɡˈol pˈodkast, tavˈaʔatˈi laʔaχˈon ʔˈal spˈotifaj, lˈo leɡˈamʁi betˈuaχ lˈama. ʔavˈal ʔelˈidi ʃeʔanˈaχnu beχˈol makˈom, beχˈol makˈom.",
+    "after_clean": "אני bˈofi ʃeʔaχeʁ ʔˈej zˈe ʃehitkufˈa ɡˈol pˈodkast tavˈaʔatˈi laʔaχˈon ʔˈal spˈotifaj lˈo leɡˈamʁi betˈuaχ lˈama ʔavˈal ʔelˈidi ʃeʔanˈaχnu beχˈol makˈom beχˈol makˈom",
+    "gt_text": "אֲנִי בְּֽ|אֹ֫ופֶן אִישִׁי אַחֲרֵי אֵיזוֹשֶׁהִי תְּקוּפָה עִם גּוּגֶל פוֹדְקַאסְטְס עָבַ֫רְתִּי לָאַחֲרוֹנָה לִ|סְפּוֹטִיפַאי לֹא לְֽגַמְרֵי בָּט֫וּחַ לָמָּה אֲבָל הָ|אֱמֶת הִיא שֶׁ|אֲנַ֫חְנוּ בְּֽ|כׇל מָקוֹם בְּֽ|כׇל מָקוֹם",
+    "gt_phonemes": "ʔanˈi beʔˈofen ʔiʃˈi ʔaχʁˈej ʔˈejzoʃehi tkufˈa ʔˈim ɡˈuɡel pˈodkasts ʔavˈaʁti laʔaχʁonˈa lespˈotifaj lˈo leɡˈamʁej batˈuaχ lˈama ʔavˈal haʔemˈet hˈi ʃeʔanˈaχnu bekˈol makˈom bekˈol makˈom"
+  },
+  "gold_020_line_006": {
+    "before_clean": " אבל הʔˈal ʔadˈajim bˈusʁit zvˈa habaχˈelek hakˈal, habaχˈelek ʔatˈem mitkadˈem meʔaχˈaʁ ʃekvˈaʁ hajˈum kvˈaʁ baʃavˈav hazˈe, teχnolˈoɡja hazˈot ʃˈel habinˈa hamonaχotˈit betχˈum libˈud hasafˈa.",
+    "after_clean": "אבל הʔˈal ʔadˈajim bˈusʁit zvˈa habaχˈelek hakˈal habaχˈelek ʔatˈem mitkadˈem meʔaχˈaʁ ʃekvˈaʁ hajˈum kvˈaʁ baʃavˈav hazˈe teχnolˈoɡja hazˈot ʃˈel habinˈa hamonaχotˈit betχˈum libˈud hasafˈa",
+    "gt_text": "אֲבָל לֹא הִיא עֲדַ֫יִין בּוֹסְרִית זֶה בַּ|חֵ֫לֶק הַ|קַּל אָה בַּ|חֵ֫לֶק הַ|יּוֹתֵר מִתְקַדֵּם מֵאַחַר שֶׁ|כְּבָר הַיּוֹם כְּבָר בַּ|שָּׁלָב הַ|זֶּה הַ|טֶּכְנוֹלוֹגְיָה הַ|זֹּאת שֶׁל הַ|בִּינָה הַ|מְּלָאכוּתִית בִּ|תְחוּם עִיבּוּד הַ|שָּׂפָה",
+    "gt_phonemes": "ʔavˈal lˈo hˈi ʔadˈajin bosʁˈit zˈe baχˈelek hakˈal ʔˈe baχˈelek hajotˈeʁ mitkadˈem meʔaχˈaʁ ʃekvˈaʁ hajˈom kvˈaʁ baʃalˈav hazˈe hateχnolˈoɡja hazˈot ʃˈel habinˈa hamelaχutˈit betχˈum ʔibˈud hasafˈa"
+  },
+  "gold_013_line_002": {
+    "before_clean": " הסipˈuʁ ʔˈel ʔˈejχʔˈal mkˈo veɡˈia labeʔˈuʃa velˈama, ʔasaʁˈodi meχlˈitu lilkˈoʁ biχlˈal, kamˈa χuzˈim מא�abonˈan zˈe hakalkalˈit ʃelahˈam hˈu tsipˈuʁ meʁatˈek.",
+    "after_clean": "הסipˈuʁ ʔˈel ʔˈejχʔˈal mkˈo veɡˈia labeʔˈuʃa velˈama ʔasaʁˈodi meχlˈitu lilkˈoʁ biχlˈal kamˈa χuzˈim מאabonˈan zˈe hakalkalˈit ʃelahˈam hˈu tsipˈuʁ meʁatˈek",
+    "gt_text": "וְֽהַ|סִּיפּוּר עַל אֵיךְ עַרְמָקוֹ הִגִּ֫יעָה לַ|בּ֫וּרְסָה וְֽ|לָ֫מָּה הַ|סָּעוּדִים הֶחֱלִ֫יטוּ לִמְכֹּור בִּכְלָל כַּ֫מָּה אֲחוּזִים מֵהַ|בּוּנֶנְזָה הַ|כַּלְכָּלִית שֶׁלָּהֶם הוּא סִיפּוּר מְֽרַתֵּק",
+    "gt_phonemes": "vehasipˈuʁ ʔˈal ʔˈejχ ʔaʁmˈako hiɡˈiʔa labˈuʁsa velˈama hasaʔˈudim heχlˈitu limkˈoʁ biχlˈal kˈama ʔaχuzˈim mehabunˈenza hakalkalˈit ʃelahˈem hˈu sipˈuʁ meʁatˈek"
+  },
+  "gold_008_line_068": {
+    "before_clean": " bimeχˈen mitsˈiʔa lemeɡʃalˈa ledˈon beʁtsinˈut bekamˈaʁ hatχilˈut, behakamˈaʁ hatχijˈa ʃˈel maʔaʁˈaχ haχinˈuχ haniktsoʔˈi, vehatsaʔˈa hazˈot lˈo ʔavʁˈa kˈol kˈaχ tˈov.",
+    "after_clean": "bimeχˈen mitsˈiʔa lemeɡʃalˈa ledˈon beʁtsinˈut bekamˈaʁ hatχilˈut behakamˈaʁ hatχijˈa ʃˈel maʔaʁˈaχ haχinˈuχ haniktsoʔˈi vehatsaʔˈa hazˈot lˈo ʔavʁˈa kˈol kˈaχ tˈov",
+    "gt_text": "וְֽ|לָכֵן הוּא הִצִּ֫יעַ לַ|מֶּמְשָׁלָה לָדוּן בִּירְצִינוּת בַּ|הֲקָמָה לִ|תְחִיָּיה שֶׁל מַעֲרַךְ הַ|חִינּוּךְ הַ|מִּקְצוֹעִי וְֽהַ|הַצָּעָה הַ|זֹּאת לֹא עָבְרָה כׇּל כָּךְ טוֹב",
+    "gt_phonemes": "velaχˈen hˈu hitsˈia lamemʃalˈa ladˈun biʁtsinˈut bahakamˈa litχijˈa ʃˈel maʔaʁˈaχ haχinˈuχ hamiktsoʔˈi vehahatsaʔˈa hazˈot lˈo ʔavʁˈa kˈol kˈaχ tˈov"
+  },
+  "gold_002_line_075": {
+    "before_clean": " maʃelˈa hazˈuʁ matʁidˈa lˈo ʁˈak ʔotˈoʁ velˈa ʔˈet haneɡidˈim ʃˈel dˈankim meʁkazˈim haʁaχavˈej haʔolˈam kulˈo, vehitsʁiχˈal hateʁˈid meʔˈod ɡˈam ʔˈo.",
+    "after_clean": "maʃelˈa hazˈuʁ matʁidˈa lˈo ʁˈak ʔotˈoʁ velˈa ʔˈet haneɡidˈim ʃˈel dˈankim meʁkazˈim haʁaχavˈej haʔolˈam kulˈo vehitsʁiχˈal hateʁˈid meʔˈod ɡˈam ʔˈo",
+    "gt_text": "וְֽהַ|שְּֽׁאֵלָה הַ|זּוֹ מַטְרִידָה לֹא רַק אוֹתוֹ אֶ֫לָּא אֶת הַ|נְּגִידִים שֶׁל בַּ֫נְקִים מֶרְכָּזִיִּים בְּֽ|רַחֲבֵי הָ|עוֹלָם כֻּולּוֹ וְֽ|הִיא צְרִיכָה לְֽהַטְרִיד מְֽאוֹד גַּם אוֹתָ֫נוּ",
+    "gt_phonemes": "vehaʃeʔelˈa hazˈo matʁidˈa lˈo ʁˈak ʔotˈo ʔˈela ʔˈet haneɡidˈim ʃˈel bˈankim meʁkazijˈim beʁaχavˈej haʔolˈam kulˈo vehˈi tsʁiχˈa lehatʁˈid meʔˈod ɡˈam ʔotˈanu"
+  },
+  "gold_002_line_103": {
+    "before_clean": " ‫ʔˈaz zˈe koʁˈe mikˈol minˈe sibˈot ʃikʃuʁˈot ʔˈal ʔˈit miʃiʃˈut hakalkalˈit, ‫omifʁˈot jatsuʁˈa hˈal ʔˈod spitsˈifik ʃelˈa, ʔˈet miʃiʃˈut hakalkalˈit mehaʃanˈa hakudˈemet.",
+    "after_clean": "ʔˈaz zˈe koʁˈe mikˈol minˈe sibˈot ʃikʃuʁˈot ʔˈal ʔˈit miʃiʃˈut hakalkalˈit omifʁˈot jatsuʁˈa hˈal ʔˈod spitsˈifik ʃelˈa ʔˈet miʃiʃˈut hakalkalˈit mehaʃanˈa hakudˈemet",
+    "gt_text": "אָז זֶה קוֹרֶה מִ|כׇּל מִינֵי סִיבּוֹת שֶׁ|קְּשׁוּרוֹת לַ|הִיתְאוֹשְׁשׁוּת הַ|כַּלְכָּלִית וּבִפְרָט לַ|צּוּרָה הַ|מְּאוֹד סְפֵּצִיפִית שֶׁל הַ|הִיתְאוֹשְׁשׁוּת הַ|כַּלְכָּלִית מֵהַ|שָּׁנָה הַ|קּוֹדֶ֫מֶת",
+    "gt_phonemes": "ʔˈaz zˈe koʁˈe mikˈol minˈej sibˈot ʃekʃuʁˈot lahitʔoʃeʃˈut hakalkalˈit vebifʁˈat latsuʁˈa hameʔˈod spetsˈifit ʃˈel hahitʔoʃeʃˈut hakalkalˈit mehaʃanˈa hakodˈemet"
+  },
+  "gold_010_line_102": {
+    "before_clean": " כaχˈa ʃetoχˈa lehitʔatkˈem, kˈi ʔatˈa betˈaχ, nuʁˈa sakʁˈan ladˈaʔat mˈa holˈeχ bizmˈan ʃatalˈu ʔemtsˈa, veʔatˈa beχˈofa ʃefaʃˈu ʔˈal hajˈa mamˈaʃ.",
+    "after_clean": "כaχˈa ʃetoχˈa lehitʔatkˈem kˈi ʔatˈa betˈaχ nuʁˈa sakʁˈan ladˈaʔat mˈa holˈeχ bizmˈan ʃatalˈu ʔemtsˈa veʔatˈa beχˈofa ʃefaʃˈu ʔˈal hajˈa mamˈaʃ",
+    "gt_text": "כָּ֫כָה שֶׁ|תּוּכַל לְֽהִתְעַדְכֵּן כִּי אַתָּה בֶּ֫טַח נוֹרָא סַקְרֵן לָדַ֫עַת מָה הוֹלֵךְ בִּ|זְמַן שֶׁ|אַתָּה לֹא נִמְצָא וְֽ|אַתָּה בְּ|חֹ֫ופֶשׁ אֵיפֹשֶׁהוּ עַל הַ|יָּם אוֹ מַ֫שֶּׁהו",
+    "gt_phonemes": "kˈaχa ʃetuχˈal lehitʔadkˈen kˈi ʔatˈa bˈetaχ noʁˈa sakʁˈen ladˈaʔat mˈa holˈeχ bezmˈan ʃeʔatˈa lˈo nimtsˈa veʔatˈa beχˈofeʃ ʔˈefoʃehu ʔˈal hajˈam ʔˈo mˈaʃehu"
+  },
+  "gold_020_line_002": {
+    "before_clean": " אז בˈo lehˈeχ maʔakˈal, ʔakˈal lakafˈed baχˈelek, hakˈal ʔˈal ʔˈafik vaʁaχʃˈav hateχneʔˈoɡja meʔˈoʁ ɡijˈud maʁʃˈima.",
+    "after_clean": "אז בˈo lehˈeχ maʔakˈal ʔakˈal lakafˈed baχˈelek hakˈal ʔˈal ʔˈafik vaʁaχʃˈav hateχneʔˈoɡja meʔˈoʁ ɡijˈud maʁʃˈima",
+    "gt_text": "אוֹקֵיי אָז בּוֹא נֵלֵךְ מֵהַ|קַּל אֶל הַ|כָּבֵד בַּ|חֵ֫לֶק הַ|קַּל עַל אַף שֶׁ|כְּבָר עַכְשָׁיו הַ|טֶּכְנוֹל֫וֹגְיָה מְֽאוֹד מְֽאוֹד מַרְשִׁימָה",
+    "gt_phonemes": "ʔokˈej ʔˈaz bˈo nelˈeχ mehakˈal ʔˈel hakavˈed baχˈelek hakˈal ʔˈal ʔˈaf ʃekvˈaʁ ʔaχʃˈav hateχnolˈoɡja meʔˈod meʔˈod maʁʃimˈa"
+  },
+  "gold_010_line_045": {
+    "before_clean": "ʔatˈam beʃˈuχ haʔˈaʔatˈa mˈo laχʃˈoʁ ʃeʔavodˈam haɡnivˈa ʃeʔˈim miʃanˈa ʔatˈa heלˈam lehaɡˈiʃ ʃehiχχˈelek mehazehˈut ʃelχˈa.",
+    "after_clean": "ʔatˈam beʃˈuχ haʔˈaʔatˈa mˈo laχʃˈoʁ ʃeʔavodˈam haɡnivˈa ʃeʔˈim miʃanˈa ʔatˈa heלˈam lehaɡˈiʃ ʃehiχχˈelek mehazehˈut ʃelχˈa",
+    "gt_text": "אַתָּה לָשׁוּב אהמ אַתָּה אָמוּר לַחֲשֹׁוב שֶׁהָ|עֲבוֹדָה מַגְנִיבָה שֶׁ|הִיא מְֽשַׁנָּה אֶת הָ|עוֹלָם לְֽהַרְגִּישׁ שֶׁ|הִיא חֵ֫לֶק מֵהַ|זֶּהוּת שֶׁ|לְּךָ",
+    "gt_phonemes": "ʔatˈa laʃˈuv ʔˈhem ʔatˈa ʔamˈuʁ laχʃˈov ʃehaʔavodˈa maɡnivˈa ʃehˈi meʃanˈa ʔˈet haʔolˈam lehaʁɡˈiʃ ʃehˈi χˈelek mehazehˈut ʃelχˈa"
+  },
+  "gold_014_line_008": {
+    "before_clean": " וχaʃˈa hapˈeʁek haʔˈu ʃodˈaʁ rutspatˈi bitɡuvˈot ʃelaχˈem, beʔemˈet hamˈon hamˈon ɡuvˈot hamˈon haʔˈot bivˈot, hamˈon ʔanaʃˈim ʔomʁˈu ʃeʔamʁotsˈim ʔˈod mˈi zˈe.",
+    "after_clean": "וχaʃˈa hapˈeʁek haʔˈu ʃodˈaʁ rutspatˈi bitɡuvˈot ʃelaχˈem beʔemˈet hamˈon hamˈon ɡuvˈot hamˈon haʔˈot bivˈot hamˈon ʔanaʃˈim ʔomʁˈu ʃeʔamʁotsˈim ʔˈod mˈi zˈe",
+    "gt_text": "אַחֲרֵי שֶׁהַ|פֶּ֫רֶק הַ|הוּא שֻׁודַּר הוֹצַפְתִּי בַּ|תְּגוּבוֹת שֶׁ|לָּכֶם בֶּאֱמֶת הֲמוֹן הֲמוֹן תְּגוּבוֹת הֲמוֹן אֲנָשִׁים אָמְרוּ שֶׁ|הֵם רוֹצִים עוֹד מִ|זֶּה",
+    "gt_phonemes": "ʔaχʁˈej ʃehapˈeʁek hahˈu ʃudˈaʁ hutsˈafti betɡuvˈot ʃelaχˈem beʔemˈet hamˈon hamˈon tɡuvˈot hamˈon ʔanaʃˈim ʔamʁˈu ʃehˈem ʁotsˈim ʔˈod mizˈe"
+  },
+  "gold_017_line_099": {
+    "before_clean": " גˈom kmˈon hamaʃˈal bemispˈal meχonˈot haliʃamˈa, ʃeʔozlonˈu χaʁbˈe, ʁaʁbˈe, ʔaʁbˈe leʔˈevel veʔeljˈan ʃemitpˈav mˈaʁit ʃˈel mijˈaʁdit.",
+    "after_clean": "גˈom kmˈon hamaʃˈal bemispˈal meχonˈot haliʃamˈa ʃeʔozlonˈu χaʁbˈe ʁaʁbˈe ʔaʁbˈe leʔˈevel veʔeljˈan ʃemitpˈav mˈaʁit ʃˈel mijˈaʁdit",
+    "gt_text": "אהמ כְּמוֹ לְֽמָשָׁל בְּֽ|מִיסְפַּר מְֽכוֹנוֹת הַ|הַנְשָׁמָה שֶׁ|הֻוזְמְנוּ הַרְבֵּה הַרְבֵּה הַרְבֵּה מֵעֵ֫בֶר לַ|יַּ֫עַד שֶׁ|נִּקְבַּע וּבַ|עֲלוּת שֶׁל מִילְיַארְדִּים",
+    "gt_phonemes": "ʔˈhem kmˈo lemaʃˈal bemispˈaʁ meχonˈot hahanʃamˈa ʃehuzmenˈu haʁbˈe haʁbˈe haʁbˈe meʔˈeveʁ lajˈaʔad ʃenikbˈa vebeʔalˈut ʃˈel miljˈaʁdim"
+  },
+  "gold_002_line_364": {
+    "before_clean": " hˈu katˈa fʃˈem ʃehˈi nefjˈatsi ʃenevˈad mitχamemˈut jˈeteʁ ʃˈel hakalkalˈa, hˈi ʔolmˈan beʔajˈa ʃemitɡaʁmˈej beʔotem mˈul meɡefˈa ʔolamˈit.",
+    "after_clean": "hˈu katˈa fʃˈem ʃehˈi nefjˈatsi ʃenevˈad mitχamemˈut jˈeteʁ ʃˈel hakalkalˈa hˈi ʔolmˈan beʔajˈa ʃemitɡaʁmˈej beʔotem mˈul meɡefˈa ʔolamˈit",
+    "gt_text": "הוּא כָּתַב שָׁם שֶׁ|אִינְפְלַ֫צְיָה שֶׁ|נּוֹבַ֫עַת מִתְחַמְּמוּת יֶ֫תֶר שֶׁל הַ|כַּלְכָּלָה הִיא אׇומְנָם בְּֽעָיָה שֶׁ|מִּתְגַּמֶּ֫דֶת אֶל מוּל מַגֵּפָה עוֹלָמִית",
+    "gt_phonemes": "hˈu katˈav ʃˈam ʃeʔinflˈatsja ʃenovˈaʔat mehitχamemˈut jˈeteʁ ʃˈel hakalkalˈa hˈi ʔomnˈam beʔajˈa ʃemitɡamˈedet ʔˈel mˈul maɡefˈa ʔolamˈit"
+  },
+  "gold_009_line_103": {
+    "before_clean": " שʁˈaʔakidˈaʁi katavˈat haχjenˈuχ ʃˈel haʔˈaʁets, תamˈon todˈa ʃejazˈem ʔˈet haʔotapˈeʁek hazˈe, veʃehafˈet haʔotomitˈanu tamˈid kˈef ʁeʁˈaʁaχ ʔotχˈets lamˈo.",
+    "after_clean": "שʁˈaʔakidˈaʁi katavˈat haχjenˈuχ ʃˈel haʔˈaʁets תamˈon todˈa ʃejazˈem ʔˈet haʔotapˈeʁek hazˈe veʃehafˈet haʔotomitˈanu tamˈid kˈef ʁeʁˈaʁaχ ʔotχˈets lamˈo",
+    "gt_text": "שִׁירָה קַדְרִי כַּתֶּבְת הַ|חִינּוּךְ שֶׁל הָ|אָ֫רֶץ הֲמוֹן תּוֹדָה שֶׁ|יָּזַ֫מְתָּ אֶת הַ|פֶּ֫רֶק הַ|זֶּה וְֽשֶׁ|עָשִׂיתָ אוֹתוֹ אִיתָּ֫נוּ תָּמִיד כֵּיף לְֽאָרֵחַ אוֹתְךָ אֶצְלֵ֫נוּ",
+    "gt_phonemes": "ʃiʁˈa kˈadʁi katˈevt haχinˈuχ ʃˈel haʔˈaʁets hamˈon todˈa ʃejazˈamt ʔˈet hapˈeʁek hazˈe veʃeʔasˈita ʔotˈo ʔitˈanu tamˈid kˈef leʔaʁeˈaχ ʔotˈaχ ʔetslˈenu"
+  },
+  "gold_001_line_290": {
+    "before_clean": " שלomˈa, kˈeʔeχˈad habinjanˈim χaʁˈas, ʔˈaz hˈu leʔˈov meʔanˈim ʃeʔˈim foʔolˈo jaχzˈoʁu leɡˈol levinjanˈim ʃeʔadˈajin notʁˈu laʔamaʔˈon, ʔˈejʃen latˈaj ʃehˈu jasˈuɡ ʔˈam ʔotˈam.",
+    "after_clean": "שלomˈa kˈeʔeχˈad habinjanˈim χaʁˈas ʔˈaz hˈu leʔˈov meʔanˈim ʃeʔˈim foʔolˈo jaχzˈoʁu leɡˈol levinjanˈim ʃeʔadˈajin notʁˈu laʔamaʔˈon ʔˈejʃen latˈaj ʃehˈu jasˈuɡ ʔˈam ʔotˈam",
+    "gt_text": "כְּלוֹמַר אוֹקֵיי אַחַד הַ|בִּנְיָינִים קָרַס סָבִיר מְֽאוֹד לְֽהַנִּ֫יחַ שֶׁ|הֵם כְּבָר לֹא יַחְזְרוּ לָגוּר בַּ|בִּנְיָינִים שֶׁ|עֲדַ֫יִין נוֹתְרוּ לַעֲמֹוד וְֽשֶׁ|מִּתַיְשֶׁהוּ יַהַרְסוּ גַּם אוֹתָם",
+    "gt_phonemes": "klomˈaʁ ʔˈokej ʔeχˈad habinjanˈim kaʁˈas savˈiʁ meʔˈod lehanˈiaχ ʃehˈem kvˈaʁ lˈo jaχzeʁˈu laɡˈuʁ babinjanˈim ʃeʔadˈajin notʁˈu laʔamˈod veʃematˈajʃehu jahaʁsˈu ɡˈam ʔotˈam"
+  },
+  "gold_005_line_150": {
+    "before_clean": " תavˈa ʁeʃˈon sˈupe mʁakitˈim davkˈa kˈem doχfˈim bamivtsaʔˈim mutsaʔˈim ʃehˈem lˈo ʁivχˈi lˈajim meʔˈo χitולˈim.",
+    "after_clean": "תavˈa ʁeʃˈon sˈupe mʁakitˈim davkˈa kˈem doχfˈim bamivtsaʔˈim mutsaʔˈim ʃehˈem lˈo ʁivχˈi lˈajim meʔˈo χitולˈim",
+    "gt_text": "דָּבָר רִאשׁוֹן סוּפֶּרְמַרְקְטִים דַּ֫וְוקָא כֵּן דּוֹחֲפִים בַּ|מִיבְצְעִים מוּצָרִים שֶׁ|הֵם לֹא רִיוּוחִיִּים לָהֶם כְּמוֹ חִיתּוּלִים",
+    "gt_phonemes": "davˈaʁ ʁiʃˈon sˈupeʁmaʁketim dˈavka kˈen doχafˈim bamivtsaʔˈim mutsaʁˈim ʃehˈem lˈo ʁivχijˈim lahˈem kmˈo χitulˈim"
+  },
+  "gold_008_line_036": {
+    "before_clean": " hajˈom ɡvaʁtˈim ʔˈad ʃeʔˈem bejisʁaʔˈel betsˈefeʁ, kimozˈe ʃeʃimˈon niʃlˈaχahˈal biʃmˈot haʃmonˈim, limˈod leɡaʔˈel.",
+    "after_clean": "hajˈom ɡvaʁtˈim ʔˈad ʃeʔˈem bejisʁaʔˈel betsˈefeʁ kimozˈe ʃeʃimˈon niʃlˈaχahˈal biʃmˈot haʃmonˈim limˈod leɡaʔˈel",
+    "gt_text": "הַיּוֹם כְּבָר כִּמְעַט שֶׁ|אֵין בְּֽ|יִשְׂרָאֵל בֵּית סֵ֫פֶר כְּמוֹ זֶה שֶׁשִּׁימְעוֹן נִשְׁלַח אֵלָיו בִּ|שְׁנוֹת הַ|שְּׁמוֹנִים לִלְמֹוד נַגְרוּת",
+    "gt_phonemes": "hajˈom kvˈaʁ kimʔˈat ʃeʔˈen bejisʁaʔˈel bˈet sˈefeʁ kmˈo zˈe ʃeʃimʔˈon niʃlˈaχ ʔelˈav beʃnˈot haʃmonˈim lilmˈod naɡaʁˈut"
+  },
+  "gold_021_line_003": {
+    "before_clean": " שmiʃeʁˈim ʔˈim matbeʔˈot ʔaχʁˈe ʃehistavˈavavti beʃˈuk bejˈon ʃiʃˈim, ʔanˈi ʔaʃˈaʁ notˈen ʔotˈan leʔeladˈib ʃeʔˈim hˈu lekopˈat χיסaχˈon ʃelahˈem.",
+    "after_clean": "שmiʃeʁˈim ʔˈim matbeʔˈot ʔaχʁˈe ʃehistavˈavavti beʃˈuk bejˈon ʃiʃˈim ʔanˈi ʔaʃˈaʁ notˈen ʔotˈan leʔeladˈib ʃeʔˈim hˈu lekopˈat χיסaχˈon ʃelahˈem",
+    "gt_text": "כְּשֶׁ|נִּשְׁאָרִים לִי מַטְבְּעוֹת אַחֲרֵי שֶׁ|הִסְתַּבַּ֫בְתִּי בַּ|שּׁוּק בְּֽ|יוֹם שִׁישִּׁי אֲנִי יָשָׁר נוֹתֵן אוֹתָן לִ|יְּלָדִים שֶׁ|יָּשִׂ֫ימוּ בְּֽ|קֻופַּת הַ|חִיסָּכוֹן שֶׁ|לָּהֶם",
+    "gt_phonemes": "kʃeniʃʔaʁˈim lˈi matbeʔˈot ʔaχʁˈej ʃehistovˈavti baʃˈuk bejˈom ʃiʃˈi ʔanˈi jaʃˈaʁ notˈen ʔotˈan lajeladˈim ʃejasˈimu bekupˈat haχisaχˈon ʃelahˈem"
+  },
+  "gold_007_line_145": {
+    "before_clean": " limaʔalˈa χaʃevˈo ʔatsmˈo, ʔanˈi ʔuχˈad laʔavodˈo beʔofenˈan malˈoχ χazʁˈu besʁˈeχ hakˈol ʔˈesʁeχ dakˈot leχˈol kivˈun.",
+    "after_clean": "limaʔalˈa χaʃevˈo ʔatsmˈo ʔanˈi ʔuχˈad laʔavodˈo beʔofenˈan malˈoχ χazʁˈu besʁˈeχ hakˈol ʔˈesʁeχ dakˈot leχˈol kivˈun",
+    "gt_text": "בְּֽ|מַהֲלַךְ הַ|שָּׁב֫וּעַ עַצְמוֹ אֲנִי רוֹכֵב לַ|עֲבוֹדָה בְּ|אוֹפַנַּיִים הֲלוֹךְ חָזור בְּֽ|סַךְ הַכֹּול עֶ֫שֶׂר דַּקּוֹת לְֽ|כׇל כִּיוּוּן",
+    "gt_phonemes": "bemahalˈaχ haʃavˈua ʔatsmˈo ʔanˈi ʁoχˈev laʔavodˈa bʔofanˈajim halˈoχ χˈazoʁ besˈaχ hakˈol ʔˈeseʁ dakˈot lekˈol kivˈun"
+  },
+  "gold_001_line_251": {
+    "before_clean": " קtsakˈia χˈats bˈa tikʃoʁot. feχvʁˈot habitˈuaχ, hevˈinu ʃeʔadˈif lahˈem hˈi lˈo lehitasˈek bejotˈeʁ midˈaʔal badavˈaʁ hazˈe.",
+    "after_clean": "קtsakˈia χˈats bˈa tikʃoʁot feχvʁˈot habitˈuaχ hevˈinu ʃeʔadˈif lahˈem hˈi lˈo lehitasˈek bejotˈeʁ midˈaʔal badavˈaʁ hazˈe",
+    "gt_text": "קְצָת לַ֫חַץ בַּ|תִּיקְשֹׁ֫ורֶת וְֽ|חֶבְרוֹת הַ|בִּיטּ֫וּחַ הֵבִ֫ינוּ שֶׁ|עָדִיף לָהֶן לֹא לְֽהִיתְעַסֵּק יוֹתֵר מִידַּי עִם הַ|דָּבָר הַ|זֶּה",
+    "gt_phonemes": "ktsˈat lˈaχats batikʃˈoʁet veχevʁˈot habitˈuaχ hevˈinu ʃeʔadˈif lahˈen lˈo lehitʔasˈek jotˈeʁ midˈaj ʔˈim hadavˈaʁ hazˈe"
+  },
+  "gold_001_line_052": {
+    "before_clean": " lejˈad ʔaχˈat haχameʔˈot ʔasmuχˈot. hajˈu hamˈon dvaʁˈim laʁitspˈa beʃkijˈot blˈid sakijˈot mˈa ʃtˈim ʁotsˈim.",
+    "after_clean": "lejˈad ʔaχˈat haχameʔˈot ʔasmuχˈot hajˈu hamˈon dvaʁˈim laʁitspˈa beʃkijˈot blˈid sakijˈot mˈa ʃtˈim ʁotsˈim",
+    "gt_text": "לְֽיַד אַחַת הַ|חֲנוּיוֹת הַ|סְּמוּכוֹת הָיוּ הֲמוֹן דְּבָרִים עַל הָ|רִיצְפָּה בְּ|שַׂקִּיּוֹת בְּלִי שַׂקִּיּוֹת מָה שֶׁ|אַתֶּם רוֹצִים",
+    "gt_phonemes": "lejˈad ʔaχˈat haχanujˈot hasmuχˈot hajˈu hamˈon dvaʁˈim ʔˈal haʁitspˈa besakijˈot blˈi sakijˈot mˈa ʃeʔatˈem ʁotsˈim"
+  },
+  "gold_007_line_108": {
+    "before_clean": " veʔˈaz hitsoʁˈet ʔˈet haχbuʁˈa, veʔˈaz suʁˈot ʔˈet haχbuʁˈa ʃehˈi ʔitsˈeʔut ʔˈet hatˈek tsivˈi.",
+    "after_clean": "veʔˈaz hitsoʁˈet ʔˈet haχbuʁˈa veʔˈaz suʁˈot ʔˈet haχbuʁˈa ʃehˈi ʔitsˈeʔut ʔˈet hatˈek tsivˈi",
+    "gt_text": "וְֽ|אָז שָׂרַת הַ|תַּחְבּוּרָה רֶגֶב הֶחְלִ֫יטָה שֶׁ|הִיא עוֹצֶ֫רֶת אֶת הַ|תַּקְצִיבִים",
+    "gt_phonemes": "veʔˈaz saʁˈat hataχbuʁˈa ʁˈeɡev heχlˈita ʃehˈi ʔotsˈeʁet ʔˈet hataktsivˈim"
+  },
+  "gold_005_line_072": {
+    "before_clean": " גם haʁˈeɡja ʃebʁˈa sˈu pʔamˈa ketχiɡˈia lejisʁaʔˈel, ʃejikˈif ʔˈet hamehpeχˈat habetˈit ʃehamidinˈat tsijʁˈa ʔamdˈa laʔavˈoʁ.",
+    "after_clean": "גם haʁˈeɡja ʃebʁˈa sˈu pʔamˈa ketχiɡˈia lejisʁaʔˈel ʃejikˈif ʔˈet hamehpeχˈat habetˈit ʃehamidinˈat tsijʁˈa ʔamdˈa laʔavˈoʁ",
+    "gt_text": "גַּם הָ|רֶ֫גַע שֶׁ|בּוֹ הַ|סּוּפֶּרְמַרְקֶט הִגִּ֫יעַ לְֽ|יִשְׂרָאֵל שִׁיקֵּף אֶת הַ|מַּהְפֵּכָה הַ|תַּרְבּוּתִית שֶׁהַ|מְּֽדִינָה הַ|צְּֽעִירָה עָמְדָה לַעֲבֹור",
+    "gt_phonemes": "ɡˈam haʁˈeɡa ʃebˈo hasˈupeʁmaʁket hiɡˈia lejisʁaʔˈel ʃikˈef ʔˈet hamahapeχˈa hataʁbutˈit ʃehamedinˈa hatseʔiʁˈa ʔamdˈa laʔavˈoʁ"
+  },
+  "gold_000_line_145": {
+    "before_clean": " leleʔˈa, meɡabˈej mˈa ʃeholˈeχ bejisʁaʁˈel vebaʔolˈam, veʔˈejχ jiʁˈi vaʔˈam haχajˈim, hasekˈuʃ hazˈo jotˈeʁ dadˈo.",
+    "after_clean": "leleʔˈa meɡabˈej mˈa ʃeholˈeχ bejisʁaʁˈel vebaʔolˈam veʔˈejχ jiʁˈi vaʔˈam haχajˈim hasekˈuʃ hazˈo jotˈeʁ dadˈo",
+    "gt_text": "הַמְּלֵאָה לְֽגַבֵּי מָה שֶׁ|הוֹלֵךְ בְּֽ|יִשְׂרָאֵל וּבָ|עוֹלָם וְֽ|אֵיךְ נִרְאִים הַ|חַיִּים הַ|סִּיכּוּי שֶׁל זֶה הוּא יוֹתֵר גָּדוֹל",
+    "gt_phonemes": "hamleʔˈa leɡabˈej mˈa ʃeholˈeχ bejisʁaʔˈel vebaʔolˈam veʔˈeχ niʁʔˈim haχajˈim hasikˈuj ʃˈel zˈe hˈu jotˈeʁ ɡadˈol"
+  },
+  "gold_009_line_022": {
+    "before_clean": " אˈi taʔavʁˈu, tˈot ʔˈo toχ lolˈeχet ʔˈet jeχˈol leʔijonˈi, tלmˈaʁ limˈod matomˈatika veʔandelˈit veʔˈod ɡniktsˈot labeɡʁˈut.",
+    "after_clean": "אˈi taʔavʁˈu tˈot ʔˈo toχ lolˈeχet ʔˈet jeχˈol leʔijonˈi tלmˈaʁ limˈod matomˈatika veʔandelˈit veʔˈod ɡniktsˈot labeɡʁˈut",
+    "gt_text": "אִם תַּעַבְרוּ אוֹתוֹ תּוּכְלוּ לָלֶ֫כֶת לְֽ|תִיכוֹן עִיּוּנִי כְּלוֹמַר לִלְמֹוד מָתֵמָ֫טִיקָה וְֽ|אַנְגְּלִית וְֽ|עוֹד מִקְצוֹעוֹת לְֽ|בַגְרוּת",
+    "gt_phonemes": "ʔˈim taʔavʁˈu ʔotˈo tuχlˈu lalˈeχet letiχˈon ʔijunˈi klomˈaʁ lilmˈod matmˈatika veʔanɡlˈit veʔˈod miktsoʔˈot labaɡʁˈut"
+  },
+  "gold_001_line_223": {
+    "before_clean": " vezˈe ʃeʔaχˈat hadʁaχˈim ʃelˈo lehitχaʁˈot hitˈal hatsˈiha χatsˈi ʃanˈa ʃˈel tˈeʃtelˈe sχˈaʁ diʁˈa meʁˈoʃ,",
+    "after_clean": "vezˈe ʃeʔaχˈat hadʁaχˈim ʃelˈo lehitχaʁˈot hitˈal hatsˈiha χatsˈi ʃanˈa ʃˈel tˈeʃtelˈe sχˈaʁ diʁˈa meʁˈoʃ",
+    "gt_text": "וְֽ|אֶת זֶה שֶׁ|אַחַת הַ|דְּרָכִים שֶׁ|לּוֹ לְֽהִתְחָרוֹת הָיְיתָה לְֽהַצִּ֫יעַ חֲצִי שָׁנָה שֶׁל תַּשְׁלוּמֵי שְׂכַר דִּירָה מֵרֹאשׁ",
+    "gt_phonemes": "veʔˈet zˈe ʃeʔaχˈat hadʁaχˈim ʃelˈo lehitχaʁˈot hajtˈa lehatsˈia χatsˈi ʃanˈa ʃˈel taʃlumˈej sχˈaʁ diʁˈa meʁˈoʃ"
+  },
+  "gold_007_line_046": {
+    "before_clean": " benmiʔiɡˈeʁ ʔˈet תavkˈid hazˈe, ʔaχʁˈej ʃeʃˈim mˈaʃ kˈese mankˈal haɡsefˈim mehamiʃnˈa mimankˈam ʃˈel χevʁˈat moʁijˈo.",
+    "after_clean": "benmiʔiɡˈeʁ ʔˈet תavkˈid hazˈe ʔaχʁˈej ʃeʃˈim mˈaʃ kˈese mankˈal haɡsefˈim mehamiʃnˈa mimankˈam ʃˈel χevʁˈat moʁijˈo",
+    "gt_text": "בֶּן מֵאִיר הִגִּ֫יעַ לַ|תַּפְקִיד הַ|זֶּה אַחֲרֵי שֶׁ|שִּׁימֵּשׁ כְּֽ|סָמַנְכֶל הַ|כְּסָפִים וְֽהַמִּישְׁנֶה לַ|מַּנְכָּל שֶׁל חֶבְרַת מוֹרִיָה",
+    "gt_phonemes": "bˈen meʔˈiʁ hiɡˈia latafkˈid hazˈe ʔaχaʁˈej ʃeʃimˈeʃ kesmankˈal haksafˈim vehamiʃnˈe lamankˈal ʃˈel χevʁˈat moʁijˈa"
+  },
+  "gold_010_line_063": {
+    "before_clean": " zˈe habˈe jotˈeʁ χaʃˈuv meʃˈeʁ jiʃmˈoʁ bʁeʁijˈut, ʔahˈem zˈe haʁbˈe jotˈeʁ χaʃˈuv meʔaʃˈeʁ liʃmˈuʁ labʁijˈut ʃelahˈem.",
+    "after_clean": "zˈe habˈe jotˈeʁ χaʃˈuv meʃˈeʁ jiʃmˈoʁ bʁeʁijˈut ʔahˈem zˈe haʁbˈe jotˈeʁ χaʃˈuv meʔaʃˈeʁ liʃmˈuʁ labʁijˈut ʃelahˈem",
+    "gt_text": "זֶה הַרְבֵּה יוֹתֵר חָשׁוּב מֵאֲשֶׁר לִשְׁמֹור לִ|בְרִיאוּת אהמ זֶה הַרְבֵּה יוֹתֵר חָשׁוּב מֵאֲשֶׁר לִשְׁמֹור עַל הַ|בְּרִיאוּת שֶׁ|לָּהֶם",
+    "gt_phonemes": "zˈe haʁbˈe jotˈeʁ χaʃˈuv meʔaʃˈeʁ liʃmˈoʁ livʁiʔˈut ʔˈem zˈe haʁbˈe jotˈeʁ χaʃˈuv meʔaʃˈeʁ liʃmˈoʁ ʔˈal habʁiʔˈut ʃelahˈem"
+  },
+  "gold_015_line_068": {
+    "before_clean": " vehaʁamˈa hazˈot, ʃetˈoneʔˈim hetχˈiʔu lehafʔˈil haʔetsmˈen tsˈem zˈuʁ haʔatsmˈit, pˈaʔam tʃemʔˈat ʔˈet ʔijˈan nebaʔˈa midadʁˈat hazˈe, ve",
+    "after_clean": "vehaʁamˈa hazˈot ʃetˈoneʔˈim hetχˈiʔu lehafʔˈil haʔetsmˈen tsˈem zˈuʁ haʔatsmˈit pˈaʔam tʃemʔˈat ʔˈet ʔijˈan nebaʔˈa midadʁˈat hazˈe ve",
+    "gt_text": "לָ|רָמָה הַ|זֹּאת שֶׁהָ|עִיתּוֹנָאִים הִתְחִ֫ילוּ לְֽהַפְעִיל עַל עַצְמָם צֶנְזוּרָה עַצְמִית פַּ֫עַם שָׁמַ֫עְתִּי אֶת אִילָנָה דַּיָּין מְֽדַבֶּ֫רֶת עַל זֶה וְֽ|הִיא",
+    "gt_phonemes": "laʁamˈa hazˈot ʃehaʔitonaʔˈim hitχˈilu lehafʔˈil ʔˈal ʔatsmˈam tsenzˈuʁa ʔatsmˈit pˈaʔam ʃamˈati ʔˈet ʔilˈana dajˈan medabˈeʁet ʔˈal zˈe vehˈi"
+  },
+  "gold_000_line_037": {
+    "before_clean": " השitˈof peʔulˈa פˈezi ʃehˈu ʔitˈon notˈel vˈizja, kˈi ʁaʔˈinu teknesˈim haʔˈele koʁˈim ɡˈam batˈel vˈizjot.",
+    "after_clean": "השitˈof peʔulˈa פˈezi ʃehˈu ʔitˈon notˈel vˈizja kˈi ʁaʔˈinu teknesˈim haʔˈele koʁˈim ɡˈam batˈel vˈizjot",
+    "gt_text": "עַל שִׁיתּוּף פְּֽעֻולָּה עִם אֵיזֶשֶׁהוּ עִיתּוֹן אוֹ טֵלֵוִ֫ויזְיָה כִּי רָאִ֫ינוּ אֶת הַ|כְּנָסִים הָ|אֵ֫לֶּה קוֹרִים גַּם בַּ|טֵּלֵוִ֫ויזְיוֹת",
+    "gt_phonemes": "ʔˈal ʃitˈuf peʔulˈa ʔˈim ʔˈejzeʃehu ʔitˈon ʔˈo televˈizja kˈi ʁaʔˈinu ʔˈet haknasˈim haʔˈele koʁˈim ɡˈam batelevˈizjot"
+  },
+  "gold_000_line_155": {
+    "before_clean": " אדˈem tsˈaʔim הב�ajˈa ʔaχˈelet kˈi jˈeʃtanu nulˈeχ hatsˈim ʃepolitikˈajim, kˈi hapolitikˈajim baʁatsˈo ʔotˈa bemeχולiɡˈoʔot tahaɡˈid leʃidˈuʁetsibuʁˈi.",
+    "after_clean": "אדˈem tsˈaʔim הבajˈa ʔaχˈelet kˈi jˈeʃtanu nulˈeχ hatsˈim ʃepolitikˈajim kˈi hapolitikˈajim baʁatsˈo ʔotˈa bemeχולiɡˈoʔot tahaɡˈid leʃidˈuʁetsibuʁˈi",
+    "gt_text": "אָה נִמְצָאִים בִּ|בְֽעָיָה אַחֶרֶת כִּי יֵשׁ לָנוּ לְֽחָצִים שֶׁל פּוֹלִיטִיקָאִים כִּי הַ|פּוֹלִיטִיקָאִים בִּ|רְצוּתָם הֵם יְֽכוֹלִים לִסְגֹּור אֶת תַּאֲגִיד הַ|שִּׁידּוּר הַ|צִּיבּוּרִי",
+    "gt_phonemes": "ʔˈa nimtsaʔˈim bebeʔajˈa ʔaχˈeʁet kˈi jˈeʃ lanˈu leχatsˈim ʃˈel politikˈaʔim kˈi hapolitikˈaʔim biʁtsutˈam hˈem jeχolˈim lisɡˈoʁ ʔˈet taʔaɡˈid haʃidˈuʁ hatsibuʁˈi"
+  },
+  "gold_007_line_152": {
+    "before_clean": " lehˈiti moχokˈot, ʔanˈi miʃtamˈeʃ baʔˈotov beʔˈoχo pˈan ʃeʔanˈi ʔosˈe ʔˈet zˈe, אני מתχʁolˈe tfinitalˈen.",
+    "after_clean": "lehˈiti moχokˈot ʔanˈi miʃtamˈeʃ baʔˈotov beʔˈoχo pˈan ʃeʔanˈi ʔosˈe ʔˈet zˈe אני מתχʁolˈe tfinitalˈen",
+    "gt_text": "לְֽ|עִתִּים רְחוֹקוֹת אֲנִי מִישְׁתַּמֵּשׁ בָּ|אוֹטוֹ וּבְ|כׇל פַּ֫עַם שֶׁ|אֲנִי עוֹשֶׂה אֶת זֶה אֲנִי מִיתְחָרֵט וּ|מְקַלֵּל",
+    "gt_phonemes": "leʔitˈim ʁeχokˈot ʔanˈi miʃtamˈeʃ baʔˈoto vebeχˈol pˈaʔam ʃeʔanˈi ʔosˈe ʔˈet zˈe ʔanˈi mitχaʁˈet vemekalˈel"
+  },
+  "gold_010_line_023": {
+    "before_clean": " veɡˈam ʔetslˈenu bejisʁˈanel leʃχˈat ʔˈet haʔasukˈa, hˈi befiχˈa ʔˈal ʔalˈia bemiʃpˈaʁ hamitpatʁˈim. ʔehˈem.",
+    "after_clean": "veɡˈam ʔetslˈenu bejisʁˈanel leʃχˈat ʔˈet haʔasukˈa hˈi befiχˈa ʔˈal ʔalˈia bemiʃpˈaʁ hamitpatʁˈim ʔehˈem",
+    "gt_text": "וְֽ|גַם אֶצְלֵ֫נוּ בְּֽ|יִשְׂרָאֵל לִשְׁכַּת הַ|תַּעֲסוּקָה דִּיוְּוחָה עַל עֲלִיָּיה בְּֽ|מִיסְפַּר הַ|מִּתְפַּטְּרִים אהמ",
+    "gt_phonemes": "veɡˈam ʔetslˈenu bejisʁaʔˈel liʃkˈat hataʔasukˈa divχˈa ʔˈal ʔalijˈa bemispˈaʁ hamitpatʁˈim ʔˈhem"
+  },
+  "gold_010_line_095": {
+    "before_clean": " אהלˈit ʃehaʁbˈe peʔˈenim miʁˈa lˈi ʃeleʔiʁɡunˈim lˈo kˈol kˈaχ ʔeχpˈat ʃeʔovdˈim nisχakˈim.",
+    "after_clean": "אהלˈit ʃehaʁbˈe peʔˈenim miʁˈa lˈi ʃeleʔiʁɡunˈim lˈo kˈol kˈaχ ʔeχpˈat ʃeʔovdˈim nisχakˈim",
+    "gt_text": "הָ|אֱמֶת שֶׁ|הַרְבֵּה פְּֽעָמִים נִרְאֶה לִי שֶׁלְּ|אִרְגּוּנִים לֹא כׇּל כָּךְ אִכְפַּת שֶׁהָ|עוֹבְדִים נִשְׁחָקִים",
+    "gt_phonemes": "haʔemˈet ʃehaʁbˈe peʔamˈim niʁʔˈe lˈi ʃeleʔiʁɡunˈim lˈo kˈol kˈaχ ʔiχpˈat ʃehaʔovdˈim niʃχakˈim"
+  },
+  "gold_016_line_076": {
+    "before_clean": " מפaʃˈut maʃχˈit ʔˈet hetikʃˈoʔot kekunˈa ʃehakoʁˈot koʁʔˈim tsufˈot, tsofˈi mikabilˈim.",
+    "after_clean": "מפaʃˈut maʃχˈit ʔˈet hetikʃˈoʔot kekunˈa ʃehakoʁˈot koʁʔˈim tsufˈot tsofˈi mikabilˈim",
+    "gt_text": "זֶה פָּשׁוּט מַשְׁחִית אֶת הַ|תִּקְשֹׁ֫ורֶת כִּי הַ|תְּמוּנָה שֶׁהַ|קּוֹרְאוֹת קוֹרְאִים צוֹפוֹת צוֹפִים מְֽקַבְּלִים",
+    "gt_phonemes": "zˈe paʃˈut maʃχˈit ʔˈet hatikʃˈoʁet kˈi hatmunˈa ʃehakoʁʔˈot koʁʔˈim tsofˈot tsofˈim mekablˈim"
+  },
+  "gold_005_line_193": {
+    "before_clean": " זיהˈo bidjˈuk haʔavodˈa ʃˈel tidˈa jihjˈa miʔinˈot bˈi, נהʁkˈa zˈe meʔidˈa ledʁˈut hatsibˈuʁ.",
+    "after_clean": "זיהˈo bidjˈuk haʔavodˈa ʃˈel tidˈa jihjˈa miʔinˈot bˈi נהʁkˈa zˈe meʔidˈa ledʁˈut hatsibˈuʁ",
+    "gt_text": "זוֹ בְּֽדִיּוּק הָ|עֲבוֹדָה שֶׁל דֵּרִיָּה מִינוֹבִי מִ|מֶּרְכַּז הַ|מֵּידָע לִ|בְרִיאוּת הַ|צִּיבּוּר",
+    "gt_phonemes": "zˈo bidijˈuk haʔavodˈa ʃˈel dˈeʁja minˈovi mimeʁkˈaz hamejdˈa lebʁiʔˈut hatsibˈuʁ"
+  },
+  "gold_015_line_071": {
+    "before_clean": " kˈi hˈem venˈim ʃejiʔˈeʃ ʔˈejzeʃ ʃejiʁˈuaχ mefakˈed, veʃeʔˈim jofpavˈu ʔaχˈeʁet hajediʔˈa paʃˈut lˈo tʔavˈo.",
+    "after_clean": "kˈi hˈem venˈim ʃejiʔˈeʃ ʔˈejzeʃ ʃejiʁˈuaχ mefakˈed veʃeʔˈim jofpavˈu ʔaχˈeʁet hajediʔˈa paʃˈut lˈo tʔavˈo",
+    "gt_text": "כִּי הֵם מְֽבִינִים שֶׁ|יֵּשׁ אֵיזוֹשֶׁהִי ר֫וּחַ מְֽפַקֵּד וְֽשֶׁ|אִם הֵם יִכְתְּבוּ אַחֶרֶת הַ|יְּדִיעָה פָּשׁוּט לֹא תַּעֲבֹור",
+    "gt_phonemes": "kˈi hˈem mevinˈim ʃejˈeʃ ʔˈejzoʃehi ʁˈuaχ mefakˈed veʃeʔˈim hˈem jiχtevˈu ʔaχˈeʁet hajediʔˈa paʃˈut lˈo taʔavˈoʁ"
+  },
+  "gold_021_line_079": {
+    "before_clean": " lefˈi hahaʔaʁχˈat tiʁɡˈun dˈot ʃehˈu χevʁˈa letˈo letetsibˈuʁ ʃehˈi מנasʃˈa lekadˈen fˈin tˈopi hafiktˈivit.",
+    "after_clean": "lefˈi hahaʔaʁχˈat tiʁɡˈun dˈot ʃehˈu χevʁˈa letˈo letetsibˈuʁ ʃehˈi מנasʃˈa lekadˈen fˈin tˈopi hafiktˈivit",
+    "gt_text": "לְֽפִי הַעֲרָכַת אִרְגּוּן מִידּוֹת שֶׁ|הוּא חֶבְרָה לְֽ|תוֹעֶ֫לֶת הַ|צִּיבּוּר שֶׁ|מְּנַסֶּה לְֽקַדֵּם פִילַנְטְרוֹפְּיָה אֵפֶקְטִ֫יבִית",
+    "gt_phonemes": "lefˈi haʔaʁaχˈat ʔiʁɡˈun midˈot ʃehˈu χevʁˈa letoʔˈelet hatsibˈuʁ ʃemenasˈa lekadˈem filantʁˈopja ʔefektˈivit"
+  },
+  "gold_007_line_013": {
+    "before_clean": " עˈaz haʃanˈa nosfˈu lˈo χviʃˈim ʔˈod ʁˈeva miljˈon kaʔˈele ʃezˈe kˈetsev ʃˈi.",
+    "after_clean": "עˈaz haʃanˈa nosfˈu lˈo χviʃˈim ʔˈod ʁˈeva miljˈon kaʔˈele ʃezˈe kˈetsev ʃˈi",
+    "gt_text": "אָז הַשָּׁנָה נוֹסְפוּ לַ|כְּבִישִׁים עוֹד רֶ֫בַע מִילְיוֹן כָּ|אֵ֫לֶּה שֶׁ|זֶּה קֶ֫צֶב שִׂיא",
+    "gt_phonemes": "ʔˈaz haʃanˈa nosfˈu lakviʃˈim ʔˈod ʁˈeva miljˈon kaʔˈele ʃezˈe kˈetsev sˈi"
+  },
+  "gold_020_line_056": {
+    "before_clean": " kˈi tabbˈiʁvin kˈom letsansˈi. ʔanˈi ʔatχˈil leʃnˈia mehaχˈelek ʃˈel ʔˈa, sχujˈot hajotsʁˈim.",
+    "after_clean": "kˈi tabbˈiʁvin kˈom letsansˈi ʔanˈi ʔatχˈil leʃnˈia mehaχˈelek ʃˈel ʔˈa sχujˈot hajotsʁˈim",
+    "gt_text": "הִיא תַּגְבִּיר בִּמְקוֹם לְֽצַמְצֵם אֲנִי אַתְחִיל שְׁנִיָּיה מֵהַ|חֵ֫לֶק שֶׁל אָה זְכוּיוֹת הַ|יּוֹצְרִים",
+    "gt_phonemes": "hˈi taɡbˈiʁ bimkˈom letsamtsˈem ʔanˈi ʔatχˈil ʃnijˈa mehaχˈelek ʃˈel ʔˈe zχujˈot hajotsʁˈim"
+  },
+  "gold_002_line_024": {
+    "before_clean": " lifnˈiv ʃalˈo ʃanˈim, hˈu beχlˈam hajˈa batsˈad haʃinˈi ʃˈel haʔolˈam babˈajit ʃelˈo, bepˈobeʁeʁe ʃˈel ʃˈel habʁˈifja.",
+    "after_clean": "lifnˈiv ʃalˈo ʃanˈim hˈu beχlˈam hajˈa batsˈad haʃinˈi ʃˈel haʔolˈam babˈajit ʃelˈo bepˈobeʁeʁe ʃˈel ʃˈel habʁˈifja",
+    "gt_text": "לִפְנֵי שָׁלוֹשׁ שָׁנִים הוּא בִּכְלָל הָיָה בַּ|צַּד הַ|שֵּׁנִי שֶׁל הָ|עוֹלָם בַּ|בַּ֫יִת שֶׁ|לּוֹ בַּ|פַּרְבֶּר שֶׁל פִילְדֶלְפִּיָּה",
+    "gt_phonemes": "lifnˈej ʃalˈoʃ ʃanˈim hˈu biχlˈal hajˈa batsˈad haʃenˈi ʃˈel haʔolˈam babˈajit ʃelˈo bapeʁbˈeʁ ʃˈel filadˈelfija"
+  },
+  "gold_002_line_356": {
+    "before_clean": " beʔaʁtsˈot habʁˈit. גינטˈajim hajaχˈan ʃehajifjˈuʔatsja ʃnatˈik veʔaʁχatstˈa ʔˈet haʃiʃˈa ʔaχuzˈim,",
+    "after_clean": "beʔaʁtsˈot habʁˈit גינטˈajim hajaχˈan ʃehajifjˈuʔatsja ʃnatˈik veʔaʁχatstˈa ʔˈet haʃiʃˈa ʔaχuzˈim",
+    "gt_text": "בְּֽ|אַרְצוֹת הַ|בְּרִית בֵּינְתַיִים הֵיכָן שֶׁהָ|אִינְפְלַ֫צְיָה הַ|שְּׁנָתִית כְּבָר חָצְתָה אֶת הַ|שִּׁישָּׁה אֲחוּזִים",
+    "gt_phonemes": "beʔaʁtsˈot habʁˈit bentajˈim hejχˈan ʃehaʔinflˈatsja haʃnatˈit kvˈaʁ χatstˈa ʔˈet haʃiʃˈa ʔaχuzˈim"
+  },
+  "gold_012_line_124": {
+    "before_clean": " lˈamʔam, ʔamˈu mesχaʁˈim ʔˈet ʔatˈaʁ keviʔilˈa, kˈi zˈe makˈom kadˈo ʃenomʁˈim, zˈe lˈo matiʔˈim, zˈe kmˈo hamisχˈiʁ ʔˈet hakˈotal?",
+    "after_clean": "lˈamʔam ʔamˈu mesχaʁˈim ʔˈet ʔatˈaʁ keviʔilˈa kˈi zˈe makˈom kadˈo ʃenomʁˈim zˈe lˈo matiʔˈim zˈe kmˈo hamisχˈiʁ ʔˈet hakˈotal",
+    "gt_text": "לָ֫מָּה הֵם לֹא מְֽמַסְחֲרִים אֶת אֲתַר הַ|תְּבִילָה כִּי זֶה מָקוֹם קָדוֹשׁ הֵם אוֹמְרִים זֶה לֹא מַתְאִים זֶה כְּמוֹ לְ|מִסְחֵר אֶת הַ|כֹּ֫ותֶל",
+    "gt_phonemes": "lˈama hˈem lˈo memasχeʁˈim ʔˈet ʔatˈaʁ hatvilˈa kˈi zˈe makˈom kadˈoʃ hˈem ʔomʁˈim zˈe lˈo matʔˈim zˈe kmˈo lemasχˈeʁ ʔˈet hakˈotel"
+  },
+  "gold_012_line_133": {
+    "before_clean": " עoʃˈevi naʔˈim veʃanˈa leʃnˈev, ɡlaʔˈin ʃeʔˈin hˈi lokˈe metvaʁˈim.",
+    "after_clean": "עoʃˈevi naʔˈim veʃanˈa leʃnˈev ɡlaʔˈin ʃeʔˈin hˈi lokˈe metvaʁˈim",
+    "gt_text": "אֹ֫ושֶׁר עִילָּאִי שֶׁ|אֵין שֵׁנִי לוֹ כָּ|אֵ֫לֶּה מִין דְּבָרִים",
+    "gt_phonemes": "ʔˈoʃeʁ ʔilaʔˈi ʃeʔˈen ʃenˈi lˈo kaʔˈele mˈin dvaʁˈim"
+  },
+  "gold_002_line_271": {
+    "before_clean": ",ʁˈotsen hahaχlatˈa ʃelˈo ʔatsmˈo ʔalulˈan lehalzˈin ʔˈet hatsipijˈot leʔinflˈatsja ʔˈod ʔotˈa.",
+    "after_clean": "ʁˈotsen hahaχlatˈa ʃelˈo ʔatsmˈo ʔalulˈan lehalzˈin ʔˈet hatsipijˈot leʔinflˈatsja ʔˈod ʔotˈa",
+    "gt_text": "וְֽ|עֶ֫צֶם הַ|הַחְלָטָה שֶׁ|לּוֹ עַצְמוֹ עֲלוּלָה לְֽהָזִין אֶת הַ|צִּיפִּיּוֹת לָ|אִינְפְלַ֫צְיָה עוֹד יוֹתֵר",
+    "gt_phonemes": "veʔˈetsem hahaχlatˈa ʃelˈo ʔatsmˈo ʔalulˈa lehazˈin ʔˈet hatsipijˈot laʔinflˈatsja ʔˈod jotˈeʁ"
+  },
+  "gold_001_line_182": {
+    "before_clean": " בבˈeveʔezʁˈat mitmatvˈim, התχˈilu mifazˈeʁ ʔˈet hetʁoʔˈut haʔˈele bˈen hamaχsanˈim.",
+    "after_clean": "בבˈeveʔezʁˈat mitmatvˈim התχˈilu mifazˈeʁ ʔˈet hetʁoʔˈut haʔˈele bˈen hamaχsanˈim",
+    "gt_text": "וּ|בְֽ|עֶזְרַת מִתְנַדְּבִים הִתְחִ֫ילוּ לְֽפַזֵּר אֶת הַ|תְּרוּמוֹת הָ|אֵ֫לֶּה בֵּין הַ|מַּחְסָנִים",
+    "gt_phonemes": "vebeʔezʁˈat mitnadvˈim hitχˈilu lefazˈeʁ ʔˈet hatʁumˈot haʔˈele bˈen hamaχsanˈim"
+  },
+  "gold_000_line_148": {
+    "before_clean": " velaχˈen hˈi nitsʁˈeχ kˈama ʃejotˈeʁ natslˈiaχ lekabˈel tmunˈa kˈama ʃjotˈeʁ tovˈa.",
+    "after_clean": "velaχˈen hˈi nitsʁˈeχ kˈama ʃejotˈeʁ natslˈiaχ lekabˈel tmunˈa kˈama ʃjotˈeʁ tovˈa",
+    "gt_text": "וְֽ|לָכֵן אִם נִצְרֹוךְ כַּ֫מָּה שֶׁ|יּוֹתֵר נַצְלִ֫יחַ לְֽקַבֵּל תְּמוּנָה כַּ֫מָּה שֶׁ|יּוֹתֵר טוֹבָה",
+    "gt_phonemes": "velaχˈen ʔˈim nitsʁˈoχ kˈama ʃejotˈeʁ natslˈiaχ lekabˈel tmunˈa kˈama ʃejotˈeʁ tovˈa"
+  },
+  "gold_005_line_033": {
+    "before_clean": " hamutsaʔˈim meʁiʃonˈim ʃeʁaʔˈino, fˈi ʃeʔatˈem ʁoʔˈim basˈupeʁ lˈo mimtsaʔˈim ʃaʔˈa bemikʁˈa.",
+    "after_clean": "hamutsaʔˈim meʁiʃonˈim ʃeʁaʔˈino fˈi ʃeʔatˈem ʁoʔˈim basˈupeʁ lˈo mimtsaʔˈim ʃaʔˈa bemikʁˈa",
+    "gt_text": "הַ|מּוּצָרִים הָ|רִאשׁוֹנִים שֶׁ|רָאִ֫ינוּ וְֽשֶׁ|אַתֶּם רוֹאִים בַּ|סּוּפֶּר לֹא נִמְצָאִים שָׁם בְּֽ|מִקְרֶה",
+    "gt_phonemes": "hamutsaʁˈim haʁiʃonˈim ʃeʁaʔˈinu veʃeʔatˈem ʁoʔˈim basˈupeʁ lˈo nimtsaʔˈim ʃˈam bemikʁˈe"
+  },
+  "gold_007_line_155": {
+    "before_clean": " האם היא mimatˈef lekˈol mˈi ʃeʔanˈi ʁˈak jeχˈol baʔavodˈa ʃeʔinsijˈut ʔˈet haχbuʁˈa hatsibuʁˈit.",
+    "after_clean": "האם היא mimatˈef lekˈol mˈi ʃeʔanˈi ʁˈak jeχˈol baʔavodˈa ʃeʔinsijˈut ʔˈet haχbuʁˈa hatsibuʁˈit",
+    "gt_text": "הַאִם אֲנִי מַטִּיף לְֽ|כׇל מִי שֶׁ|אֲנִי רַק יָכוֹל בָּ|עֲבוֹדָה שֶׁ|יְּנַסּוּ אֶת הַ|תַּחְבּוּרָה הַ|צִּיבּוּרִית",
+    "gt_phonemes": "haʔˈim ʔanˈi matˈif lekˈol mˈi ʃeʔanˈi ʁˈak jaχˈol baʔavodˈa ʃejenasˈu ʔˈet hataχbuʁˈa hatsibuʁˈit"
+  },
+  "gold_012_line_136": {
+    "before_clean": " veʔafˈilu ʔˈo zˈe dˈaɡ ʃemˈi ʃehˈu sipˈeʁ ʃejeʃˈu pˈaʔam, ʔaχˈam",
+    "after_clean": "veʔafˈilu ʔˈo zˈe dˈaɡ ʃemˈi ʃehˈu sipˈeʁ ʃejeʃˈu pˈaʔam ʔaχˈam",
+    "gt_text": "וַ|אֲפִ֫ילּוּ אֵ֫יזֶה דָּג שֶׁ|מִּ֫ישֶׁהוּ סִיפֵּר שֶׁ|יֵּשּׁוּ פַּ֫עַם אָכַל",
+    "gt_phonemes": "vaʔafˈilu ʔˈejze dˈaɡ ʃemˈiʃehu sipˈeʁ ʃejˈeʃu pˈaʔam ʔaχˈal"
+  },
+  "gold_006_line_060": {
+    "before_clean": " habaʔusot bekˈoʁ haʔolˈa meχˈilu likʁˈos beʔaχozˈim mitaʁˈim.",
+    "after_clean": "habaʔusot bekˈoʁ haʔolˈa meχˈilu likʁˈos beʔaχozˈim mitaʁˈim",
+    "gt_text": "הַ|בּ֫וּרְסוֹת בְּֽ|כׇל הָ|עוֹלָם הִתְחִ֫ילוּ לִיקְרֹוס בַּ|אֲחוּזִים נִיכָּרִים",
+    "gt_phonemes": "habˈuʁsot bekˈol haʔolˈam hitχˈilu likʁˈos beʔaχuzˈim nikaʁˈim"
+  },
+  "gold_007_line_150": {
+    "before_clean": " nimˈaʃ תˈel haχalutˈim lamˈo bpkakˈim, mˈaʔasti meʔamˈaχa ʔˈetsi, mˈaʔas lˈi meχipusˈeʔa χalejˈa paʃˈut lˈi, mˈaχsti.",
+    "after_clean": "nimˈaʃ תˈel haχalutˈim lamˈo bpkakˈim mˈaʔasti meʔamˈaχa ʔˈetsi mˈaʔas lˈi meχipusˈeʔa χalejˈa paʃˈut lˈi mˈaχsti",
+    "gt_text": "נִמְאַס לִי לַחֲלוּטִין לַעֲמֹוד בַּ|פְּקָקִים נִמְאַס לִי מֵהַ|לַּ֫חַץ נִמְאַס לִי מֵ|חִיפּוּשֵׂי הַ|חֲנָיָיה פָּשׁוּט נִמְאַס לִי",
+    "gt_phonemes": "nimʔˈas lˈi laχalutˈin laʔamˈod bapkakˈim nimʔˈas lˈi mehalˈaχats nimʔˈas lˈi meχipusˈej haχanajˈa paʃˈut nimʔˈas lˈi"
+  },
+  "gold_001_line_035": {
+    "before_clean": " רˈo bˈetsem zˈe kˈol maʃniʃʔˈa ʔaʁˈak hazˈi χonˈot veɡˈam hˈem kvˈaʁ bˈej ɡeʁujˈim.",
+    "after_clean": "רˈo bˈetsem zˈe kˈol maʃniʃʔˈa ʔaʁˈak hazˈi χonˈot veɡˈam hˈem kvˈaʁ bˈej ɡeʁujˈim",
+    "gt_text": "אוֹ בְּֽעֶ֫צֶם זֶה כׇּל מָה שֶׁ|נִּישָּׁאֵר רַק הַ|זִּיכְרוֹנוֹת וְֽ|גַם הֵם כְּבָר דֵּי דְּהוּיִים",
+    "gt_phonemes": "ʔˈo beʔˈetsem zˈe kˈol mˈa ʃeniʃaʔˈeʁ ʁˈak haziχʁonˈot veɡˈam hˈem kvˈaʁ dˈej dehujˈim"
+  },
+  "gold_001_line_443": {
+    "before_clean": " אמˈok betˈoχ haɡidijˈa, niχtˈav ʃebankˈom paʁbˈat habinjanˈim.",
+    "after_clean": "אמˈok betˈoχ haɡidijˈa niχtˈav ʃebankˈom paʁbˈat habinjanˈim",
+    "gt_text": "עָמֹוק בְּֽתוֹךְ הַ|יְּדִיעָה נִכְתַּב שֶׁבִּמְקוֹם אַרְבַּעַת הַ|בִּנְיָינִים",
+    "gt_phonemes": "ʔamˈok betˈoχ hajediʔˈa niχtˈav ʃebimkˈom ʔaʁbˈaʔat habinjanˈim"
+  },
+  "gold_012_line_119": {
+    "before_clean": " מipˈaʁ ɡʁˈe zˈot χˈol pˈaʔam, vetaʁaɡˈemet meʔˈod beχˈol pˈaʔam ʃejisʁˈe tˈoʔet ʔaχˈeʁet.",
+    "after_clean": "מipˈaʁ ɡʁˈe zˈot χˈol pˈaʔam vetaʁaɡˈemet meʔˈod beχˈol pˈaʔam ʃejisʁˈe tˈoʔet ʔaχˈeʁet",
+    "gt_text": "וּ|מִתְרַגֶּ֫זֶת בְּֽ|כׇל פַּ֫עַם וּ|מִתְרַגֶּ֫זֶת מְֽאוֹד בְּֽ|כׇל פַּ֫עַם שֶׁ|יִּשְׂרָאֵל טוֹעֶ֫נֶת אַחֶרֶת",
+    "gt_phonemes": "vemitʁaɡˈezet bekˈol pˈaʔam vemitʁaɡˈezet meʔˈod bekˈol pˈaʔam ʃejisʁaʔˈel toʔˈenet ʔaχˈeʁet"
+  },
+  "gold_001_line_186": {
+    "before_clean": " haʁaʁˈim haʁaʁˈim, haʁaʁaʁˈim ʃˈel χultsˈot umeχnasˈajim litɡadˈim haχˈeχ.",
+    "after_clean": "haʁaʁˈim haʁaʁˈim haʁaʁaʁˈim ʃˈel χultsˈot umeχnasˈajim litɡadˈim haχˈeχ",
+    "gt_text": "הֲרָרִים הֲרָרִים שֶׁל חֻולְצוֹת וּ|מִכְנָסַיִים וּ|בְגָדִים אֲחֵרִים",
+    "gt_phonemes": "haʁaʁˈim haʁaʁˈim ʃˈel χultsˈot vemiχnasˈajim vebɡadˈim ʔaχeʁˈim"
+  },
+  "gold_002_line_279": {
+    "before_clean": " klˈomaʁ ʃeʔˈo ʃeʔanˈaχnu holχˈim leʔiflˈatsja ʃehˈi besˈedeʁ mpχinˈat hajˈad ʃˈet bˈank jisʁˈel.",
+    "after_clean": "klˈomaʁ ʃeʔˈo ʃeʔanˈaχnu holχˈim leʔiflˈatsja ʃehˈi besˈedeʁ mpχinˈat hajˈad ʃˈet bˈank jisʁˈel",
+    "gt_text": "כְּלוֹמַר שָׁאוֹ שֶׁ|אֲנַ֫חְנוּ הוֹלְכִים לְֽ|אִינְפְלַ֫צְיָה שֶׁ|הִיא בְּֽסֵ֫דֶר מִ|בְּחִינַת הַ|יַּ֫עַד שֶׁל בַּנְק יִשְׂרָאֵל",
+    "gt_phonemes": "klomˈaʁ ʃeʔˈu ʃeʔanˈaχnu holχˈim leʔinflˈatsja ʃehˈi besˈedeʁ mibχinˈat hajˈaʔad ʃˈel bˈank jisʁaʔˈel"
+  },
+  "gold_003_line_011": {
+    "before_clean": " מ�ifɡˈaʃti ʔˈim kˈoʁman babˈokeʁ jiʁuʃˈamim, tʁeʁˈiʁ bˈem tsˈa ʃavˈuʔa ʃeʔavˈa.",
+    "after_clean": "מifɡˈaʃti ʔˈim kˈoʁman babˈokeʁ jiʁuʃˈamim tʁeʁˈiʁ bˈem tsˈa ʃavˈuʔa ʃeʔavˈa",
+    "gt_text": "נִפְגַּ֫שְׁתִּי עִם קוֹרְמָן בְּֽ|בֹ֫וקֶר יְֽרוּשַׁלְמִי קָרִיר בְּֽ|אֶמְצַע הַ|שָּׁב֫וּעַ שֶׁ|עָבַר",
+    "gt_phonemes": "nifɡˈaʃti ʔˈim kˈoʁman bebˈokeʁ jeʁuʃˈalmi kaʁˈiʁ beʔˈemtsa haʃavˈua ʃeʔavˈaʁ"
+  },
+  "gold_017_line_048": {
+    "before_clean": " בעikvˈot haʔiʃˈiv haʔahˈi, miχlˈet ʔˈal hatalˈat sˈiʁ ʔˈal jisʁˈelki.",
+    "after_clean": "בעikvˈot haʔiʃˈiv haʔahˈi miχlˈet ʔˈal hatalˈat sˈiʁ ʔˈal jisʁˈelki",
+    "gt_text": "בְּֽעִיקְּבוֹת הַ|יְּשִׁיבָה הַ|הִיא הֻוחְלַט עַל הֲטָלַת סֶ֫גֶר עַל יִשְׂרָאֵל",
+    "gt_phonemes": "beʔikvˈot hajeʃivˈa hahˈi huχlˈat ʔˈal hatalˈat sˈeɡeʁ ʔˈal jisʁaʔˈel"
+  },
+  "gold_011_line_095": {
+    "before_clean": " בשנים meʔaχˈonut, פʃˈen bebʁˈim hˈal kalkalkalˈa veʔˈal hamikzˈaʁ hajiskˈi.",
+    "after_clean": "בשנים meʔaχˈonut פʃˈen bebʁˈim hˈal kalkalkalˈa veʔˈal hamikzˈaʁ hajiskˈi",
+    "gt_text": "בַּ|שָּׁנִים הָ|אַחֲרוֹנוֹת כְּשֶׁ|מְּֽדַבְּרִים עַל כַּלְכָּלָה וְֽ|עַל הַ|מִּגְזָר הָ|עִסְקִי",
+    "gt_phonemes": "baʃanˈim haʔaχʁonˈot kʃemedabʁˈim ʔˈal kalkalˈa veʔˈal hamiɡzˈaʁ haʔiskˈi"
+  },
+  "gold_012_line_055": {
+    "before_clean": " אבל bˈen hajˈeteʁ ɡˈam sibˈot kalkalkalijˈot veteʔejutijˈot.",
+    "after_clean": "אבל bˈen hajˈeteʁ ɡˈam sibˈot kalkalkalijˈot veteʔejutijˈot",
+    "gt_text": "אֲבָל בֵּין הַ|יֶּ֫תֶר גַּם סִיבּוֹת כַּלְכָּלִיּוֹת וּֽ|תַיָּירוּתִיּוֹת",
+    "gt_phonemes": "ʔavˈal bˈen hajˈeteʁ ɡˈam sibˈot kalkalijˈot vetajaʁutijˈot"
+  },
+  "gold_000_line_012": {
+    "before_clean": " haχevʁˈa haʔˈim zˈo ʃemaʁzikˈa ʔˈo hazˈika ʔˈaz beʔoʁˈal.",
+    "after_clean": "haχevʁˈa haʔˈim zˈo ʃemaʁzikˈa ʔˈo hazˈika ʔˈaz beʔoʁˈal",
+    "gt_text": "הַ|חֶבְרָה הַאִם זוֹ שֶׁ|מַּחֲזִיקָה אוֹ הֶחְזִיקָה אָז בְּֽ|וָואלָה",
+    "gt_phonemes": "haχevʁˈa haʔˈem zˈo ʃemaχzikˈa ʔˈo heχzˈika ʔˈaz bewˈala"
+  },
+  "gold_000_line_089": {
+    "before_clean": " נχˈol, lˈo mudˈeʔim hazˈe biχlˈa. veʔaɡˈav.",
+    "after_clean": "נχˈol lˈo mudˈeʔim hazˈe biχlˈa veʔaɡˈav",
+    "gt_text": "נָכוֹן הֵם לֹא מוּדָעִים לָ|זֶה בִּכְלָל וְֽ|אַגַּב",
+    "gt_phonemes": "naχˈon hˈem lˈo mudaʔˈim lezˈe biχlˈal veʔˈaɡav"
+  },
+  "gold_002_line_310": {
+    "before_clean": " תeʃˈut kˈi hamiflˈatsek ʔanˈi ʔadˈajin mimuχˈa bejˈaχa ʃתדˈin ʔˈot ʔaχeʁˈot.",
+    "after_clean": "תeʃˈut kˈi hamiflˈatsek ʔanˈi ʔadˈajin mimuχˈa bejˈaχa ʃתדˈin ʔˈot ʔaχeʁˈot",
+    "gt_text": "פָּשׁוּט כִּי הָ|אִינְפְלַ֫צְיָה כָּאן הִיא עֲדַ֫יִין נְֽמוּכָה בְּֽ|יַ֫חַס לִ|מְדִינוֹת אֲחֵרוֹת",
+    "gt_phonemes": "paʃˈut kˈi haʔinflˈatsja kˈan hˈi ʔadˈajin nemuχˈa bejˈaχas lemedinˈot ʔaχeʁˈot"
+  },
+  "gold_021_line_078": {
+    "before_clean": " hamikzˈaʁ haʃliʃˈi bejisʁaʔˈel miɡalɡˈel lijeʁbˈej ʃkalˈim biʃanˈia.",
+    "after_clean": "hamikzˈaʁ haʃliʃˈi bejisʁaʔˈel miɡalɡˈel lijeʁbˈej ʃkalˈim biʃanˈia",
+    "gt_text": "הַ|מִּיגְזָר הַ|שְּׁלִישִׁי בְּֽ|יִשְׂרָאֵל מְֽגַלְגֵּל מִילְיַ֫ארְדֵּי שְׁקָלִים בְּֽ|שָׁנָה",
+    "gt_phonemes": "hamiɡzˈaʁ haʃliʃˈi bejisʁaʔˈel meɡalɡˈel miljˈaʁdej ʃkalˈim beʃanˈa"
+  },
+  "gold_017_line_144": {
+    "before_clean": " ניסˈinu ʃeʃnˈej haʁaʔjonˈot jihjˈa χeʁˈim, hˈu ketaʔˈim ʔaχeʁˈim, kˈa ɡˈam.",
+    "after_clean": "ניסˈinu ʃeʃnˈej haʁaʔjonˈot jihjˈa χeʁˈim hˈu ketaʔˈim ʔaχeʁˈim kˈa ɡˈam",
+    "gt_text": "נִיסִּ֫ינוּ שֶׁ|שְּׁנֵי הָ|רַעְיוֹנוֹת יִכְלְלוּ קְטָעִים אֲחֵרִים לְֽגַמְרֵי",
+    "gt_phonemes": "nisˈinu ʃeʃnˈej haʁaʔajonˈot jiχlelˈu ktaʔˈim ʔaχeʁˈim leɡˈamʁej"
+  },
+  "gold_002_line_311": {
+    "before_clean": " bifjˈil lesabˈeʁ laχˈim ʔˈet haʔˈozˈe, מדinˈot ʁabˈot svuʔˈot ʔaχʃˈav dimiflˈatsja.",
+    "after_clean": "bifjˈil lesabˈeʁ laχˈim ʔˈet haʔˈozˈe מדinˈot ʁabˈot svuʔˈot ʔaχʃˈav dimiflˈatsja",
+    "gt_text": "בִּשְׁבִיל לְֽסַבֵּר לָכֶם אֶת הָ|אֹ֫וזֶן מְֽדִינוֹת רַבּוֹת סוֹבְלוֹת עַכְשָׁיו מֵ|אִינְפְלַ֫צְיָה",
+    "gt_phonemes": "biʃvˈil lesabˈeʁ laχˈem ʔˈet haʔˈozen medinˈot ʁabˈot sovlˈot ʔaχʃˈav meʔinflˈatsja"
+  },
+  "gold_012_line_060": {
+    "before_clean": "ʔatˈa ʁaʁˈat veʔˈila hafˈaχ lihjˈot bevˈat ʔaχˈat χˈelet miʃˈot haχtsvaʔˈi sɡˈuʁ.",
+    "after_clean": "ʔatˈa ʁaʁˈat veʔˈila hafˈaχ lihjˈot bevˈat ʔaχˈat χˈelet miʃˈot haχtsvaʔˈi sɡˈuʁ",
+    "gt_text": "אֲתַר הַ|טְּבִילָה הָפַךְ לִהְיוֹת בְּֽ|בַת אַחַת חֵ֫לֶק מִ|שֶּׁ֫טַח צְבָאִי סָגוּר",
+    "gt_phonemes": "ʔatˈaʁ hatvilˈa hafˈaχ lihjˈot bevˈat ʔaχˈat χˈelek miʃˈetaχ tsvaʔˈi saɡˈuʁ"
+  },
+  "gold_001_line_100": {
+    "before_clean": " אדˈam ʃelˈaχ lˈi seʔutˈon ʃˈel ʔadiʁˈa hazˈut.",
+    "after_clean": "אדˈam ʃelˈaχ lˈi seʔutˈon ʃˈel ʔadiʁˈa hazˈut",
+    "gt_text": "אָדָם שָׁלַח לִי סִרְטוֹן שֶׁל הַ|דִּירָה הַ|זֹּאת",
+    "gt_phonemes": "ʔˈadam ʃalˈaχ lˈi siʁtˈon ʃˈel hadiʁˈa hazˈot"
+  },
+  "gold_001_line_362": {
+    "before_clean": " klˈal vemיגdˈan, ʔadˈajin ʔasˈu baʔajˈot kˈam χevʁatˈej ʔelˈon.",
+    "after_clean": "klˈal vemיגdˈan ʔadˈajin ʔasˈu baʔajˈot kˈam χevʁatˈej ʔelˈon",
+    "gt_text": "כְּ|לָל וּ|מִיגְדָּל עֲדַ֫יִין עָשׂוּ בְּֽעָיוֹת גַּם חֶבְרַת אַיָּילוֹן",
+    "gt_phonemes": "klˈal umiɡdˈal ʔadˈajin ʔasˈu beʔajˈot ɡˈam χevʁˈat ʔajalˈon"
+  },
+  "gold_000_line_035": {
+    "before_clean": "ʔavˈa χˈelet mˈi zˈe ɡˈam ʔˈevel vezˈe, zˈe, zˈe, zˈe, zˈe, zˈe, zˈe, zˈe, zˈe, zˈe, zˈe, zˈe, zˈe, zˈe, zˈe, zˈe, zˈe, zˈe, zˈe, zˈe, zˈe, zˈe, zˈe, zˈe, zˈe, zˈe, zˈe, zˈe, zˈe, zˈe, zˈe, zˈe, zˈe, zˈe, zˈe, zˈe, zˈe, zˈe, zˈe, zˈe, zˈe, zˈe, zˈe, zˈe, zˈe, zˈe, zˈe, zˈe, zˈe, zˈe, zˈe, zˈe, zˈe, zˈe, zˈe, zˈe, zˈe, zˈe, zˈe, zˈe, zˈe, zˈe, zˈe, zˈe, zˈe, zˈe, zˈe, zˈe, zˈe, zˈe, zˈe, zˈe, zˈe, zˈe, zˈe, zˈe, zˈe, zˈe, zˈe, zˈe, zˈe, zˈe, zˈ",
+    "after_clean": "ʔavˈa χˈelet mˈi zˈe ɡˈam ʔˈevel vezˈe zˈe zˈe zˈe zˈe zˈe zˈe zˈe zˈe zˈe zˈe zˈe zˈe zˈe zˈe zˈe zˈe zˈe zˈe zˈe zˈe zˈe zˈe zˈe zˈe zˈe zˈe zˈe zˈe zˈe zˈe zˈe zˈe zˈe zˈe zˈe zˈe zˈe zˈe zˈe zˈe zˈe zˈe zˈe zˈe zˈe zˈe zˈe zˈe zˈe zˈe zˈe zˈe zˈe zˈe zˈe zˈe zˈe zˈe zˈe zˈe zˈe zˈe zˈe zˈe zˈe zˈe zˈe zˈe zˈe zˈe zˈe zˈe zˈe zˈe zˈe zˈe zˈe zˈe zˈe zˈe zˈe zˈ",
+    "gt_text": "אֲבָל חֵ֫לֶק מִ|זֶּה זֶה גַּם מֵעֵ֫בֶר לָ|זֶה זֹאת אוֹמֶ֫רֶת הֵם יוֹדְעִים שֶׁ|אִם הַ|מִּתְחָרֶה שֶׁלָּהֶם",
+    "gt_phonemes": "ʔavˈal χˈelek mizˈe zˈe ɡˈam meʔˈeveʁ lezˈe zˈot ʔomˈeʁet hˈem jodʔˈim ʃeʔˈim hamitχaʁˈe ʃelahˈem"
+  },
+  "gold_011_line_114": {
+    "before_clean": " bemעʔaʁaχˈeʁ χajˈut kˈis, χavaʁodkˈam ɡˈan hafˈoʔam, kitsˈi levaʁˈam.",
+    "after_clean": "bemעʔaʁaχˈeʁ χajˈut kˈis χavaʁodkˈam ɡˈan hafˈoʔam kitsˈi levaʁˈam",
+    "gt_text": "בַּ|מַּעֲרֶ֫כֶת חַיּוֹת כִּיס חֲבֵרוֹת גַּם דָּנָה פְרַנְק וּ|צְלִיל אַבְרָהָם",
+    "gt_phonemes": "bemaʔaʁˈeχet χajˈot kˈis χaveʁˈot ɡˈam dˈana fʁˈank vetslˈil ʔavʁahˈam"
+  },
+  "gold_001_line_022": {
+    "before_clean": " אבל bemˈet נoɡiʔˈim, befinˈim ʔˈet zˈe mˈaʃu bafˈi.",
+    "after_clean": "אבל bemˈet נoɡiʔˈim befinˈim ʔˈet zˈe mˈaʃu bafˈi",
+    "gt_text": "אֲבָל בֶּאֱמֶת נוֹגְעִים מַפְעִילִים אֶת זֶה מַ֫שֶּׁהוּ בִּפְנִים",
+    "gt_phonemes": "ʔavˈal beʔemˈet noɡʔˈim mafʔilˈim ʔˈet zˈe mˈaʃehu bifnˈim"
+  },
+  "gold_004_line_002": {
+    "before_clean": " kˈi beχˈol zˈo panˈaχnu pˈodkast jisʁˈeeli ʃekoʁˈe bejisʁaʔˈel.",
+    "after_clean": "kˈi beχˈol zˈo panˈaχnu pˈodkast jisʁˈeeli ʃekoʁˈe bejisʁaʔˈel",
+    "gt_text": "כִּי בְּֽ|כׇל זֹאת אֲנַ֫חְנוּ פּ֫וֹדְקַאסְט יִשְׂרְֽאֵלִי שֶׁ|קּוֹרֶה בְּֽ|יִשְׂרָאֵל",
+    "gt_phonemes": "kˈi beχˈol zˈot ʔanˈaχnu pˈodkast jisʁaʔelˈi ʃekoʁˈe bejisʁaʔˈel"
+  },
+  "gold_011_line_083": {
+    "before_clean": " אני אוסˈad biχlˈal ʔeʃʃaʁˈi ʔiʃpatˈit.",
+    "after_clean": "אני אוסˈad biχlˈal ʔeʃʃaʁˈi ʔiʃpatˈit",
+    "gt_text": "אֵין לִי מֻושָּׂג אִם זֶה בִּכְלָל אֶפְשָׁרִי מִשְׁפָּטִית",
+    "gt_phonemes": "ʔˈen lˈi musˈaɡ ʔˈim zˈe biχlˈal ʔefʃaʁˈi miʃpatˈit"
+  },
+  "gold_021_line_014": {
+    "before_clean": " יˈanɡi ʃeχnˈe ɡˈam hetχˈem jitsתaʁˈefi ʔiɡˈu letuvˈa.",
+    "after_clean": "יˈanɡi ʃeχnˈe ɡˈam hetχˈem jitsתaʁˈefi ʔiɡˈu letuvˈa",
+    "gt_text": "אוּלַי הוּא יְֽשַׁכְנֵעַ גַּם אֶתְכֶם לְֽהִצְטָרֵף לָ|עִיגּוּל לְֽ|טוֹבָה",
+    "gt_phonemes": "ʔulˈaj hˈu jeʃaχnˈea ɡˈam ʔetχˈem lehitstaʁˈef laʔiɡˈul letovˈa"
+  },
+  "gold_005_line_081": {
+    "before_clean": " כˈuχen lˈo הגˈiʔa ʔˈaz bedizˈot ʔiʃijˈot leʃˈim ʔˈoʃ beʔitˈi.",
+    "after_clean": "כˈuχen lˈo הגˈiʔa ʔˈaz bedizˈot ʔiʃijˈot leʃˈim ʔˈoʃ beʔitˈi",
+    "gt_text": "הָ|אֹ֫וכֶל לֹא הִגִּ֫יעַ אָז בַּ|אֲרִיזוֹת אִישִׁיּוֹת לְֽ|שִׁימּוּשׁ בֵּיתִי",
+    "gt_phonemes": "haʔˈoχel lˈo hiɡˈia ʔˈaz baʔaʁizˈot ʔiʃijˈot leʃimˈuʃ bejtˈi"
+  },
+  "gold_001_line_243": {
+    "before_clean": " zˈe lakˈaχ lˈo meʔˈat haʔitinˈim batikʃˈuʁet ɡˈam bezlˈenu.",
+    "after_clean": "zˈe lakˈaχ lˈo meʔˈat haʔitinˈim batikʃˈuʁet ɡˈam bezlˈenu",
+    "gt_text": "זֶה לָקַח לֹא מְֽעַט אַיְיטֵמִים בַּ|תִּיקְשֹׁ֫ורֶת גַּם אֶצְלֵ֫נוּ",
+    "gt_phonemes": "zˈe lakˈaχ lˈo meʔˈat ʔˈajtemim batikʃˈoʁet ɡˈam ʔetslˈenu"
+  },
+  "gold_002_line_316": {
+    "before_clean": " במדinˈud ʔaχaʁˈut zˈe tipˈa veɡˈua haʔotˈeʁ veʔadˈajin ɡavˈo.",
+    "after_clean": "במדinˈud ʔaχaʁˈut zˈe tipˈa veɡˈua haʔotˈeʁ veʔadˈajin ɡavˈo",
+    "gt_text": "בִּ|מְדִינוֹת אֲחֵרוֹת זֶה טִיפָּה רָגוּעַ יוֹתֵר וַ|עֲדַ֫יִין גָּב֫וֹהַּ",
+    "gt_phonemes": "bemedinˈot ʔaχeʁˈot zˈe tipˈa ʁaɡuˈa jotˈeʁ veʔadˈajin ɡavˈoa"
+  },
+  "gold_005_line_133": {
+    "before_clean": " zˈe ʔumˈeʁ ʔˈet zˈe kˈi hˈem boχaʁˈim metχˈof linˈu beʔikˈaʁ mezˈon lˈo baʁˈi.",
+    "after_clean": "zˈe ʔumˈeʁ ʔˈet zˈe kˈi hˈem boχaʁˈim metχˈof linˈu beʔikˈaʁ mezˈon lˈo baʁˈi",
+    "gt_text": "זֶה אוֹמֵר אֶת זֶה כִּי הֵם בּוֹחֲרִים לִדְחֹוף לָנוּ בְּֽעִיקָּר מָזוֹן לֹא בָּרִיא",
+    "gt_phonemes": "zˈe ʔomˈeʁ ʔˈet zˈe kˈi hˈem boχaʁˈim lidχˈof lanˈu beʔikˈaʁ mazˈon lˈo baʁˈi"
+  },
+  "gold_000_line_101": {
+    "before_clean": " אה, zˈe dˈej madˈim liʁʔˈot liʁʔˈot zˈe leʔˈoʁ jˈom.",
+    "after_clean": "אה zˈe dˈej madˈim liʁʔˈot liʁʔˈot zˈe leʔˈoʁ jˈom",
+    "gt_text": "אָה זֶה דֵּי מַדְהִים לִרְאוֹת לִרְאוֹת אֶת זֶה לְֽאוֹר יוֹם",
+    "gt_phonemes": "ʔˈa zˈe dˈej madhˈim liʁʔˈot liʁʔˈot ʔˈet zˈe leʔˈoʁ jˈom"
+  },
+  "gold_021_line_057": {
+    "before_clean": "evˈu mˈi ʃamˈeʃ betˈoʁ joʃˈev ʁˈoʃ ʃˈela ʔˈad hajˈum.",
+    "after_clean": "evˈu mˈi ʃamˈeʃ betˈoʁ joʃˈev ʁˈoʃ ʃˈela ʔˈad hajˈum",
+    "gt_text": "וְֽ|הוּא מְֽשַׁמֵּשׁ בְּֽתוֹר יוֹשֵׁב הָ|רֹאשׁ שֶׁלָּהּ עַד הַיּוֹם",
+    "gt_phonemes": "vehˈu meʃamˈeʃ betˈoʁ joʃˈev haʁˈoʃ ʃelˈa ʔˈad hajˈom"
+  },
+  "gold_016_line_021": {
+    "before_clean": " יχˈן ʔanˈa χmˈi ʔeχolˈim leʔamˈin lilamijˈan mˈa ʃeʔatˈa ʔomˈeʁ?",
+    "after_clean": "יχˈן ʔanˈa χmˈi ʔeχolˈim leʔamˈin lilamijˈan mˈa ʃeʔatˈa ʔomˈeʁ",
+    "gt_text": "אֵיךְ אֲנַ֫חְנוּ יְֽכוֹלִים לְֽהַאֲמִין לַ|מִּילָּה מִ|מָּה שֶׁ|אַתָּה אוֹמֵר",
+    "gt_phonemes": "ʔˈejχ ʔanˈaχnu jeχolˈim lehaʔamˈin lemilˈa mimˈa ʃeʔatˈa ʔomˈeʁ"
+  },
+  "gold_017_line_041": {
+    "before_clean": " אם תiʃenˈu ʔˈet haʔanaχˈot ʃˈel hamodˈelti ʃenˈu ɡˈam ʔˈet hapotsaʁˈot.",
+    "after_clean": "אם תiʃenˈu ʔˈet haʔanaχˈot ʃˈel hamodˈelti ʃenˈu ɡˈam ʔˈet hapotsaʁˈot",
+    "gt_text": "אִם תִּשַׁנּוּ אֶת הַ|הֲנָחוֹת שֶׁל הַ|מּ֫וֹדֵל תְּשַׁנּוּ גַּם אֶת הַ|תּוֹצָאוֹת",
+    "gt_phonemes": "ʔˈim teʃanˈu ʔˈet hahanaχˈot ʃˈel hamodˈel teʃanˈu ɡˈam ʔˈet hatotsaʔˈot"
+  },
+  "gold_007_line_094": {
+    "before_clean": " zˈe lˈo hakivˈon naχˈon lalˈeχet bʁˈov, ʔˈav zˈe mˈa ʃenˈom ʃalˈot ʔosʁˈot.",
+    "after_clean": "zˈe lˈo hakivˈon naχˈon lalˈeχet bʁˈov ʔˈav zˈe mˈa ʃenˈom ʃalˈot ʔosʁˈot",
+    "gt_text": "זֶה לֹא הַ|כִּיוּוּן הַ|נָּכוֹן לָלֶ֫כֶת בּוֹ אֲבָל זֶה מָה שֶׁהַ|מֶּמְשָׁלוֹת עוֹשׂוֹת",
+    "gt_phonemes": "zˈe lˈo hakivˈun hanaχˈon lalˈeχet bˈo ʔavˈal zˈe mˈa ʃehamemʃalˈot ʔosˈot"
+  },
+  "gold_001_line_120": {
+    "before_clean": " הנˈa ʔaχnu meɡˈim leʔeχˈad haχalakˈim hamisubaχˈim basipˈuʁ hazˈa.",
+    "after_clean": "הנˈa ʔaχnu meɡˈim leʔeχˈad haχalakˈim hamisubaχˈim basipˈuʁ hazˈa",
+    "gt_text": "וְֽ|הִ֫נֵּה אֲנַ֫חְנוּ מַגִּיעִים לְֽ|אַחַד הַ|חֲלָקִים הַ|מְּסֻובָּכִים בַּ|סִּיפּוּר הַ|זֶּה",
+    "gt_phonemes": "vehˈine ʔanˈaχnu maɡiʔˈim leʔeχˈad haχalakˈim hamesubaχˈim basipˈuʁ hazˈe"
+  },
+  "gold_002_line_371": {
+    "before_clean": " עˈim jˈeʃ laχˈem ʃeʔelˈot ʔˈo maχʃavˈot beʔikvˈot hapˈeʁek hazˈe.",
+    "after_clean": "עˈim jˈeʃ laχˈem ʃeʔelˈot ʔˈo maχʃavˈot beʔikvˈot hapˈeʁek hazˈe",
+    "gt_text": "אִם יֵשׁ לָכֶם שְֽׁאֵלוֹת אוֹ מַחֲשָׁבוֹת בְּֽעִקְבוֹת הַ|פֶּ֫רֶק הַ|זֶּה",
+    "gt_phonemes": "ʔˈim jˈeʃ laχˈem ʃeʔelˈot ʔˈo maχʃavˈot beʔikvˈot hapˈeʁek hazˈe"
+  },
+  "gold_008_line_091": {
+    "before_clean": " אגˈן, ʔˈanˈi ʔaɡˈi biʃˈuv ʔˈet haʃnˈem miʃpatˈim haχʁonˈim.",
+    "after_clean": "אגˈן ʔˈanˈi ʔaɡˈi biʃˈuv ʔˈet haʃnˈem miʃpatˈim haχʁonˈim",
+    "gt_text": "הִ֫נֵּה אֲנִי אַגִּיד שׁוּב אֶת הַ|שֵּׁנֵי מִשְׁפָּטִים הָ|אַחֲרוֹנִים",
+    "gt_phonemes": "hˈine ʔanˈi ʔaɡˈid ʃˈuv ʔˈet haʃnˈej miʃpatˈim haʔaχʁonˈim"
+  },
+  "gold_015_line_015": {
+    "before_clean": " haʔˈim zˈe mˈaʃu plˈi vemadinˈa toʁʔˈenet ʃekˈen?",
+    "after_clean": "haʔˈim zˈe mˈaʃu plˈi vemadinˈa toʁʔˈenet ʃekˈen",
+    "gt_text": "הַאִם זֶה מַ֫שֶּׁהוּ פְּלִילִי הַ|מְּֽדִינָה טוֹעֶ֫נֶת שֶׁ|כֵּן",
+    "gt_phonemes": "haʔˈim zˈe mˈaʃehu plilˈi hamedinˈa toʔˈenet ʃekˈen"
+  },
+  "gold_021_line_040": {
+    "before_clean": " hˈu ʔeχˈad mˈi zamˈej hahˈajti kavetikˈim ʃejihjˈeʃ lˈo.",
+    "after_clean": "hˈu ʔeχˈad mˈi zamˈej hahˈajti kavetikˈim ʃejihjˈeʃ lˈo",
+    "gt_text": "הוּא אֶחָד מִיִּיזְּמֵי הַ|הַיְיטֵק הַ|וָּותִיקִים שֶׁ|יֵּשׁ לָנוּ",
+    "gt_phonemes": "hˈu ʔeχˈad mijazamˈej hahˈajtek havatikˈim ʃejˈeʃ lanˈu"
+  },
+  "gold_001_line_069": {
+    "before_clean": " נifnˈe ʃeʔatχˈim, bitˈa ʃtˈim mimˈeno ʃehˈi jatsˈiɡ ʔˈet ʔatsmˈo.",
+    "after_clean": "נifnˈe ʃeʔatχˈim bitˈa ʃtˈim mimˈeno ʃehˈi jatsˈiɡ ʔˈet ʔatsmˈo",
+    "gt_text": "לִפְנֵי שֶׁ|נַּתְחִיל בִּיקַּ֫שְׁתִּי מִמֶּ֫נּוּ שֶׁ|יַּצִּיג אֶת עַצְמוֹ",
+    "gt_phonemes": "lifnˈej ʃenatχˈil bikˈaʃti mimˈeno ʃejatsˈiɡ ʔˈet ʔatsmˈo"
+  },
+  "gold_001_line_348": {
+    "before_clean": " עˈod ʃnˈej haʔelˈele mekˈom χadˈaʃ jikʁˈo lˈo bˈajt.",
+    "after_clean": "עˈod ʃnˈej haʔelˈele mekˈom χadˈaʃ jikʁˈo lˈo bˈajt",
+    "gt_text": "עוֹד שְׁנִיָּיה יִהְיֶה לָהּ מָקוֹם חָדָשׁ לִקְרֹוא לוֹ בַּ֫יִת",
+    "gt_phonemes": "ʔˈod ʃnijˈa jihjˈe lˈa makˈom χadˈaʃ likʁˈo lˈo bˈajit"
+  },
+  "gold_003_line_008": {
+    "before_clean": " bizmˈan ʃehajˈa kˈan hˈu mifɡˈaʃ ʔˈim ʁˈoʃem memʃalˈa.",
+    "after_clean": "bizmˈan ʃehajˈa kˈan hˈu mifɡˈaʃ ʔˈim ʁˈoʃem memʃalˈa",
+    "gt_text": "בִּ|זְמַן שֶׁ|הָיָה כָּאן הוּא נִיפָּגֵשׁ עִם רֹאשׁ הַ|מֶּמְשָׁלָה",
+    "gt_phonemes": "bezmˈan ʃehajˈa kˈan hˈu nifɡˈaʃ ʔˈim ʁˈoʃ hamemʃalˈa"
+  }
+}

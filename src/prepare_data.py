@@ -1,7 +1,7 @@
 """
 uv run hf download thewh1teagle/phonikud-experiments \
   --repo-type model \
-  --include "comparison/audio/saspeech_nakdimon/*" \
+  --include "comparison/audio/*" \
   --local-dir ./audio-data
 """
 def main():
