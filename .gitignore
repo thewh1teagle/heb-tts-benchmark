@@ -11,3 +11,4 @@ audio-data/
 whisper-heb-ipa-ct2/
 *.onnx
 *.wav
+tts-model.config.json
