@@ -19,7 +19,9 @@ import threading
 # Thread-local storage for models
 thread_local = threading.local()
 
-def get_device():
+def get_device(args):
+    if args.device:
+        return args.device
     if torch.cuda.is_available():
         return "cuda"
     elif torch.backends.mps.is_available():
@@ -72,9 +74,11 @@ def main():
                         help="Overwrite existing transcript files instead of skipping")
     parser.add_argument("--workers", type=int, default=4,
                         help="Number of parallel workers for transcription (default: 4)")
+    parser.add_argument("--device", type=str, default=None,
+                        help="Device to use for transcription (default: auto-detect)")
     args = parser.parse_args()
 
-    device = get_device()
+    device = get_device(args)
     print(f"Using device: {device}")
     print(f"Using {args.workers} parallel workers")
 

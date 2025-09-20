@@ -10,3 +10,4 @@ audio-data/
 *.bin
 whisper-heb-ipa-ct2/
 *.onnx
+*.wav
