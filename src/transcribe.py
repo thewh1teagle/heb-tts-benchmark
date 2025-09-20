@@ -4,7 +4,7 @@ The format of the input directoy should be subfolders with wav files (each subfo
 
 git clone https://huggingface.co/thewh1teagle/phonikud-experiments
 uv run hf download --repo-type model thewh1teagle/whisper-heb-ipa-ct2 --local-dir ./whisper-heb-ipa-ct2
-uv run src/transcribe.py ./phonikud-experiments/comparison/audio/ ./transcripts
+uv run src/transcribe.py ./phonikud_saspeech_piper1 ./transcripts
 """
 import argparse
 import torch
@@ -29,10 +29,10 @@ def get_device(args):
     else:
         return "cpu"
 
-def get_model(model_path, device):
+def get_model(args):
     """Get or create a model for the current thread"""
     if not hasattr(thread_local, 'model'):
-        thread_local.model = WhisperModel(model_path, device=device, compute_type="int8_float16")
+        thread_local.model = WhisperModel(args.model, device=args.device, compute_type=args.compute_type)
     return thread_local.model
 
 def get_input_folders(input_dir):
@@ -50,10 +50,10 @@ def get_input_folders(input_dir):
     
     return folders
 
-def transcribe_file(wav_file, model_path, device):
+def transcribe_file(wav_file, args):
     """Worker function to transcribe a single file"""
     try:
-        model = get_model(model_path, device)
+        model = get_model(args)
         segments, info = model.transcribe(str(wav_file))
         # Combine all segments into a single text
         text = " ".join([segment.text for segment in segments])
@@ -80,8 +80,8 @@ def main():
                         help="Compute type for transcription (default: int8_float16)")
     args = parser.parse_args()
 
-    device = get_device(args)
-    print(f"Using device: {device}")
+    args.device = get_device(args)
+    print(f"Using device: {args.device}")
     print(f"Using {args.workers} parallel workers")
 
     input_dir = Path(args.input)
@@ -122,7 +122,7 @@ def main():
         with ThreadPoolExecutor(max_workers=args.workers) as executor:
             # Submit all tasks
             future_to_file = {
-                executor.submit(transcribe_file, wav_file, args.model, device): wav_file 
+                executor.submit(transcribe_file, wav_file, args): wav_file 
                 for wav_file in wav_files
             }
             

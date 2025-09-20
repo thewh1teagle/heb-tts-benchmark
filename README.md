@@ -45,4 +45,4 @@ Hand annotated IPA transcripts of random 100 samples from SASPEECH dataset.
 
 ## Gotchas
 
-on macOS you may want to run the `transcribe.py` with `--compute-type int8_float16` to avoid errors.
+on macOS you may want to run the `transcribe.py` with `--compute-type int8_float32` to avoid errors.

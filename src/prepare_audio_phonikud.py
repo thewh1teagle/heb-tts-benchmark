@@ -37,7 +37,7 @@ def main():
         phonemes = row['text_phonemized']
         
         # Create audio from phonemes
-        samples, sample_rate = piper.create(phonemes, is_phonemes=True)
+        samples, sample_rate = piper.create(phonemes, is_phonemes=True, length_scale=1.4)
         
         # Save audio file using id column
         filename = f"{row['id']}.wav"
