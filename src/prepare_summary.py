@@ -1,3 +1,7 @@
+"""
+uv run src/prepare_summary.py ./transcripts_eval1 ./web/summary.json
+"""
+
 from glob import glob
 import pandas as pd
 import os
@@ -10,6 +14,7 @@ def fn2name(fn):
 def main():
     parser = argparse.ArgumentParser(description='Create summary JSON from transcript evaluation results')
     parser.add_argument('input_dir', help='Directory containing JSON transcript evaluation files')
+    parser.add_argument('output_file', help='Output file to save summary JSON', default='summary.json')
     args = parser.parse_args()
     
     # Load data from JSON files
@@ -62,10 +67,10 @@ def main():
         summary_data['models'].append(model_data)
     
     # Save summary JSON
-    with open('summary.json', 'w') as f:
+    with open(args.output_file, 'w') as f:
         json.dump(summary_data, f, indent=2)
     
-    print(f"Summary saved to summary.json")
+    print(f"Summary saved to {args.output_file}")
     print(f"Total models: {len(df)}")
     print(f"Our models: {df['is_ours'].sum()}")
     print(f"Other models: {(~df['is_ours']).sum()}")
