@@ -18,6 +18,7 @@ from tqdm import tqdm
 def main():
     parser = argparse.ArgumentParser(description="Generate audio from phonemized text in CSV")
     parser.add_argument("output", type=str, help="Output folder to save audio files")
+    parser.add_argument("--model", type=str, help="Model path")
     args = parser.parse_args()
     
     # Create output directory
@@ -28,7 +29,7 @@ def main():
     df = pd.read_csv('saspeech_100_gold_synthesis.csv')
     
     # Initialize Piper TTS
-    piper = Piper('tts-model.onnx', 'tts-model.config.json')
+    piper = Piper(args.model, 'tts-model.config.json')
     
     print(f"Processing {len(df)} texts from CSV...")
     
