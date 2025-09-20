@@ -150,6 +150,18 @@ wheels = [
 ]
 
 [[package]]
+name = "colorlog"
+version = "6.9.0"
+source = { registry = "https://pypi.org/simple" }
+dependencies = [
+    { name = "colorama", marker = "sys_platform == 'win32'" },
+]
+sdist = { url = "https://files.pythonhosted.org/packages/d3/7a/359f4d5df2353f26172b3cc39ea32daa39af8de522205f512f458923e677/colorlog-6.9.0.tar.gz", hash = "sha256:bfba54a1b93b94f54e1f4fe48395725a3d92fd2a4af702f6bd70946bdc0c6ac2", size = 16624, upload-time = "2024-10-29T18:34:51.011Z" }
+wheels = [
+    { url = "https://files.pythonhosted.org/packages/e3/51/9b208e85196941db2f0654ad0357ca6388ab3ed67efdbfc799f35d1f83aa/colorlog-6.9.0-py3-none-any.whl", hash = "sha256:5906e71acd67cb07a71e779c47c4bcb45fb8c2993eebe9e5adcd6a6f1b283eff", size = 11424, upload-time = "2024-10-29T18:34:49.815Z" },
+]
+
+[[package]]
 name = "contourpy"
 version = "1.3.3"
 source = { registry = "https://pypi.org/simple" }
@@ -245,6 +257,12 @@ sdist = { url = "https://files.pythonhosted.org/packages/a9/95/a3dbbb5028f35eafb
 wheels = [
     { url = "https://files.pythonhosted.org/packages/e7/05/c19819d5e3d95294a6f5947fb9b9629efb316b96de511b418c53d245aae6/cycler-0.12.1-py3-none-any.whl", hash = "sha256:85cef7cff222d8644161529808465972e51340599459b8ac3ccbac5a854e0d30", size = 8321, upload-time = "2023-10-07T05:32:16.783Z" },
 ]
+
+[[package]]
+name = "docopt"
+version = "0.6.2"
+source = { registry = "https://pypi.org/simple" }
+sdist = { url = "https://files.pythonhosted.org/packages/a2/55/8f8cab2afd404cf578136ef2cc5dfb50baa1761b68c9da1fb1e4eed343c9/docopt-0.6.2.tar.gz", hash = "sha256:49b3a825280bd66b3aa83585ef59c4a8c82f2c8a522dbe754a8bc8d08c85c491", size = 25901, upload-time = "2014-06-16T11:18:57.406Z" }
 
 [[package]]
 name = "faster-whisper"
@@ -344,6 +362,8 @@ dependencies = [
     { name = "kaleido" },
     { name = "matplotlib" },
     { name = "pandas" },
+    { name = "phonikud" },
+    { name = "phonikud-onnx" },
     { name = "plotly" },
     { name = "seaborn" },
     { name = "torch" },
@@ -361,6 +381,8 @@ requires-dist = [
     { name = "kaleido", specifier = ">=1.1.0" },
     { name = "matplotlib", specifier = ">=3.10.6" },
     { name = "pandas", specifier = ">=2.3.2" },
+    { name = "phonikud", specifier = ">=0.4.1" },
+    { name = "phonikud-onnx", specifier = ">=1.0.6" },
     { name = "plotly", specifier = ">=6.3.0" },
     { name = "seaborn", specifier = ">=0.13.0" },
     { name = "torch", specifier = ">=2.8.0" },
@@ -674,6 +696,18 @@ wheels = [
 ]
 
 [[package]]
+name = "num2words"
+version = "0.5.14"
+source = { registry = "https://pypi.org/simple" }
+dependencies = [
+    { name = "docopt" },
+]
+sdist = { url = "https://files.pythonhosted.org/packages/f6/58/ad645bd38b4b648eb2fc2ba1b909398e54eb0cbb6a7dbd2b4953e38c9621/num2words-0.5.14.tar.gz", hash = "sha256:b066ec18e56b6616a3b38086b5747daafbaa8868b226a36127e0451c0cf379c6", size = 218213, upload-time = "2024-12-17T20:17:10.191Z" }
+wheels = [
+    { url = "https://files.pythonhosted.org/packages/d6/5b/545e9267a1cc080c8a1be2746113a063e34bcdd0f5173fd665a5c13cb234/num2words-0.5.14-py3-none-any.whl", hash = "sha256:1c8e5b00142fc2966fd8d685001e36c4a9911e070d1b120e1beb721fa1edb33d", size = 163525, upload-time = "2024-12-17T20:17:06.074Z" },
+]
+
+[[package]]
 name = "numpy"
 version = "2.3.3"
 source = { registry = "https://pypi.org/simple" }
@@ -977,6 +1011,33 @@ wheels = [
     { url = "https://files.pythonhosted.org/packages/15/d5/f0486090eb18dd8710bf60afeaf638ba6817047c0c8ae5c6a25598665609/pandas-2.3.2-cp313-cp313t-manylinux_2_17_x86_64.manylinux2014_x86_64.whl", hash = "sha256:b37205ad6f00d52f16b6d09f406434ba928c1a1966e2771006a9033c736d30d2", size = 11883216, upload-time = "2025-08-21T10:27:59.302Z" },
     { url = "https://files.pythonhosted.org/packages/10/86/692050c119696da19e20245bbd650d8dfca6ceb577da027c3a73c62a047e/pandas-2.3.2-cp313-cp313t-musllinux_1_2_aarch64.whl", hash = "sha256:837248b4fc3a9b83b9c6214699a13f069dc13510a6a6d7f9ba33145d2841a012", size = 12699743, upload-time = "2025-08-21T10:28:02.447Z" },
     { url = "https://files.pythonhosted.org/packages/cd/d7/612123674d7b17cf345aad0a10289b2a384bff404e0463a83c4a3a59d205/pandas-2.3.2-cp313-cp313t-musllinux_1_2_x86_64.whl", hash = "sha256:d2c3554bd31b731cd6490d94a28f3abb8dd770634a9e06eb6d2911b9827db370", size = 13186141, upload-time = "2025-08-21T10:28:05.377Z" },
+]
+
+[[package]]
+name = "phonikud"
+version = "0.4.1"
+source = { registry = "https://pypi.org/simple" }
+dependencies = [
+    { name = "colorlog" },
+    { name = "num2words" },
+    { name = "regex" },
+]
+sdist = { url = "https://files.pythonhosted.org/packages/65/a7/e9c23eab2954ac05eaac8377b740e4c193205b9b0b8502c8f4fd41bef584/phonikud-0.4.1.tar.gz", hash = "sha256:f02b4acacfd7ca648d1814c2f62c1881d7fd1d046d79a813eb96f4b45896a0a9", size = 158174, upload-time = "2025-09-02T04:25:40.82Z" }
+wheels = [
+    { url = "https://files.pythonhosted.org/packages/85/4f/c4f5b8240565d54dd4c14e1956aa126969b3a1fe3bce82a147452433489e/phonikud-0.4.1-py3-none-any.whl", hash = "sha256:55fe3545d91448b0e5499154d44966ef363273e8d3131705ffa0b70d29db1e98", size = 23697, upload-time = "2025-09-02T04:25:39.561Z" },
+]
+
+[[package]]
+name = "phonikud-onnx"
+version = "1.0.6"
+source = { registry = "https://pypi.org/simple" }
+dependencies = [
+    { name = "onnxruntime" },
+    { name = "tokenizers" },
+]
+sdist = { url = "https://files.pythonhosted.org/packages/33/d7/27801e54beb198fe31fddd9f57da758cf2c53090d45513d997bc935738a7/phonikud_onnx-1.0.6.tar.gz", hash = "sha256:3e2322fa95bf25055dc5a2454298cf127db164e34d5fa4a4c03fb77b027fac7e", size = 6672, upload-time = "2025-09-07T13:11:50.849Z" }
+wheels = [
+    { url = "https://files.pythonhosted.org/packages/e3/c3/790e0e9500f20db7c09cc46d06682f8a17693f16c789c773cea0533da2e3/phonikud_onnx-1.0.6-py3-none-any.whl", hash = "sha256:68ec3862fb48394d77b160ebbc5c30106f5502672eaa575db50c5c1e48aa862c", size = 5064, upload-time = "2025-09-07T13:11:49.399Z" },
 ]
 
 [[package]]
