@@ -21,12 +21,13 @@ git clone https://github.com/thewh1teagle/heb-tts-benchmark
 cd heb-tts-benchmark
 uv run hf download --repo-type model thewh1teagle/whisper-heb-ipa-ct2 --local-dir ./whisper-heb-ipa-ct2
 uv run src/transcribe.py ./your-model-name ./transcripts
+uv run src/prepare_transcripts.py ./transcripts ./transcripts_cleane
 ```
 
 3. Evaluate the transcription
 
 ```console
-uv run src/prepare_evaluation.py ./transcripts ./transcripts_eval
+uv run src/prepare_evaluation.py ./transcripts_clean ./transcripts_eval
 ```
 
 4. Add the model to the summary
@@ -34,7 +35,7 @@ uv run src/prepare_evaluation.py ./transcripts ./transcripts_eval
 uv run src/prepare_summary.py ./transcripts_eval ./web/summary.json
 ```
 
-Now you can open ./web/index.html with live server to see the results.
+Now you can open ./web/index.html with live server to see the results. (or use `uv run python -m http.server 8000 -d ./web`)
 
 5. Open new PR with your model results 🎉
 
