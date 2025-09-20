@@ -32,7 +32,7 @@ def get_device(args):
 def get_model(model_path, device):
     """Get or create a model for the current thread"""
     if not hasattr(thread_local, 'model'):
-        thread_local.model = WhisperModel(model_path, device=device)
+        thread_local.model = WhisperModel(model_path, device=device, compute_type="int8_float16")
     return thread_local.model
 
 def get_input_folders(input_dir):
@@ -76,6 +76,8 @@ def main():
                         help="Number of parallel workers for transcription (default: 4)")
     parser.add_argument("--device", type=str, default=None,
                         help="Device to use for transcription (default: auto-detect)")
+    parser.add_argument("--compute-type", type=str, default="int8_float16", choices=["int8_float16", "int8_float32"],
+                        help="Compute type for transcription (default: int8_float16)")
     args = parser.parse_args()
 
     device = get_device(args)
