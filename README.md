@@ -17,6 +17,8 @@ See [Phonikud](https://phonikud.github.io) for more information.
 2. Transcribe the wav files to IPA transcripts
 
 ```console
+git clone https://github.com/thewh1teagle/heb-tts-benchmark
+cd heb-tts-benchmark
 uv run hf download --repo-type model thewh1teagle/whisper-heb-ipa-ct2 --local-dir ./whisper-heb-ipa-ct2
 uv run src/transcribe.py ./your-model-name ./transcripts
 ```
