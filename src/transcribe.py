@@ -33,6 +33,21 @@ def get_model(model_path, device):
         thread_local.model = WhisperModel(model_path, device=device, compute_type="int8_float16")
     return thread_local.model
 
+def get_input_folders(input_dir):
+    input_path = Path(input_dir)
+    
+    # If input has wav files directly, use it
+    if list(input_path.glob("*.wav")):
+        return [(input_path, input_path.name)]
+    
+    # Otherwise, find subfolders with wav files
+    folders = []
+    for subfolder in input_path.iterdir():
+        if subfolder.is_dir() and list(subfolder.glob("*.wav")):
+            folders.append((subfolder, subfolder.name))
+    
+    return folders
+
 def transcribe_file(wav_file, model_path, device):
     """Worker function to transcribe a single file"""
     try:
@@ -71,33 +86,31 @@ def main():
     output_dir = Path(args.output)
     output_dir.mkdir(parents=True, exist_ok=True)
 
-    # Find all subfolders in the input directory
-    subfolders = [p for p in input_dir.iterdir() if p.is_dir()]
+    # Get input folders to process (handles both direct wav files and subfolders)
+    input_folders = get_input_folders(input_dir)
     
-    if not subfolders:
-        print(f"No subfolders found in {input_dir}")
+    if not input_folders:
+        print(f"No wav files found in {input_dir} or its subfolders")
         return
 
-    print(f"Found {len(subfolders)} subfolders to process")
-
-    for subfolder in subfolders:
-        print(f"\n📁 Processing subfolder: {subfolder.name}")
+    for folder_path, folder_name in input_folders:
+        print(f"\n📁 Processing folder: {folder_name}")
         
-        # Find all wav files in this subfolder
-        wav_files = list(subfolder.glob("*.wav"))
+        # Find all wav files in this folder
+        wav_files = list(folder_path.glob("*.wav"))
         
         if not wav_files:
-            print(f"No wav files found in {subfolder.name}")
+            print(f"No wav files found in {folder_name}")
             continue
 
         transcripts = {}
-        output_file = output_dir / f"{subfolder.name}.json"
+        output_file = output_dir / f"{folder_name}.json"
         
         if output_file.exists() and not args.overwrite:
-            print(f"⏭️ Skipping {subfolder.name}, {output_file} already exists")
+            print(f"⏭️ Skipping {folder_name}, {output_file} already exists")
             continue
 
-        print(f"Found {len(wav_files)} wav files in {subfolder.name}")
+        print(f"Found {len(wav_files)} wav files in {folder_name}")
 
         # Use ThreadPoolExecutor for parallel transcription
         with ThreadPoolExecutor(max_workers=args.workers) as executor:
@@ -108,7 +121,7 @@ def main():
             }
             
             # Process results with progress bar
-            for future in tqdm(future_to_file, desc=f"Transcribing {subfolder.name}", unit="file"):
+            for future in tqdm(future_to_file, desc=f"Transcribing {folder_name}", unit="file"):
                 filename, text = future.result()
                 if text.startswith("ERROR:"):
                     print(f"\nFailed to transcribe {filename}: {text[7:]}")  # Remove "ERROR: " prefix
@@ -119,7 +132,7 @@ def main():
         with open(output_file, "w", encoding="utf-8") as f:
             json.dump(transcripts, f, ensure_ascii=False, indent=2, sort_keys=True)
 
-        print(f"✅ Transcriptions for {subfolder.name} saved to {output_file}")
+        print(f"✅ Transcriptions for {folder_name} saved to {output_file}")
 
 
 if __name__ == "__main__":
