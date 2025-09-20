@@ -3,7 +3,7 @@
     "total_models": 17,
     "our_models_count": 8,
     "other_models_count": 9,
-    "input_directory": "./transcripts_eval1"
+    "input_directory": "./transcripts_eval"
   },
   "models": [
     {

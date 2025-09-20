@@ -1,5 +1,7 @@
 """
-uv run src/prepare_summary.py ./transcripts_eval1 ./web/summary.json
+Create summary JSON from transcript evaluation results.
+
+uv run src/prepare_summary.py ./transcripts_eval ./web/summary.json
 """
 
 from glob import glob

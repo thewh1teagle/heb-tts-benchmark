@@ -1,4 +1,9 @@
 
+"""
+Prepare evaluation results for summary.
+
+uv run src/prepare_evaluation.py ./transcripts_clean ./transcripts_eval
+"""
 import argparse
 import json
 from pathlib import Path

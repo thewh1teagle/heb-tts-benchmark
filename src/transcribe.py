@@ -1,4 +1,5 @@
 """
+Transcribe wav files to IPA transcripts.
 The format of the input directoy should be subfolders with wav files (each subfolder is different model)
 
 git clone https://huggingface.co/thewh1teagle/phonikud-experiments

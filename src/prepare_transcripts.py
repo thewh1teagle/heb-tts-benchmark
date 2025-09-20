@@ -1,4 +1,6 @@
 """
+Post process transcripts to remove punctuation and clean up multiple spaces.
+
 uv run src/prepare_transcripts.py ./transcripts ./transcripts_cleaned
 """
 import json
