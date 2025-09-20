@@ -3,7 +3,7 @@
     "total_models": 18,
     "our_models_count": 9,
     "other_models_count": 9,
-    "input_directory": "./transcripts_eval1"
+    "input_directory": "./transcripts_eval"
   },
   "models": [
     {
@@ -32,6 +32,14 @@
     },
     {
       "rank": 4,
+      "model_name": "mamre-phonikud",
+      "mean_wer": 0.3616,
+      "mean_cer": 0.0937,
+      "model_type": "Our models",
+      "is_ours": true
+    },
+    {
+      "rank": 5,
       "model_name": "piper-phonikud",
       "mean_wer": 0.4093,
       "mean_cer": 0.0978,
@@ -39,7 +47,7 @@
       "is_ours": true
     },
     {
-      "rank": 5,
+      "rank": 6,
       "model_name": "chatterbox-dicta",
       "mean_wer": 0.4564,
       "mean_cer": 0.1109,
@@ -47,20 +55,12 @@
       "is_ours": false
     },
     {
-      "rank": 6,
+      "rank": 7,
       "model_name": "roboshaul_nakdimon",
       "mean_wer": 0.4661,
       "mean_cer": 0.1334,
       "model_type": "Other models",
       "is_ours": false
-    },
-    {
-      "rank": 7,
-      "model_name": "mamre-phonikud",
-      "mean_wer": 0.4741,
-      "mean_cer": 0.1329,
-      "model_type": "Our models",
-      "is_ours": true
     },
     {
       "rank": 8,
