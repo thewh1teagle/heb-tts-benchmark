@@ -8,13 +8,9 @@ OR
 
 git clone https://huggingface.co/thewh1teagle/phonikud-experiments
 
+uv run hf download --repo-type model thewh1teagle/whisper-heb-ipa-ct2 --local-dir ./whisper-heb-ipa-ct2
 uv run src/transcribe.py --input ./phonikud-experiments/comparison/audio/ --output ./transcripts
 
-git clone https://huggingface.co/thewh1teagle/whisper-heb-ipa
-uv run ct2-transformers-converter \
-    --model ./whisper-heb-ipa \
-    --output_dir ./whisper-heb-ipa-ct2 \
-    --quantization int8_float16
 """
 import argparse
 import torch
