@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hebrew TTS Benchmark Results</title>
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            margin: 0;
+            padding: 20px;
+            background-color: #f5f5f5;
+            line-height: 1.6;
+        }
+        
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            background: white;
+            border-radius: 10px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+            overflow: hidden;
+        }
+        
+        .header {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 30px;
+            text-align: center;
+        }
+        
+        .header h1 {
+            margin: 0;
+            font-size: 2.5em;
+            font-weight: 300;
+        }
+        
+        .stats {
+            display: flex;
+            justify-content: space-around;
+            padding: 20px;
+            background: #f8f9fa;
+            border-bottom: 1px solid #dee2e6;
+        }
+        
+        .stat {
+            text-align: center;
+        }
+        
+        .stat-number {
+            font-size: 2em;
+            font-weight: bold;
+            color: #495057;
+        }
+        
+        .stat-label {
+            color: #6c757d;
+            font-size: 0.9em;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+        }
+        
+        .table-container {
+            padding: 20px;
+            overflow-x: auto;
+        }
+        
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 0;
+        }
+        
+        th {
+            background: #343a40;
+            color: white;
+            padding: 15px 10px;
+            text-align: left;
+            font-weight: 600;
+            text-transform: uppercase;
+            font-size: 0.85em;
+            letter-spacing: 0.5px;
+        }
+        
+        td {
+            padding: 12px 10px;
+            border-bottom: 1px solid #dee2e6;
+        }
+        
+        tr:hover {
+            background-color: #f8f9fa;
+        }
+        
+        .rank {
+            font-weight: bold;
+            font-size: 1.1em;
+            text-align: center;
+            width: 60px;
+        }
+        
+        .model-name {
+            font-family: 'Monaco', 'Menlo', monospace;
+            font-size: 0.9em;
+            max-width: 300px;
+            word-break: break-word;
+        }
+        
+        .our-model {
+            background-color: #fff5f5;
+            border-left: 4px solid #e53e3e;
+        }
+        
+        .other-model {
+            background-color: #f0f8ff;
+            border-left: 4px solid #3182ce;
+        }
+        
+        .metric {
+            font-family: 'Monaco', 'Menlo', monospace;
+            text-align: right;
+            font-weight: 500;
+        }
+        
+        .best-score {
+            background-color: #f0fff4;
+            font-weight: bold;
+            color: #22543d;
+        }
+        
+        .model-type {
+            font-size: 0.8em;
+            padding: 4px 8px;
+            border-radius: 12px;
+            font-weight: 500;
+            text-align: center;
+        }
+        
+        .our-type {
+            background-color: #fed7d7;
+            color: #c53030;
+        }
+        
+        .other-type {
+            background-color: #bee3f8;
+            color: #2b6cb0;
+        }
+        
+        .loading {
+            text-align: center;
+            padding: 50px;
+            color: #6c757d;
+        }
+        
+        .error {
+            text-align: center;
+            padding: 50px;
+            color: #dc3545;
+        }
+        
+        @media (max-width: 768px) {
+            .stats {
+                flex-direction: column;
+                gap: 15px;
+            }
+            
+            .header h1 {
+                font-size: 2em;
+            }
+            
+            table {
+                font-size: 0.9em;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>Hebrew TTS Benchmark Results</h1>
+            <p>Comprehensive evaluation of Text-to-Speech models for Hebrew</p>
+        </div>
+        
+        <div class="stats" id="stats">
+            <div class="stat">
+                <div class="stat-number" id="total-models">-</div>
+                <div class="stat-label">Total Models</div>
+            </div>
+            <div class="stat">
+                <div class="stat-number" id="our-models">-</div>
+                <div class="stat-label">Our Models</div>
+            </div>
+            <div class="stat">
+                <div class="stat-number" id="other-models">-</div>
+                <div class="stat-label">Other Models</div>
+            </div>
+        </div>
+        
+        <div class="table-container">
+            <div id="loading" class="loading">Loading benchmark results...</div>
+            <div id="error" class="error" style="display: none;">
+                Error loading data. Please make sure summary.json exists and is valid.
+            </div>
+            
+            <table id="results-table" style="display: none;">
+                <thead>
+                    <tr>
+                        <th>Rank</th>
+                        <th>Model Name</th>
+                        <th>Type</th>
+                        <th>WER</th>
+                        <th>CER</th>
+                    </tr>
+                </thead>
+                <tbody id="table-body">
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+    <script>
+        async function loadData() {
+            try {
+                const response = await fetch('summary.json');
+                if (!response.ok) {
+                    throw new Error('Failed to load summary.json');
+                }
+                const data = await response.json();
+                displayData(data);
+            } catch (error) {
+                console.error('Error loading data:', error);
+                document.getElementById('loading').style.display = 'none';
+                document.getElementById('error').style.display = 'block';
+            }
+        }
+        
+        function displayData(data) {
+            // Update stats
+            document.getElementById('total-models').textContent = data.metadata.total_models;
+            document.getElementById('our-models').textContent = data.metadata.our_models_count;
+            document.getElementById('other-models').textContent = data.metadata.other_models_count;
+            
+            // Find best scores for highlighting
+            const bestWER = Math.min(...data.models.map(m => m.mean_wer));
+            const bestCER = Math.min(...data.models.map(m => m.mean_cer));
+            
+            // Populate table
+            const tbody = document.getElementById('table-body');
+            tbody.innerHTML = '';
+            
+            data.models.forEach(model => {
+                const row = document.createElement('tr');
+                row.className = model.is_ours ? 'our-model' : 'other-model';
+                
+                const werClass = model.mean_wer === bestWER ? 'metric best-score' : 'metric';
+                const cerClass = model.mean_cer === bestCER ? 'metric best-score' : 'metric';
+                const typeClass = model.is_ours ? 'model-type our-type' : 'model-type other-type';
+                
+                row.innerHTML = `
+                    <td class="rank">${model.rank}</td>
+                    <td class="model-name">${model.model_name}</td>
+                    <td><span class="${typeClass}">${model.model_type}</span></td>
+                    <td class="${werClass}">${model.mean_wer.toFixed(4)}</td>
+                    <td class="${cerClass}">${model.mean_cer.toFixed(4)}</td>
+                `;
+                
+                tbody.appendChild(row);
+            });
+            
+            // Show table and hide loading
+            document.getElementById('loading').style.display = 'none';
+            document.getElementById('results-table').style.display = 'table';
+        }
+        
+        // Load data when page loads
+        document.addEventListener('DOMContentLoaded', loadData);
+    </script>
+</body>
+</html>

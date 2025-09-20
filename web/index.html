@@ -1,0 +1,454 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hebrew TTS Benchmark - Scatter Plot</title>
+    <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            margin: 0;
+            padding: 20px;
+            background-color: #f5f5f5;
+            line-height: 1.6;
+        }
+        
+        .container {
+            max-width: 1400px;
+            margin: 0 auto;
+            background: white;
+            border-radius: 10px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+            overflow: hidden;
+        }
+        
+        .header {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 30px;
+            text-align: center;
+        }
+        
+        .header h1 {
+            margin: 0;
+            font-size: 2.5em;
+            font-weight: 300;
+        }
+        
+        .header-buttons {
+            margin-top: 20px;
+        }
+        
+        .header-btn {
+            display: inline-block;
+            margin: 0 10px;
+            padding: 10px 20px;
+            background: rgba(255, 255, 255, 0.2);
+            color: white;
+            text-decoration: none;
+            border-radius: 25px;
+            border: 2px solid rgba(255, 255, 255, 0.3);
+            font-weight: 500;
+            transition: all 0.3s ease;
+        }
+        
+        .header-btn:hover {
+            background: rgba(255, 255, 255, 0.3);
+            border-color: rgba(255, 255, 255, 0.5);
+            transform: translateY(-2px);
+            box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+        }
+        
+        .stats {
+            display: flex;
+            justify-content: space-around;
+            padding: 20px;
+            background: #f8f9fa;
+            border-bottom: 1px solid #dee2e6;
+        }
+        
+        .stat {
+            text-align: center;
+        }
+        
+        .stat-number {
+            font-size: 2em;
+            font-weight: bold;
+            color: #495057;
+        }
+        
+        .stat-label {
+            color: #6c757d;
+            font-size: 0.9em;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+        }
+        
+        .plot-container {
+            padding: 20px;
+            height: 800px;
+            position: relative;
+        }
+        
+        .model-table {
+            position: absolute;
+            bottom: 20px;
+            right: 20px;
+            background: rgba(255, 255, 255, 0.95);
+            border: 1px solid #dee2e6;
+            border-radius: 8px;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+            max-height: 400px;
+            max-width: 350px;
+            overflow-y: auto;
+            z-index: 1000;
+            font-size: 12px;
+        }
+        
+        .model-table table {
+            margin: 0;
+            border-collapse: collapse;
+            width: 100%;
+        }
+        
+        .model-table th {
+            background: #f8f9fa;
+            padding: 8px 10px;
+            font-size: 11px;
+            font-weight: 600;
+            border-bottom: 1px solid #dee2e6;
+            text-align: left;
+        }
+        
+        .model-table td {
+            padding: 6px 10px;
+            border-bottom: 1px solid #f1f3f4;
+            font-family: 'Monaco', 'Menlo', monospace;
+            font-size: 11px;
+        }
+        
+        .model-table tr:hover {
+            background-color: #f8f9fa;
+        }
+        
+        .model-table .rank {
+            text-align: center;
+            font-weight: bold;
+            width: 30px;
+        }
+        
+        .model-table .model-name {
+            max-width: 200px;
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+        }
+        
+        .model-table .metric {
+            text-align: right;
+            width: 60px;
+        }
+        
+        .model-table .our-model-row {
+            background-color: #fff5f5;
+            border-left: 3px solid #e53e3e;
+        }
+        
+        .model-table .other-model-row {
+            background-color: #f0f8ff;
+            border-left: 3px solid #3182ce;
+        }
+        
+        .loading {
+            text-align: center;
+            padding: 50px;
+            color: #6c757d;
+        }
+        
+        .error {
+            text-align: center;
+            padding: 50px;
+            color: #dc3545;
+        }
+        
+        .controls {
+            padding: 20px;
+            background: #f8f9fa;
+            border-bottom: 1px solid #dee2e6;
+            text-align: center;
+        }
+        
+        .legend-info {
+            display: inline-block;
+            margin: 0 20px;
+            font-size: 0.9em;
+        }
+        
+        .legend-dot {
+            display: inline-block;
+            width: 12px;
+            height: 12px;
+            border-radius: 50%;
+            margin-right: 8px;
+            vertical-align: middle;
+        }
+        
+        .our-dot {
+            background-color: #e53e3e;
+        }
+        
+        .other-dot {
+            background-color: #3182ce;
+        }
+        
+        @media (max-width: 768px) {
+            .stats {
+                flex-direction: column;
+                gap: 15px;
+            }
+            
+            .header h1 {
+                font-size: 2em;
+            }
+            
+            .plot-container {
+                height: 600px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>Hebrew TTS Benchmark - Performance Scatter Plot</h1>
+            <p>Word Error Rate vs Character Error Rate comparison</p>
+            <div class="header-buttons">
+                <a href="https://phonikud.github.io" target="_blank" class="header-btn">
+                    🌐 Phonikud Project
+                </a>
+                <a href="https://github.com/thewh1teagle/heb-tts-benchmark" target="_blank" class="header-btn">
+                    📊 Benchmark Repository
+                </a>
+            </div>
+        </div>
+        
+        <div class="stats" id="stats">
+            <div class="stat">
+                <div class="stat-number" id="total-models">-</div>
+                <div class="stat-label">Total Models</div>
+            </div>
+            <div class="stat">
+                <div class="stat-number" id="our-models">-</div>
+                <div class="stat-label">Our Models</div>
+            </div>
+            <div class="stat">
+                <div class="stat-number" id="other-models">-</div>
+                <div class="stat-label">Other Models</div>
+            </div>
+        </div>
+        
+        <div class="controls">
+            <div class="legend-info">
+                <span class="legend-dot our-dot"></span>
+                Our Models
+            </div>
+            <div class="legend-info">
+                <span class="legend-dot other-dot"></span>
+                Other Models
+            </div>
+        </div>
+        
+        <div class="plot-container">
+            <div id="loading" class="loading">Loading scatter plot...</div>
+            <div id="scatter-plot" style="width: 100%; height: 100%;"></div>
+            
+            <div class="model-table" id="model-table">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>#</th>
+                            <th>Model</th>
+                            <th>WER</th>
+                            <th>CER</th>
+                        </tr>
+                    </thead>
+                    <tbody id="table-body">
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        // Embedded actual data from summary.json
+        const actualData = {
+            "metadata": {
+                "total_models": 17,
+                "our_models_count": 8,
+                "other_models_count": 9,
+                "input_directory": "transcripts_eval1"
+            },
+            "models": [
+                {"rank": 1, "model_name": "gemini_unvocalized", "mean_wer": 0.2932, "mean_cer": 0.0632, "model_type": "Other models", "is_ours": false},
+                {"rank": 2, "model_name": "openai_unvocalized", "mean_wer": 0.3236, "mean_cer": 0.0782, "model_type": "Other models", "is_ours": false},
+                {"rank": 3, "model_name": "phonikud_stts2", "mean_wer": 0.3298, "mean_cer": 0.0769, "model_type": "Our models", "is_ours": true},
+                {"rank": 4, "model_name": "piper-phonikud", "mean_wer": 0.4093, "mean_cer": 0.0978, "model_type": "Our models", "is_ours": true},
+                {"rank": 5, "model_name": "chatterbox-dicta", "mean_wer": 0.4564, "mean_cer": 0.1109, "model_type": "Other models", "is_ours": false},
+                {"rank": 6, "model_name": "roboshaul_nakdimon", "mean_wer": 0.4661, "mean_cer": 0.1334, "model_type": "Other models", "is_ours": false},
+                {"rank": 7, "model_name": "mamre-phonikud", "mean_wer": 0.4741, "mean_cer": 0.1329, "model_type": "Our models", "is_ours": true},
+                {"rank": 8, "model_name": "phonikud_enhanced_epoch=5159-step=3145742", "mean_wer": 0.4959, "mean_cer": 0.1324, "model_type": "Our models", "is_ours": true},
+                {"rank": 9, "model_name": "zonus-phonikud", "mean_wer": 0.5116, "mean_cer": 0.1697, "model_type": "Our models", "is_ours": true},
+                {"rank": 10, "model_name": "vocalized_mock_epoch=5159-step=3145742", "mean_wer": 0.5436, "mean_cer": 0.1457, "model_type": "Our models", "is_ours": true},
+                {"rank": 11, "model_name": "roboshaul_dicta", "mean_wer": 0.5761, "mean_cer": 0.1785, "model_type": "Other models", "is_ours": false},
+                {"rank": 12, "model_name": "phonikud_vocalized_epoch=5159-step=3145742", "mean_wer": 0.5836, "mean_cer": 0.1582, "model_type": "Our models", "is_ours": true},
+                {"rank": 13, "model_name": "mms_nakdimon", "mean_wer": 0.645, "mean_cer": 0.1967, "model_type": "Other models", "is_ours": false},
+                {"rank": 14, "model_name": "hebtts_unvocalized", "mean_wer": 0.6655, "mean_cer": 0.2233, "model_type": "Other models", "is_ours": false},
+                {"rank": 15, "model_name": "saspeech_nakdimon", "mean_wer": 0.6697, "mean_cer": 0.2025, "model_type": "Other models", "is_ours": false},
+                {"rank": 16, "model_name": "unvocalized_mock_epoch=5159-step=3145742", "mean_wer": 0.7153, "mean_cer": 0.2419, "model_type": "Our models", "is_ours": true},
+                {"rank": 17, "model_name": "lothm_unvocalized", "mean_wer": 0.7848, "mean_cer": 0.3978, "model_type": "Other models", "is_ours": false}
+            ]
+        };
+
+        function loadData() {
+            // Use embedded data directly (no need to fetch JSON)
+            displayScatterPlot(actualData);
+        }
+        
+        function displayScatterPlot(data) {
+            // Update stats
+            document.getElementById('total-models').textContent = data.metadata.total_models;
+            document.getElementById('our-models').textContent = data.metadata.our_models_count;
+            document.getElementById('other-models').textContent = data.metadata.other_models_count;
+            
+            // Calculate axis ranges first (needed for annotations)
+            const allWER = data.models.map(m => m.mean_wer);
+            const allCER = data.models.map(m => m.mean_cer);
+            
+            // Separate our models from others
+            const ourModels = data.models.filter(m => m.is_ours);
+            const otherModels = data.models.filter(m => !m.is_ours);
+            
+            // Create traces with only markers (no text labels to avoid overlap)
+            const ourTrace = {
+                x: ourModels.map(m => m.mean_wer),
+                y: ourModels.map(m => m.mean_cer),
+                text: ourModels.map(m => m.model_name),
+                mode: 'markers',
+                type: 'scatter',
+                name: 'Our Models',
+                marker: {
+                    color: '#e53e3e',
+                    size: 15,
+                    line: {
+                        color: '#c53030',
+                        width: 2
+                    }
+                },
+                hovertemplate: '<b>%{text}</b><br>' +
+                              'WER: %{x:.4f}<br>' +
+                              'CER: %{y:.4f}<br>' +
+                              '<extra>Our Model</extra>'
+            };
+            
+            const otherTrace = {
+                x: otherModels.map(m => m.mean_wer),
+                y: otherModels.map(m => m.mean_cer),
+                text: otherModels.map(m => m.model_name),
+                mode: 'markers',
+                type: 'scatter',
+                name: 'Other Models',
+                marker: {
+                    color: '#3182ce',
+                    size: 15,
+                    line: {
+                        color: '#2b6cb0',
+                        width: 2
+                    }
+                },
+                hovertemplate: '<b>%{text}</b><br>' +
+                              'WER: %{x:.4f}<br>' +
+                              'CER: %{y:.4f}<br>' +
+                              '<extra>Other Model</extra>'
+            };
+            
+            // Populate the table
+            const tableBody = document.getElementById('table-body');
+            tableBody.innerHTML = '';
+            
+            data.models.forEach(model => {
+                const row = document.createElement('tr');
+                row.className = model.is_ours ? 'our-model-row' : 'other-model-row';
+                
+                row.innerHTML = `
+                    <td class="rank">${model.rank}</td>
+                    <td class="model-name" title="${model.model_name}">${model.model_name}</td>
+                    <td class="metric">${model.mean_wer.toFixed(3)}</td>
+                    <td class="metric">${model.mean_cer.toFixed(3)}</td>
+                `;
+                
+                tableBody.appendChild(row);
+            });
+            
+            // Calculate axis ranges with very large padding to prevent overlap
+            const werRange = Math.max(...allWER) - Math.min(...allWER);
+            const cerRange = Math.max(...allCER) - Math.min(...allCER);
+            
+            const layout = {
+                title: {
+                    text: 'TTS Model Performance: WER vs CER',
+                    font: { size: 20, color: '#2d3748' }
+                },
+                xaxis: {
+                    title: 'Mean WER (Word Error Rate)',
+                    titlefont: { size: 14 },
+                    range: [
+                        Math.min(...allWER) - werRange * 0.8,
+                        Math.max(...allWER) + werRange * 0.8
+                    ],
+                    gridcolor: '#e2e8f0',
+                    zerolinecolor: '#cbd5e0'
+                },
+                yaxis: {
+                    title: 'Mean CER (Character Error Rate)',
+                    titlefont: { size: 14 },
+                    range: [
+                        Math.min(...allCER) - cerRange * 0.8,
+                        Math.max(...allCER) + cerRange * 0.8
+                    ],
+                    gridcolor: '#e2e8f0',
+                    zerolinecolor: '#cbd5e0'
+                },
+                plot_bgcolor: '#ffffff',
+                paper_bgcolor: '#ffffff',
+                font: { family: 'Arial, sans-serif' },
+                legend: {
+                    x: 0.02,
+                    y: 0.98,
+                    bgcolor: 'rgba(255,255,255,0.8)',
+                    bordercolor: '#e2e8f0',
+                    borderwidth: 1
+                },
+                hovermode: 'closest',
+                margin: { t: 60, r: 40, b: 60, l: 60 }
+            };
+            
+            const config = {
+                responsive: true,
+                displayModeBar: true,
+                modeBarButtonsToRemove: ['pan2d', 'lasso2d', 'select2d'],
+                displaylogo: false
+            };
+            
+            // Hide loading message first
+            document.getElementById('loading').style.display = 'none';
+            
+            // Create the plot
+            Plotly.newPlot('scatter-plot', [otherTrace, ourTrace], layout, config);
+        }
+        
+        // Load data when page loads
+        document.addEventListener('DOMContentLoaded', loadData);
+    </script>
+</body>
+</html>
