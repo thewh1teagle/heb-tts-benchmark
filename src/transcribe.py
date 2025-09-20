@@ -9,8 +9,7 @@ OR
 git clone https://huggingface.co/thewh1teagle/phonikud-experiments
 
 uv run hf download --repo-type model thewh1teagle/whisper-heb-ipa-ct2 --local-dir ./whisper-heb-ipa-ct2
-uv run src/transcribe.py --input ./phonikud-experiments/comparison/audio/ --output ./transcripts
-
+uv run src/transcribe.py ./phonikud-experiments/comparison/audio/ ./transcripts
 """
 import argparse
 import torch
@@ -55,9 +54,9 @@ def transcribe_file(wav_file, model_path, device):
 
 def main():
     parser = argparse.ArgumentParser(description="Batch transcribe wav files from subfolders")
-    parser.add_argument("--input", type=str, required=True,
+    parser.add_argument("input", type=str,
                         help="Input folder containing subfolders with wav files")
-    parser.add_argument("--output", type=str, required=True,
+    parser.add_argument("output", type=str,
                         help="Output folder to save transcripts")
     parser.add_argument("--model", type=str, default="./whisper-heb-ipa-ct2",
                         help="Model path for CT2 converted model (default: ./whisper-heb-ipa-ct2)")

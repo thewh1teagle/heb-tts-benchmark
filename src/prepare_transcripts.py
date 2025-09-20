@@ -1,3 +1,6 @@
+"""
+uv run src/prepare_transcripts.py ./transcripts ./transcripts_cleaned
+"""
 import json
 import argparse
 from pathlib import Path

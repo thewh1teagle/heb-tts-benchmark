@@ -281,38 +281,18 @@
     </div>
 
     <script>
-        // Embedded actual data from summary.json
-        const actualData = {
-            "metadata": {
-                "total_models": 17,
-                "our_models_count": 8,
-                "other_models_count": 9,
-                "input_directory": "transcripts_eval1"
-            },
-            "models": [
-                {"rank": 1, "model_name": "gemini_unvocalized", "mean_wer": 0.2932, "mean_cer": 0.0632, "model_type": "Other models", "is_ours": false},
-                {"rank": 2, "model_name": "openai_unvocalized", "mean_wer": 0.3236, "mean_cer": 0.0782, "model_type": "Other models", "is_ours": false},
-                {"rank": 3, "model_name": "phonikud_stts2", "mean_wer": 0.3298, "mean_cer": 0.0769, "model_type": "Our models", "is_ours": true},
-                {"rank": 4, "model_name": "piper-phonikud", "mean_wer": 0.4093, "mean_cer": 0.0978, "model_type": "Our models", "is_ours": true},
-                {"rank": 5, "model_name": "chatterbox-dicta", "mean_wer": 0.4564, "mean_cer": 0.1109, "model_type": "Other models", "is_ours": false},
-                {"rank": 6, "model_name": "roboshaul_nakdimon", "mean_wer": 0.4661, "mean_cer": 0.1334, "model_type": "Other models", "is_ours": false},
-                {"rank": 7, "model_name": "mamre-phonikud", "mean_wer": 0.4741, "mean_cer": 0.1329, "model_type": "Our models", "is_ours": true},
-                {"rank": 8, "model_name": "phonikud_enhanced_epoch=5159-step=3145742", "mean_wer": 0.4959, "mean_cer": 0.1324, "model_type": "Our models", "is_ours": true},
-                {"rank": 9, "model_name": "zonus-phonikud", "mean_wer": 0.5116, "mean_cer": 0.1697, "model_type": "Our models", "is_ours": true},
-                {"rank": 10, "model_name": "vocalized_mock_epoch=5159-step=3145742", "mean_wer": 0.5436, "mean_cer": 0.1457, "model_type": "Our models", "is_ours": true},
-                {"rank": 11, "model_name": "roboshaul_dicta", "mean_wer": 0.5761, "mean_cer": 0.1785, "model_type": "Other models", "is_ours": false},
-                {"rank": 12, "model_name": "phonikud_vocalized_epoch=5159-step=3145742", "mean_wer": 0.5836, "mean_cer": 0.1582, "model_type": "Our models", "is_ours": true},
-                {"rank": 13, "model_name": "mms_nakdimon", "mean_wer": 0.645, "mean_cer": 0.1967, "model_type": "Other models", "is_ours": false},
-                {"rank": 14, "model_name": "hebtts_unvocalized", "mean_wer": 0.6655, "mean_cer": 0.2233, "model_type": "Other models", "is_ours": false},
-                {"rank": 15, "model_name": "saspeech_nakdimon", "mean_wer": 0.6697, "mean_cer": 0.2025, "model_type": "Other models", "is_ours": false},
-                {"rank": 16, "model_name": "unvocalized_mock_epoch=5159-step=3145742", "mean_wer": 0.7153, "mean_cer": 0.2419, "model_type": "Our models", "is_ours": true},
-                {"rank": 17, "model_name": "lothm_unvocalized", "mean_wer": 0.7848, "mean_cer": 0.3978, "model_type": "Other models", "is_ours": false}
-            ]
-        };
-
-        function loadData() {
-            // Use embedded data directly (no need to fetch JSON)
-            displayScatterPlot(actualData);
+        async function loadData() {
+            try {
+                const response = await fetch('summary.json');
+                if (!response.ok) {
+                    throw new Error('Failed to load summary.json');
+                }
+                const data = await response.json();
+                displayScatterPlot(data);
+            } catch (error) {
+                console.error('Error loading data:', error);
+                document.getElementById('loading').innerHTML = 'Error loading data. Please make sure summary.json exists.';
+            }
         }
         
         function displayScatterPlot(data) {
