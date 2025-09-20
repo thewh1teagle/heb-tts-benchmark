@@ -9,7 +9,7 @@ See [Phonikud](https://phonikud.github.io) for more information.
 
 ## Add new model
 
-1. Synthesis with TTS frm the file `saspeech_100_gold_synthesis.csv` 
+1. Synthesis with TTS from the file `saspeech_100_gold_synthesis.csv` 
 
 - either from the text/vocalized/phonemes columns
 - make sure to save in new folder where each wav file name is the id from the csv file
