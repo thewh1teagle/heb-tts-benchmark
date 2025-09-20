@@ -39,8 +39,9 @@ def main():
         # Create audio from phonemes
         samples, sample_rate = piper.create(phonemes, is_phonemes=True)
         
-        # Save audio file
-        output_file = output_dir / f"audio_{idx:03d}.wav"
+        # Save audio file using id column
+        filename = f"{row['id']}.wav"
+        output_file = output_dir / filename
         sf.write(output_file, samples, sample_rate)
     
     print(f"✅ Generated {len(df)} audio files in {output_dir}")
