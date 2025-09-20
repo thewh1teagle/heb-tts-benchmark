@@ -32,6 +32,8 @@ uv run src/prepare_summary.py ./transcripts_eval ./web/summary.json
 
 Now you can open ./web/index.html with live server to see the results.
 
+5. Open new PR with your model results 🎉
+
 # Ground truth
 
 The GT is the file `saspeech_100_gold_gt.csv`.
