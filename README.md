@@ -8,5 +8,5 @@ See phonikud.github.io for more information.
 
 # Ground truth
 
-The GT is the file `saspeech_100_gold.csv`.
-Hand annotated random 100 samples from SASPEECH dataset.
+The GT is the file `saspeech_100_gold_gt.csv`.
+Hand annotated IPA transcripts of random 100 samples from SASPEECH dataset.

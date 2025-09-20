@@ -29,8 +29,8 @@ def main():
                         help="Input folder containing JSON transcript files")
     parser.add_argument("output", type=str,
                         help="Output folder to save cleaned transcripts")
-    parser.add_argument("--gold-csv", type=str, default="saspeech_100_gold.csv",
-                        help="Path to gold standard CSV file (default: saspeech_100_gold.csv)")
+    parser.add_argument("--gold-csv", type=str, default="saspeech_100_gold_gt.csv",
+                        help="Path to gold standard CSV file (default: saspeech_100_gold_gt.csv)")
     parser.add_argument("--overwrite", action="store_true",
                         help="Overwrite existing output files")
     args = parser.parse_args()
