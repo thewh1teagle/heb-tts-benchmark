@@ -3,7 +3,7 @@ import argparse
 import json
 from pathlib import Path
 import jiwer
-from typing import Dict, Any, Tuple
+from typing import Dict, Any
 import statistics
 
 

@@ -1,13 +1,7 @@
 """
-uv run hf download thewh1teagle/phonikud-experiments \
-  --repo-type model \
-  --include "comparison/audio/piper-phonikud/*" \
-  --local-dir ./audio-data
-
-OR
+The format of the input directoy should be subfolders with wav files (each subfolder is different model)
 
 git clone https://huggingface.co/thewh1teagle/phonikud-experiments
-
 uv run hf download --repo-type model thewh1teagle/whisper-heb-ipa-ct2 --local-dir ./whisper-heb-ipa-ct2
 uv run src/transcribe.py ./phonikud-experiments/comparison/audio/ ./transcripts
 """
@@ -19,8 +13,6 @@ from pathlib import Path
 from tqdm import tqdm
 from concurrent.futures import ThreadPoolExecutor
 import threading
-
-
 
 
 # Thread-local storage for models
