@@ -21,7 +21,7 @@ git clone https://github.com/thewh1teagle/heb-tts-benchmark
 cd heb-tts-benchmark
 uv run hf download --repo-type model thewh1teagle/whisper-heb-ipa-ct2 --local-dir ./whisper-heb-ipa-ct2
 uv run src/transcribe.py ./your-model-name ./transcripts # name the folder with wav files with the model name
-uv run src/prepare_transcripts.py ./transcripts ./transcripts_cleane
+uv run src/prepare_transcripts.py ./transcripts ./transcripts_clean
 ```
 
 3. Evaluate the transcription
