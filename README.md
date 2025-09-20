@@ -42,3 +42,7 @@ Now you can open ./web/index.html with live server to see the results.
 
 The GT is the file `saspeech_100_gold_gt.csv`.
 Hand annotated IPA transcripts of random 100 samples from SASPEECH dataset.
+
+## Gotchas
+
+on macOS you may want to run the `transcribe.py` with `--compute-type int8_float16` to avoid errors.
