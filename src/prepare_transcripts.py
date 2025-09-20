@@ -108,7 +108,7 @@ def main():
             
             # Save the cleaned data
             with open(output_file, 'w', encoding='utf-8') as f:
-                json.dump(cleaned_data, f, ensure_ascii=False, indent=2)
+                json.dump(cleaned_data, f, ensure_ascii=False, indent=2, sort_keys=True)
             
             print(f"✅ Cleaned {len(cleaned_data)} entries ({matched_count} matched with gold data), saved to {output_file}")
             
