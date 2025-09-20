@@ -32,7 +32,7 @@ def get_device(args):
 def get_model(model_path, device):
     """Get or create a model for the current thread"""
     if not hasattr(thread_local, 'model'):
-        thread_local.model = WhisperModel(model_path, device=device, compute_type="int8_float16")
+        thread_local.model = WhisperModel(model_path, device=device)
     return thread_local.model
 
 def get_input_folders(input_dir):

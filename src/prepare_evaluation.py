@@ -2,7 +2,7 @@
 """
 Prepare evaluation results for summary.
 
-uv run src/prepare_evaluation.py ./transcripts_clean ./transcripts_eval
+uv run src/prepare_evaluation.py ./transcripts_clean ./transcripts_eval1
 """
 import argparse
 import json
