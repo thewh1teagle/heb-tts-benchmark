@@ -2,8 +2,10 @@
 
 This repository contains the code for the Hebrew TTS benchmark.
 
+See [Hebrew TTS Benchmark](https://thewh1teagle.github.io/heb-tts-benchmark) for the live results.
 
-See phonikud.github.io for more information.
+
+See [Phonikud](https://phonikud.github.io) for more information.
 
 ## Add new model
 
