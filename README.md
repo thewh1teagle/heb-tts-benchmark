@@ -1,6 +1,6 @@
 # heb-tts-benchmark
 
-This repository contains the code for the Hebrew TTS benchmark.
+This repository contains the code for the Hebrew TTS benchmark using [Whisper IPA model](https://github.com/thewh1teagle/whisper-heb-ipa).
 
 See [Hebrew TTS Benchmark](https://thewh1teagle.github.io/heb-tts-benchmark) for the live results.
 
