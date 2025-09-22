@@ -13,3 +13,5 @@ whisper-heb-ipa-ct2/
 *.wav
 tts-model.config.json
 *.zip
+whisper-latest-v2-ct2/
+whisper-latest-v2/
