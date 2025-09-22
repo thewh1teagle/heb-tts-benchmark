@@ -2,7 +2,7 @@
 """
 Prepare evaluation results for summary.
 
-uv run src/prepare_evaluation.py ./transcripts_clean ./transcripts_eval1
+uv run src/prepare_evaluation.py ./transcripts_clean ./transcripts_eval
 """
 import argparse
 import json
@@ -12,14 +12,31 @@ from typing import Dict, Any
 import statistics
 
 
+def extract_stress_positions(phoneme_string: str) -> str:
+    """Extract stress marker positions as a space-separated string for WER calculation."""
+    if not phoneme_string:
+        return ""
+    
+    # Find all positions of stress markers (ˈ)
+    stress_positions = []
+    for i, char in enumerate(phoneme_string):
+        if char == 'ˈ':
+            stress_positions.append(str(i))
+    
+    # Return positions as space-separated string for WER calculation
+    return " ".join(stress_positions)
+
+
 def calculate_metrics(reference: str, hypothesis: str) -> Dict[str, float]:
-    """Calculate WER, CER, and other metrics between reference and hypothesis."""
+    """Calculate WER, CER, and stress WER metrics between reference and hypothesis."""
     if not reference or not hypothesis:
         return {
             "wer": 1.0,  # 100% error if either is empty
             "cer": 1.0,
+            "stress_wer": 1.0,
             "word_count": len(reference.split()) if reference else 0,
-            "char_count": len(reference) if reference else 0
+            "char_count": len(reference) if reference else 0,
+            "stress_count": reference.count('ˈ') if reference else 0
         }
     
     # Calculate WER (Word Error Rate)
@@ -28,15 +45,29 @@ def calculate_metrics(reference: str, hypothesis: str) -> Dict[str, float]:
     # Calculate CER (Character Error Rate)  
     cer = jiwer.cer(reference, hypothesis)
     
+    # Calculate Stress WER
+    ref_stress = extract_stress_positions(reference)
+    hyp_stress = extract_stress_positions(hypothesis)
+    
+    if not ref_stress and not hyp_stress:
+        stress_wer = 0.0  # No stress in either, perfect match
+    elif not ref_stress or not hyp_stress:
+        stress_wer = 1.0  # One has stress, other doesn't
+    else:
+        stress_wer = jiwer.wer(ref_stress, hyp_stress)
+    
     # Additional metrics
     word_count = len(reference.split())
     char_count = len(reference)
+    stress_count = reference.count('ˈ')
     
     return {
         "wer": wer,
         "cer": cer,
+        "stress_wer": stress_wer,
         "word_count": word_count,
-        "char_count": char_count
+        "char_count": char_count,
+        "stress_count": stress_count
     }
 
 
@@ -44,8 +75,10 @@ def calculate_summary_metrics(individual_results: Dict[str, Dict[str, Any]]) -> 
     """Calculate summary statistics from individual results."""
     wer_scores = []
     cer_scores = []
+    stress_wer_scores = []
     total_words = 0
     total_chars = 0
+    total_stress = 0
     valid_entries = 0
     
     for entry_id, entry_data in individual_results.items():
@@ -55,20 +88,28 @@ def calculate_summary_metrics(individual_results: Dict[str, Dict[str, Any]]) -> 
             total_words += entry_data.get("word_count", 0)
             total_chars += entry_data.get("char_count", 0)
             valid_entries += 1
+            
+            # Add stress WER if available
+            if "stress_wer" in entry_data:
+                stress_wer_scores.append(entry_data["stress_wer"])
+                total_stress += entry_data.get("stress_count", 0)
     
     if not wer_scores:
         return {
             "mean_wer": 0.0,
             "mean_cer": 0.0,
+            "mean_stress_wer": 0.0,
             "median_wer": 0.0,
             "median_cer": 0.0,
+            "median_stress_wer": 0.0,
             "total_entries": 0,
             "valid_entries": 0,
             "total_words": 0,
-            "total_chars": 0
+            "total_chars": 0,
+            "total_stress": 0
         }
     
-    return {
+    result = {
         "mean_wer": statistics.mean(wer_scores),
         "mean_cer": statistics.mean(cer_scores),
         "median_wer": statistics.median(wer_scores),
@@ -80,8 +121,27 @@ def calculate_summary_metrics(individual_results: Dict[str, Dict[str, Any]]) -> 
         "total_entries": len(individual_results),
         "valid_entries": valid_entries,
         "total_words": total_words,
-        "total_chars": total_chars
+        "total_chars": total_chars,
+        "total_stress": total_stress
     }
+    
+    # Add stress WER statistics if available
+    if stress_wer_scores:
+        result.update({
+            "mean_stress_wer": statistics.mean(stress_wer_scores),
+            "median_stress_wer": statistics.median(stress_wer_scores),
+            "min_stress_wer": min(stress_wer_scores),
+            "max_stress_wer": max(stress_wer_scores)
+        })
+    else:
+        result.update({
+            "mean_stress_wer": 0.0,
+            "median_stress_wer": 0.0,
+            "min_stress_wer": 0.0,
+            "max_stress_wer": 0.0
+        })
+    
+    return result
 
 
 def main():
@@ -157,7 +217,7 @@ def main():
                 json.dump(evaluation_result, f, ensure_ascii=False, indent=2, sort_keys=False)
             
             print(f"✅ Evaluated {len(individual_results)} entries")
-            print(f"   Mean WER: {summary['mean_wer']:.3f}, Mean CER: {summary['mean_cer']:.3f}")
+            print(f"   Mean WER: {summary['mean_wer']:.3f}, Mean CER: {summary['mean_cer']:.3f}, Mean Stress WER: {summary['mean_stress_wer']:.3f}")
             print(f"   Results saved to {output_file}")
             
         except Exception as e:

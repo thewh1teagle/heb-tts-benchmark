@@ -1,0 +1,163 @@
+{
+  "metadata": {
+    "total_models": 17,
+    "our_models_count": 8,
+    "other_models_count": 9,
+    "input_directory": "./transcripts_eval"
+  },
+  "models": [
+    {
+      "rank": 1,
+      "model_name": "openai_unvocalized",
+      "mean_wer": 0.1481,
+      "mean_cer": 0.0421,
+      "model_type": "Other models",
+      "is_ours": false,
+      "mean_stress_wer": 0.3567
+    },
+    {
+      "rank": 2,
+      "model_name": "gemini_unvocalized",
+      "mean_wer": 0.1527,
+      "mean_cer": 0.0368,
+      "model_type": "Other models",
+      "is_ours": false,
+      "mean_stress_wer": 0.3334
+    },
+    {
+      "rank": 3,
+      "model_name": "phonikud_stts2",
+      "mean_wer": 0.1877,
+      "mean_cer": 0.0454,
+      "model_type": "Our models",
+      "is_ours": true,
+      "mean_stress_wer": 0.4049
+    },
+    {
+      "rank": 4,
+      "model_name": "chatterbox-dicta",
+      "mean_wer": 0.2002,
+      "mean_cer": 0.0451,
+      "model_type": "Other models",
+      "is_ours": false,
+      "mean_stress_wer": 0.403
+    },
+    {
+      "rank": 5,
+      "model_name": "mamre-phonikud",
+      "mean_wer": 0.2101,
+      "mean_cer": 0.0653,
+      "model_type": "Our models",
+      "is_ours": true,
+      "mean_stress_wer": 0.4577
+    },
+    {
+      "rank": 6,
+      "model_name": "roboshaul_nakdimon",
+      "mean_wer": 0.2115,
+      "mean_cer": 0.0591,
+      "model_type": "Other models",
+      "is_ours": false,
+      "mean_stress_wer": 0.4579
+    },
+    {
+      "rank": 7,
+      "model_name": "piper-phonikud",
+      "mean_wer": 0.219,
+      "mean_cer": 0.0523,
+      "model_type": "Our models",
+      "is_ours": true,
+      "mean_stress_wer": 0.4815
+    },
+    {
+      "rank": 8,
+      "model_name": "zonus-phonikud",
+      "mean_wer": 0.2796,
+      "mean_cer": 0.1074,
+      "model_type": "Our models",
+      "is_ours": true,
+      "mean_stress_wer": 0.5017
+    },
+    {
+      "rank": 9,
+      "model_name": "roboshaul_dicta",
+      "mean_wer": 0.2998,
+      "mean_cer": 0.1152,
+      "model_type": "Other models",
+      "is_ours": false,
+      "mean_stress_wer": 0.5688
+    },
+    {
+      "rank": 10,
+      "model_name": "phonikud_enhanced_epoch=5159-step=3145742",
+      "mean_wer": 0.3029,
+      "mean_cer": 0.0735,
+      "model_type": "Our models",
+      "is_ours": true,
+      "mean_stress_wer": 0.5385
+    },
+    {
+      "rank": 11,
+      "model_name": "vocalized_mock_epoch=5159-step=3145742",
+      "mean_wer": 0.3186,
+      "mean_cer": 0.0836,
+      "model_type": "Our models",
+      "is_ours": true,
+      "mean_stress_wer": 0.5099
+    },
+    {
+      "rank": 12,
+      "model_name": "phonikud_vocalized_epoch=5159-step=3145742",
+      "mean_wer": 0.3281,
+      "mean_cer": 0.0886,
+      "model_type": "Our models",
+      "is_ours": true,
+      "mean_stress_wer": 0.5936
+    },
+    {
+      "rank": 13,
+      "model_name": "saspeech_nakdimon",
+      "mean_wer": 0.3304,
+      "mean_cer": 0.0863,
+      "model_type": "Other models",
+      "is_ours": false,
+      "mean_stress_wer": 0.6002
+    },
+    {
+      "rank": 14,
+      "model_name": "hebtts_unvocalized",
+      "mean_wer": 0.4375,
+      "mean_cer": 0.141,
+      "model_type": "Other models",
+      "is_ours": false,
+      "mean_stress_wer": 0.6092
+    },
+    {
+      "rank": 15,
+      "model_name": "mms_nakdimon",
+      "mean_wer": 0.5037,
+      "mean_cer": 0.1539,
+      "model_type": "Other models",
+      "is_ours": false,
+      "mean_stress_wer": 0.6938
+    },
+    {
+      "rank": 16,
+      "model_name": "lothm_unvocalized",
+      "mean_wer": 0.5609,
+      "mean_cer": 0.3224,
+      "model_type": "Other models",
+      "is_ours": false,
+      "mean_stress_wer": 0.8376
+    },
+    {
+      "rank": 17,
+      "model_name": "unvocalized_mock_epoch=5159-step=3145742",
+      "mean_wer": 0.5838,
+      "mean_cer": 0.1947,
+      "model_type": "Our models",
+      "is_ours": true,
+      "mean_stress_wer": 0.7036
+    }
+  ]
+}

@@ -284,6 +284,8 @@
                             <th class="metric">Accuracy (WER)</th>
                             <th class="metric">WER</th>
                             <th class="metric">CER</th>
+                            <th class="metric">Accuracy (STRESS)</th>
+                            <th class="metric">Stress WER</th>
                         </tr>
                     </thead>
                     <tbody id="table-body">
@@ -296,26 +298,27 @@
             <div id="loading" class="loading">Loading scatter plot...</div>
             <div id="scatter-plot" style="width: 100%; height: 100%;"></div>
         </div>
+        
+        <div class="plot-container">
+            <div id="loading-stress" class="loading">Loading stress WER scatter plot...</div>
+            <div id="stress-scatter-plot" style="width: 100%; height: 100%;"></div>
+        </div>
     </div>
 
     <script>
-        function getReportFile() {
-            const urlParams = new URLSearchParams(window.location.search);
-            return urlParams.get('report') || 'summary.json';
-        }
-        
         async function loadData() {
-            const reportFile = getReportFile();
             try {
-                const response = await fetch(reportFile);
+                const response = await fetch('summary.json');
                 if (!response.ok) {
-                    throw new Error(`Failed to load ${reportFile}`);
+                    throw new Error('Failed to load summary.json');
                 }
                 const data = await response.json();
                 displayScatterPlot(data);
+                displayStressScatterPlot(data);
             } catch (error) {
                 console.error('Error loading data:', error);
-                document.getElementById('loading').innerHTML = `Error loading data. Please make sure ${reportFile} exists.`;
+                document.getElementById('loading').innerHTML = 'Error loading data. Please make sure summary.json exists.';
+                document.getElementById('loading-stress').innerHTML = 'Error loading data. Please make sure summary.json exists.';
             }
         }
         
@@ -387,12 +390,18 @@
                 // Calculate WER accuracy as percentage
                 const werAccuracy = ((1 - model.mean_wer) * 100).toFixed(1);
                 
+                // Calculate Stress accuracy as percentage
+                const stressAccuracy = model.mean_stress_wer !== undefined ? 
+                    ((1 - model.mean_stress_wer) * 100).toFixed(1) : 'N/A';
+                
                 row.innerHTML = `
                     <td class="rank">${model.rank}</td>
                     <td class="model-name" title="${model.model_name}">${model.model_name}</td>
                     <td class="metric">${werAccuracy}%</td>
                     <td class="metric">${model.mean_wer.toFixed(3)}</td>
                     <td class="metric">${model.mean_cer.toFixed(3)}</td>
+                    <td class="metric">${stressAccuracy}${stressAccuracy !== 'N/A' ? '%' : ''}</td>
+                    <td class="metric">${model.mean_stress_wer !== undefined ? model.mean_stress_wer.toFixed(3) : 'N/A'}</td>
                 `;
                 
                 tableBody.appendChild(row);
@@ -453,6 +462,123 @@
             
             // Create the plot
             Plotly.newPlot('scatter-plot', [otherTrace, ourTrace], layout, config);
+        }
+        
+        function displayStressScatterPlot(data) {
+            // Check if stress WER data is available
+            const hasStressData = data.models.some(m => m.mean_stress_wer !== undefined);
+            
+            if (!hasStressData) {
+                document.getElementById('loading-stress').innerHTML = 'Stress WER data not available in summary.json';
+                return;
+            }
+            
+            // Calculate axis ranges first
+            const allWER = data.models.map(m => m.mean_wer);
+            const allStressWER = data.models.map(m => m.mean_stress_wer || 0);
+            
+            // Separate our models from others
+            const ourModels = data.models.filter(m => m.is_ours);
+            const otherModels = data.models.filter(m => !m.is_ours);
+            
+            // Create traces for stress WER
+            const ourStressTrace = {
+                x: ourModels.map(m => m.mean_wer),
+                y: ourModels.map(m => m.mean_stress_wer || 0),
+                text: ourModels.map(m => m.model_name),
+                mode: 'markers',
+                type: 'scatter',
+                name: 'Our Models',
+                marker: {
+                    color: '#e53e3e',
+                    size: 15,
+                    line: {
+                        color: '#c53030',
+                        width: 2
+                    }
+                },
+                hovertemplate: '<b>%{text}</b><br>' +
+                              'WER: %{x:.4f}<br>' +
+                              'Stress WER: %{y:.4f}<br>' +
+                              '<extra>Our Model</extra>'
+            };
+            
+            const otherStressTrace = {
+                x: otherModels.map(m => m.mean_wer),
+                y: otherModels.map(m => m.mean_stress_wer || 0),
+                text: otherModels.map(m => m.model_name),
+                mode: 'markers',
+                type: 'scatter',
+                name: 'Other Models',
+                marker: {
+                    color: '#3182ce',
+                    size: 15,
+                    line: {
+                        color: '#2b6cb0',
+                        width: 2
+                    }
+                },
+                hovertemplate: '<b>%{text}</b><br>' +
+                              'WER: %{x:.4f}<br>' +
+                              'Stress WER: %{y:.4f}<br>' +
+                              '<extra>Other Model</extra>'
+            };
+            
+            // Calculate axis ranges with padding
+            const werRange = Math.max(...allWER) - Math.min(...allWER);
+            const stressWerRange = Math.max(...allStressWER) - Math.min(...allStressWER);
+            
+            const stressLayout = {
+                title: {
+                    text: 'TTS Model Performance: WER vs Stress WER',
+                    font: { size: 20, color: '#2d3748' }
+                },
+                xaxis: {
+                    title: 'Mean WER (Word Error Rate)',
+                    titlefont: { size: 14 },
+                    range: [
+                        Math.min(...allWER) - werRange * 0.8,
+                        Math.max(...allWER) + werRange * 0.8
+                    ],
+                    gridcolor: '#e2e8f0',
+                    zerolinecolor: '#cbd5e0'
+                },
+                yaxis: {
+                    title: 'Mean Stress WER (Stress Word Error Rate)',
+                    titlefont: { size: 14 },
+                    range: [
+                        Math.min(...allStressWER) - stressWerRange * 0.8,
+                        Math.max(...allStressWER) + stressWerRange * 0.8
+                    ],
+                    gridcolor: '#e2e8f0',
+                    zerolinecolor: '#cbd5e0'
+                },
+                plot_bgcolor: '#ffffff',
+                paper_bgcolor: '#ffffff',
+                font: { family: 'Arial, sans-serif' },
+                legend: {
+                    x: 0.02,
+                    y: 0.98,
+                    bgcolor: 'rgba(255,255,255,0.8)',
+                    bordercolor: '#e2e8f0',
+                    borderwidth: 1
+                },
+                hovermode: 'closest',
+                margin: { t: 60, r: 40, b: 60, l: 60 }
+            };
+            
+            const config = {
+                responsive: true,
+                displayModeBar: true,
+                modeBarButtonsToRemove: ['pan2d', 'lasso2d', 'select2d'],
+                displaylogo: false
+            };
+            
+            // Hide loading message
+            document.getElementById('loading-stress').style.display = 'none';
+            
+            // Create the stress plot
+            Plotly.newPlot('stress-scatter-plot', [otherStressTrace, ourStressTrace], stressLayout, config);
         }
         
         // Load data when page loads
