@@ -299,17 +299,23 @@
     </div>
 
     <script>
+        function getReportFile() {
+            const urlParams = new URLSearchParams(window.location.search);
+            return urlParams.get('report') || 'summary.json';
+        }
+        
         async function loadData() {
+            const reportFile = getReportFile();
             try {
-                const response = await fetch('summary.json');
+                const response = await fetch(reportFile);
                 if (!response.ok) {
-                    throw new Error('Failed to load summary.json');
+                    throw new Error(`Failed to load ${reportFile}`);
                 }
                 const data = await response.json();
                 displayScatterPlot(data);
             } catch (error) {
                 console.error('Error loading data:', error);
-                document.getElementById('loading').innerHTML = 'Error loading data. Please make sure summary.json exists.';
+                document.getElementById('loading').innerHTML = `Error loading data. Please make sure ${reportFile} exists.`;
             }
         }
         
