@@ -12,19 +12,49 @@ from typing import Dict, Any
 import statistics
 
 
-def extract_stress_positions(phoneme_string: str) -> str:
-    """Extract stress marker positions as a space-separated string for WER calculation."""
+def extract_stress_by_vowel_index(phoneme_string: str) -> str:
+    """Extract stress positions by vowel index for linguistically accurate comparison."""
     if not phoneme_string:
         return ""
     
-    # Find all positions of stress markers (ˈ)
-    stress_positions = []
-    for i, char in enumerate(phoneme_string):
-        if char == 'ˈ':
-            stress_positions.append(str(i))
+    vowels = set('aeiou')
+    words = phoneme_string.split()
+    stress_patterns = []
     
-    # Return positions as space-separated string for WER calculation
-    return " ".join(stress_positions)
+    for word in words:
+        vowel_positions = []
+        stress_positions = []
+        
+        # Find vowel positions and stress positions in the word
+        for i, char in enumerate(word):
+            if char.lower() in vowels:
+                vowel_positions.append(i)
+            elif char == 'ˈ':
+                stress_positions.append(i)
+        
+        # For each stress marker, find which vowel it precedes
+        word_stress_pattern = []
+        for stress_pos in stress_positions:
+            # Find the next vowel after this stress marker
+            vowel_index = None
+            for idx, vowel_pos in enumerate(vowel_positions):
+                if vowel_pos > stress_pos:
+                    vowel_index = idx
+                    break
+            
+            if vowel_index is not None:
+                word_stress_pattern.append(f"v{vowel_index}")
+        
+        # Add word pattern (number of vowels + stress pattern)
+        vowel_count = len(vowel_positions)
+        if word_stress_pattern:
+            pattern = f"{vowel_count}:{','.join(word_stress_pattern)}"
+        else:
+            pattern = f"{vowel_count}:none"
+        
+        stress_patterns.append(pattern)
+    
+    return " ".join(stress_patterns)
 
 
 def calculate_metrics(reference: str, hypothesis: str) -> Dict[str, float]:
@@ -46,8 +76,8 @@ def calculate_metrics(reference: str, hypothesis: str) -> Dict[str, float]:
     cer = jiwer.cer(reference, hypothesis)
     
     # Calculate Stress WER
-    ref_stress = extract_stress_positions(reference)
-    hyp_stress = extract_stress_positions(hypothesis)
+    ref_stress = extract_stress_by_vowel_index(reference)
+    hyp_stress = extract_stress_by_vowel_index(hypothesis)
     
     if not ref_stress and not hyp_stress:
         stress_wer = 0.0  # No stress in either, perfect match
