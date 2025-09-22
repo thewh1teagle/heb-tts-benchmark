@@ -12,7 +12,8 @@
       "mean_wer": 0.1481,
       "mean_cer": 0.0421,
       "model_type": "Other models",
-      "is_ours": false
+      "is_ours": false,
+      "mean_stress_wer": 0.3567
     },
     {
       "rank": 2,
@@ -20,7 +21,8 @@
       "mean_wer": 0.1527,
       "mean_cer": 0.0368,
       "model_type": "Other models",
-      "is_ours": false
+      "is_ours": false,
+      "mean_stress_wer": 0.3334
     },
     {
       "rank": 3,
@@ -28,7 +30,8 @@
       "mean_wer": 0.1877,
       "mean_cer": 0.0454,
       "model_type": "Our models",
-      "is_ours": true
+      "is_ours": true,
+      "mean_stress_wer": 0.4049
     },
     {
       "rank": 4,
@@ -36,7 +39,8 @@
       "mean_wer": 0.2002,
       "mean_cer": 0.0451,
       "model_type": "Other models",
-      "is_ours": false
+      "is_ours": false,
+      "mean_stress_wer": 0.403
     },
     {
       "rank": 5,
@@ -44,7 +48,8 @@
       "mean_wer": 0.2101,
       "mean_cer": 0.0653,
       "model_type": "Our models",
-      "is_ours": true
+      "is_ours": true,
+      "mean_stress_wer": 0.4577
     },
     {
       "rank": 6,
@@ -52,7 +57,8 @@
       "mean_wer": 0.2115,
       "mean_cer": 0.0591,
       "model_type": "Other models",
-      "is_ours": false
+      "is_ours": false,
+      "mean_stress_wer": 0.4579
     },
     {
       "rank": 7,
@@ -60,7 +66,8 @@
       "mean_wer": 0.219,
       "mean_cer": 0.0523,
       "model_type": "Our models",
-      "is_ours": true
+      "is_ours": true,
+      "mean_stress_wer": 0.4815
     },
     {
       "rank": 8,
@@ -68,7 +75,8 @@
       "mean_wer": 0.2796,
       "mean_cer": 0.1074,
       "model_type": "Our models",
-      "is_ours": true
+      "is_ours": true,
+      "mean_stress_wer": 0.5017
     },
     {
       "rank": 9,
@@ -76,7 +84,8 @@
       "mean_wer": 0.2998,
       "mean_cer": 0.1152,
       "model_type": "Other models",
-      "is_ours": false
+      "is_ours": false,
+      "mean_stress_wer": 0.5688
     },
     {
       "rank": 10,
@@ -84,7 +93,8 @@
       "mean_wer": 0.3029,
       "mean_cer": 0.0735,
       "model_type": "Our models",
-      "is_ours": true
+      "is_ours": true,
+      "mean_stress_wer": 0.5385
     },
     {
       "rank": 11,
@@ -92,7 +102,8 @@
       "mean_wer": 0.3186,
       "mean_cer": 0.0836,
       "model_type": "Our models",
-      "is_ours": true
+      "is_ours": true,
+      "mean_stress_wer": 0.5099
     },
     {
       "rank": 12,
@@ -100,7 +111,8 @@
       "mean_wer": 0.3281,
       "mean_cer": 0.0886,
       "model_type": "Our models",
-      "is_ours": true
+      "is_ours": true,
+      "mean_stress_wer": 0.5936
     },
     {
       "rank": 13,
@@ -108,7 +120,8 @@
       "mean_wer": 0.3304,
       "mean_cer": 0.0863,
       "model_type": "Other models",
-      "is_ours": false
+      "is_ours": false,
+      "mean_stress_wer": 0.6002
     },
     {
       "rank": 14,
@@ -116,7 +129,8 @@
       "mean_wer": 0.4375,
       "mean_cer": 0.141,
       "model_type": "Other models",
-      "is_ours": false
+      "is_ours": false,
+      "mean_stress_wer": 0.6092
     },
     {
       "rank": 15,
@@ -124,7 +138,8 @@
       "mean_wer": 0.5037,
       "mean_cer": 0.1539,
       "model_type": "Other models",
-      "is_ours": false
+      "is_ours": false,
+      "mean_stress_wer": 0.6938
     },
     {
       "rank": 16,
@@ -132,7 +147,8 @@
       "mean_wer": 0.5609,
       "mean_cer": 0.3224,
       "model_type": "Other models",
-      "is_ours": false
+      "is_ours": false,
+      "mean_stress_wer": 0.8376
     },
     {
       "rank": 17,
@@ -140,7 +156,8 @@
       "mean_wer": 0.5838,
       "mean_cer": 0.1947,
       "model_type": "Our models",
-      "is_ours": true
+      "is_ours": true,
+      "mean_stress_wer": 0.7036
     }
   ]
 }
