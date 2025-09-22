@@ -308,17 +308,23 @@
     <script>
         async function loadData() {
             try {
-                const response = await fetch('summary.json');
+                // Get report filename from URL query parameter, default to 'summary.json'
+                const urlParams = new URLSearchParams(window.location.search);
+                const reportFile = urlParams.get('report') || 'summary.json';
+                
+                const response = await fetch(reportFile);
                 if (!response.ok) {
-                    throw new Error('Failed to load summary.json');
+                    throw new Error(`Failed to load ${reportFile}`);
                 }
                 const data = await response.json();
                 displayScatterPlot(data);
                 displayStressScatterPlot(data);
             } catch (error) {
                 console.error('Error loading data:', error);
-                document.getElementById('loading').innerHTML = 'Error loading data. Please make sure summary.json exists.';
-                document.getElementById('loading-stress').innerHTML = 'Error loading data. Please make sure summary.json exists.';
+                const urlParams = new URLSearchParams(window.location.search);
+                const reportFile = urlParams.get('report') || 'summary.json';
+                document.getElementById('loading').innerHTML = `Error loading data. Please make sure ${reportFile} exists.`;
+                document.getElementById('loading-stress').innerHTML = `Error loading data. Please make sure ${reportFile} exists.`;
             }
         }
         
