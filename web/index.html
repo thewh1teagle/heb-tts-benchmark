@@ -310,7 +310,7 @@
             try {
                 // Get report filename from URL query parameter, default to 'summary.json'
                 const urlParams = new URLSearchParams(window.location.search);
-                const reportFile = urlParams.get('report') || 'summary.json';
+                const reportFile = urlParams.get('report') || 'summary1.json';
                 
                 const response = await fetch(reportFile);
                 if (!response.ok) {
