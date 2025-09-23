@@ -1,7 +1,7 @@
 {
   "metadata": {
-    "total_models": 17,
-    "our_models_count": 8,
+    "total_models": 18,
+    "our_models_count": 9,
     "other_models_count": 9,
     "input_directory": "./transcripts_eval"
   },
@@ -88,6 +88,14 @@
     },
     {
       "rank": 11,
+      "model_name": "phonikud_shaul_whisper_ipa",
+      "mean_wer": 0.3054,
+      "mean_cer": 0.0912,
+      "model_type": "Our models",
+      "is_ours": true
+    },
+    {
+      "rank": 12,
       "model_name": "vocalized_mock_epoch=5159-step=3145742",
       "mean_wer": 0.3186,
       "mean_cer": 0.0836,
@@ -95,7 +103,7 @@
       "is_ours": true
     },
     {
-      "rank": 12,
+      "rank": 13,
       "model_name": "phonikud_vocalized_epoch=5159-step=3145742",
       "mean_wer": 0.3281,
       "mean_cer": 0.0886,
@@ -103,7 +111,7 @@
       "is_ours": true
     },
     {
-      "rank": 13,
+      "rank": 14,
       "model_name": "saspeech_nakdimon",
       "mean_wer": 0.3304,
       "mean_cer": 0.0863,
@@ -111,7 +119,7 @@
       "is_ours": false
     },
     {
-      "rank": 14,
+      "rank": 15,
       "model_name": "hebtts_unvocalized",
       "mean_wer": 0.4375,
       "mean_cer": 0.141,
@@ -119,7 +127,7 @@
       "is_ours": false
     },
     {
-      "rank": 15,
+      "rank": 16,
       "model_name": "mms_nakdimon",
       "mean_wer": 0.5037,
       "mean_cer": 0.1539,
@@ -127,7 +135,7 @@
       "is_ours": false
     },
     {
-      "rank": 16,
+      "rank": 17,
       "model_name": "lothm_unvocalized",
       "mean_wer": 0.5609,
       "mean_cer": 0.3224,
@@ -135,7 +143,7 @@
       "is_ours": false
     },
     {
-      "rank": 17,
+      "rank": 18,
       "model_name": "unvocalized_mock_epoch=5159-step=3145742",
       "mean_wer": 0.5838,
       "mean_cer": 0.1947,
