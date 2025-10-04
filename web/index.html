@@ -113,7 +113,7 @@
             box-shadow: 0 1px 3px rgba(0,0,0,0.1);
             max-width: 900px;
             margin: 0 auto;
-            height: 400px;
+            height: 600px;
             overflow-y: auto;
             font-size: 16px;
         }
@@ -310,7 +310,7 @@
             try {
                 // Get report filename from URL query parameter, default to 'summary.json'
                 const urlParams = new URLSearchParams(window.location.search);
-                const reportFile = urlParams.get('report') || 'summary1.json';
+                const reportFile = urlParams.get('report') || 'summary.json';
                 
                 const response = await fetch(reportFile);
                 if (!response.ok) {

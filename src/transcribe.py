@@ -4,7 +4,7 @@ The format of the input directoy should be subfolders with wav files (each subfo
 
 git clone https://huggingface.co/thewh1teagle/phonikud-experiments
 uv run hf download --repo-type model thewh1teagle/whisper-heb-ipa-large-v3-turbo-ct2 --local-dir ./whisper-heb-ipa-large-v3-turbo-ct2
-uv run src/transcribe.py ./phonikud_saspeech_piper1 ./transcripts
+uv run src/transcribe.py ./to_transcribe ./transcripts
 """
 import argparse
 import torch
