@@ -3,7 +3,7 @@ Transcribe wav files to IPA transcripts.
 The format of the input directoy should be subfolders with wav files (each subfolder is different model)
 
 git clone https://huggingface.co/thewh1teagle/phonikud-experiments
-uv run hf download --repo-type model thewh1teagle/whisper-heb-ipa-ct2 --local-dir ./whisper-heb-ipa-ct2
+uv run hf download --repo-type model thewh1teagle/whisper-heb-ipa-large-v3-turbo-ct2 --local-dir ./whisper-heb-ipa-large-v3-turbo-ct2
 uv run src/transcribe.py ./phonikud_saspeech_piper1 ./transcripts
 """
 import argparse
@@ -68,8 +68,8 @@ def main():
                         help="Input folder containing subfolders with wav files")
     parser.add_argument("output", type=str,
                         help="Output folder to save transcripts")
-    parser.add_argument("--model", type=str, default="./whisper-heb-ipa-ct2",
-                        help="Model path for CT2 converted model (default: ./whisper-heb-ipa-ct2)")
+    parser.add_argument("--model", type=str, default="./whisper-heb-ipa-large-v3-turbo-ct2",
+                        help="Model path for CT2 converted model (default: ./whisper-heb-ipa-large-v3-turbo-ct2)")
     parser.add_argument("--overwrite", action="store_true",
                         help="Overwrite existing transcript files instead of skipping")
     parser.add_argument("--workers", type=int, default=4,
