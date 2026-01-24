@@ -76,7 +76,7 @@ def main():
                         help="Number of parallel workers for transcription (default: 4)")
     parser.add_argument("--device", type=str, default=None,
                         help="Device to use for transcription (default: auto-detect)")
-    parser.add_argument("--compute-type", type=str, default="int8_float16", choices=["int8_float16", "int8_float32"],
+    parser.add_argument("--compute-type", type=str, default="int8_float16", choices=["int8_float16", "int8_float32", "float16", "float32", "int8"],
                         help="Compute type for transcription (default: int8_float16)")
     args = parser.parse_args()
 
