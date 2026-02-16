@@ -115,6 +115,7 @@
             margin: 0 auto;
             height: 400px;
             overflow-y: auto;
+            overflow-x: auto;
             font-size: 16px;
         }
         
@@ -223,17 +224,110 @@
         }
         
         @media (max-width: 768px) {
+            body {
+                padding: 10px;
+            }
+            
             .stats {
                 flex-direction: column;
                 gap: 15px;
+                padding: 15px;
+            }
+            
+            .header {
+                padding: 20px 15px;
             }
             
             .header h1 {
-                font-size: 2em;
+                font-size: 1.8em;
+            }
+            
+            .header p {
+                font-size: 1em;
             }
             
             .plot-container {
-                height: 600px;
+                height: 500px;
+                padding: 10px;
+            }
+            
+            .leaderboard-section {
+                padding: 15px;
+            }
+            
+            .leaderboard-title {
+                font-size: 1.4em;
+            }
+            
+            .model-table {
+                overflow-x: auto;
+                font-size: 14px;
+                max-width: 100%;
+            }
+            
+            .model-table th {
+                padding: 12px 10px;
+                font-size: 13px;
+                white-space: nowrap;
+            }
+            
+            .model-table td {
+                padding: 10px 8px;
+                font-size: 13px;
+                white-space: nowrap;
+            }
+            
+            .model-table .rank {
+                width: 50px;
+            }
+            
+            .model-table .metric {
+                width: 100px;
+            }
+            
+            .controls {
+                padding: 15px;
+            }
+            
+            .legend-info {
+                display: block;
+                margin: 5px 0;
+            }
+        }
+        
+        @media (max-width: 480px) {
+            .header h1 {
+                font-size: 1.5em;
+            }
+            
+            .header p {
+                font-size: 0.9em;
+            }
+            
+            .stat-number {
+                font-size: 1.5em;
+            }
+            
+            .stat-label {
+                font-size: 0.8em;
+            }
+            
+            .plot-container {
+                height: 400px;
+            }
+            
+            .model-table {
+                font-size: 12px;
+            }
+            
+            .model-table th {
+                padding: 10px 8px;
+                font-size: 11px;
+            }
+            
+            .model-table td {
+                padding: 8px 6px;
+                font-size: 11px;
             }
         }
     </style>
