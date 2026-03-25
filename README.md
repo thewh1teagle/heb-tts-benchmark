@@ -9,12 +9,9 @@ See [Phonikud](https://phonikud.github.io) for more information.
 
 ## Add new model
 
-1. Synthesis with TTS from the file `saspeech_100_gold_synthesis.csv` 
+1. Transcribe the wav files to IPA transcripts
 
-- either from the text/vocalized/phonemes columns
-- make sure to save in new folder where each wav file name is the id from the csv file
-
-2. Transcribe the wav files to IPA transcripts
+- make sure each wav file name matches the id from the csv file
 
 ```console
 git clone https://github.com/thewh1teagle/heb-tts-benchmark
@@ -24,20 +21,20 @@ uv run src/transcribe.py ./your-model-name ./transcripts # name the folder with 
 uv run src/prepare_transcripts.py ./transcripts ./transcripts_clean
 ```
 
-3. Evaluate the transcription
+2. Evaluate the transcription
 
 ```console
 uv run src/prepare_evaluation.py ./transcripts_clean ./transcripts_eval
 ```
 
-4. Add the model to the summary
+3. Add the model to the summary
 ```console
 uv run src/prepare_summary.py ./transcripts_eval ./web/summary.json
 ```
 
 Now you can open ./web/index.html with live server to see the results. (or use `uv run python -m http.server 8000 -d ./web`)
 
-5. Open new PR with your model results 🎉
+4. Open new PR with your model results 🎉
 
 # Ground truth
 
